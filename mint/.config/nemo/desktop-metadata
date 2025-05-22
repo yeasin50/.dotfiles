@@ -1,0 +1,53 @@
+[desktop-monitor-0]
+nemo-icon-view-keep-aligned=true
+nemo-icon-view-auto-layout=true
+nemo-icon-view-layout-timestamp=1747923281
+desktop-grid-adjust=100;110;
+
+[Works.volume]
+nemo-icon-position=91,276
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747938238
+
+[debian_stuffs.volume]
+nemo-icon-position=91,278
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1746402662
+
+[256 GB Volume.volume]
+nemo-icon-position=91,166
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747938238
+
+[Hacklogy.volume]
+nemo-icon-position=91,166
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747653998
+
+[1.1 GB Volume.volume]
+nemo-icon-position=91,58
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1746405156
+
+[Unisoc Phone.volume]
+nemo-icon-position=91,166
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1746475171
+
+[Audio &Video.volume]
+nemo-icon-position=91,166
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747000022
+
+[119 GB Volume.volume]
+nemo-icon-position=91,56
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1747938238

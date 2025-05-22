@@ -1,0 +1,48 @@
+# Ignore compiled or temp files
+*.swp
+*.swo
+*.bak
+*~
+
+# Node/npm/Python/Rust cache
+node_modules/
+__pycache__/
+*.pyc
+target/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor metadata
+.vscode/
+.idea/
+.envrc
+.env
+
+# Bash history or secrets
+.bash_history
+.bash_sessions
+.secret
+*.key
+*.pem
+*.crt
+*.token
+
+# Don't include user-specific things
+bash/.bash_history
+bash/.bash_logout
+
+# Ignore sensitive custom exports if separated
+bash/private_aliases
+bash/exports_secrets
+
+# If you back up system config samples
+mint/dconf-backups/
+mint/*.dconf
+mint/machine-specific/
+
+# Git or package-specific
+.git/
+.gitmodules
+*.log
