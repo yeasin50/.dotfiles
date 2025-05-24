@@ -122,6 +122,8 @@ if [ -f ~/.bash_secrets ]; then
 fi
 
 export PATH="$PATH:$HOME/apps/flutter/bin"
+export PATH="$PATH:$HOME/apps/flutter/bin/cache/dart-sdk/bin"
+
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/apps/go/bin"
 export PATH="$HOME/go/bin:$PATH"
@@ -131,6 +133,7 @@ export PATH="$PATH:/home/yeasin/go/bin"
 export GRADLE_USER_HOME=/mnt/debian_stuffs/.gradle
 export GRADLE_HOME=/mnt/debian_stuffs/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
+
 
 # If not running interactively, don't do anything
 case $- in
