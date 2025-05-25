@@ -6,8 +6,11 @@ settab() {
 alias cls='clear'
 alias reload='source ~/.bashrc'
 
-alias v='nvim'
+alias vi='nvim'
  
 alias ll='ls -lah'
 alias gs='git status'
 
+
+
+# alias cd='z'

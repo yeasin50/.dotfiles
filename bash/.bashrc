@@ -133,7 +133,7 @@ export PATH="$PATH:/home/yeasin/go/bin"
 export GRADLE_USER_HOME=/mnt/debian_stuffs/.gradle
 export GRADLE_HOME=/mnt/debian_stuffs/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
-
+export PATH=/home/yeasin/.local/bin:$PATH
 
 # If not running interactively, don't do anything
 case $- in

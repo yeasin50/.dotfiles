@@ -116,7 +116,7 @@
             }
         ],
         "default_category": "Linux Mint",
-        "value": "linuxmint-logo-ring-symbolic"
+        "value": "face-smile-big-symbolic"
     },
     "menu-icon-size": {
         "type": "spinbutton",
