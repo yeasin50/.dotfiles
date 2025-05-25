@@ -1,14 +1,14 @@
 [desktop-monitor-0]
 nemo-icon-view-keep-aligned=true
 nemo-icon-view-auto-layout=true
-nemo-icon-view-layout-timestamp=1748046954
+nemo-icon-view-layout-timestamp=1748112170
 desktop-grid-adjust=100;110;
 
 [Works.volume]
 nemo-icon-position=91,56
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1748094430
+nemo-icon-position-timestamp=1748094698
 
 [debian_stuffs.volume]
 nemo-icon-position=91,278
@@ -57,3 +57,9 @@ nemo-icon-position=91,56
 monitor=0
 icon-scale=1
 nemo-icon-position-timestamp=1747990033
+
+[Ventoy.volume]
+nemo-icon-position=91,56
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1748108789

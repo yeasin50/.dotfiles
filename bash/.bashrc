@@ -222,3 +222,5 @@ export BASH_IT_THEME="easy"
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
+# just like to use vim keybindings
+# set -o vi
