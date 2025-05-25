@@ -1,7 +1,7 @@
 [desktop-monitor-0]
 nemo-icon-view-keep-aligned=true
 nemo-icon-view-auto-layout=true
-nemo-icon-view-layout-timestamp=1748112170
+nemo-icon-view-layout-timestamp=1748193594
 desktop-grid-adjust=100;110;
 
 [Works.volume]
@@ -62,4 +62,4 @@ nemo-icon-position-timestamp=1747990033
 nemo-icon-position=91,56
 monitor=0
 icon-scale=1
-nemo-icon-position-timestamp=1748108789
+nemo-icon-position-timestamp=1748181437
