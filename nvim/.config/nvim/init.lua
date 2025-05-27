@@ -25,6 +25,29 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 
+-- vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", { desc = "Clear search highlight" })
+
+
+-- Save view (folds, cursor, etc.) only for real files
+vim.api.nvim_create_autocmd("BufWinLeave", {
+  callback = function(args)
+    local ft = vim.bo[args.buf].filetype
+    if ft ~= "oil" and vim.api.nvim_buf_get_name(args.buf) ~= "" then
+      vim.cmd("mkview")
+    end
+  end,
+})
+
+-- Load view only for real files
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  callback = function(args)
+    local ft = vim.bo[args.buf].filetype
+    if ft ~= "oil" and vim.api.nvim_buf_get_name(args.buf) ~= "" then
+      vim.cmd("silent! loadview")
+    end
+  end,
+})
+
 
 vim.opt.guifont = "Fira Code Medium,Noto Sans Bengali Regular:h14"
 

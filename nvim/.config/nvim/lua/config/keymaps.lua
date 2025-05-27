@@ -13,3 +13,5 @@ vim.keymap.set("n", "<leader>f", function()
     }
     )
 end, { desc = "Format code with LSP" })
+
+-- vim.keymap.set('n', 'jj', 'i', { noremap = true, silent = true })

@@ -224,3 +224,5 @@ source "$BASH_IT"/bash_it.sh
 
 # just like to use vim keybindings
 # set -o vi
+eval "$(zoxide init --cmd cd bash)"
+
