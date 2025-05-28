@@ -1,6 +1,7 @@
 return
 {
     "vim-test/vim-test",
+    enabled = false,
     keys = {
         { "<leader>tn", ":TestNearest<CR>", desc = "Run nearest Go test" },
         { "<leader>tf", ":TestFile<CR>",    desc = "Run all tests in current Go file" },
