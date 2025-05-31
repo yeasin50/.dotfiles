@@ -66,4 +66,15 @@ vim.api.nvim_set_keymap('i', '<S-Right>', '<Esc>vwea', { noremap = true, silent 
 -- -- Auto-close curly braces
 -- vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true, silent = true })
 --
+
+-- Transparent background
+vim.cmd [[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NormalNC guibg=NONE ctermbg=NONE
+  highlight SignColumn guibg=NONE ctermbg=NONE
+  highlight VertSplit guibg=NONE ctermbg=NONE
+  highlight StatusLine guibg=NONE ctermbg=NONE
+]]
+
+
 require("config.lazy")

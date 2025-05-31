@@ -5,24 +5,33 @@ return {
         lazy = false,
         priority = 1000,
         opts = {
-            style = "night", },
+            style = "moon", -- Theme variant: "storm", "night", "moon", "day"
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
+        },
+        config = function()
+            vim.cmd("colorscheme tokyonight")
+        end,
     },
 
     {
         "joshdick/onedark.vim",
+        enabled = false,
         config = function()
-            enabled = false,
-                vim.cmd("colorscheme onedark")
+            vim.cmd("colorscheme onedark")
 
-            vim.g.onedark_style = "dark" -- Choose the style: "dark", "light", "warmer", "cooler"
-            vim.g.onedark_terminal_italics = 1 -- Enable italics in terminal
+            vim.g.onedark_style = "dark" -- Choose style: "dark", "light", "warmer", "cooler"
+            vim.g.onedark_terminal_italics = 1
 
             vim.cmd([[
-          highlight SpellBad   guisp=#ff5f5f gui=undercurl
-          highlight SpellCap   guisp=#5f87ff gui=undercurl
-          highlight SpellLocal guisp=#5fffaf gui=undercurl
-          highlight SpellRare  guisp=#d787ff gui=undercurl
-    ]])
+                highlight SpellBad   guisp=#ff5f5f gui=undercurl
+                highlight SpellCap   guisp=#5f87ff gui=undercurl
+                highlight SpellLocal guisp=#5fffaf gui=undercurl
+                highlight SpellRare  guisp=#d787ff gui=undercurl
+            ]])
         end,
     },
 }
