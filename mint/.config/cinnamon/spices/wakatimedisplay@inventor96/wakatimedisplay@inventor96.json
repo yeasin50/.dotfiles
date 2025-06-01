@@ -19,7 +19,7 @@
         "default": "",
         "description": "WakaTime API Key",
         "tooltip": "The API key unique to your WakaTime account.",
-        "value": "waka_36816093-84c9-484f-a928-5d7d564e835e"
+        "value": "YOUR_API_KEY"
     },
     "getApiKey": {
         "type": "button",

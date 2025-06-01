@@ -1,6 +1,11 @@
 return {
     "folke/trouble.nvim",
-    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    opts = {
+        position = "left",
+        width = 40,
+        icons = true,
+        use_diagnostic_signs = true,
+    },
     cmd = "Trouble",
     keys = {
         {
