@@ -1,10 +1,10 @@
 return {
     "folke/trouble.nvim",
     opts = {
-        position = "left",
-        width = 40,
-        icons = true,
-        use_diagnostic_signs = true,
+        -- position = "left",
+        -- width = 40,
+        -- icons = true,
+        -- use_diagnostic_signs = true,
     },
     cmd = "Trouble",
     keys = {
