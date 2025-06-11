@@ -14,4 +14,10 @@ vim.keymap.set("n", "<leader>f", function()
     )
 end, { desc = "Format code with LSP" })
 
+
+
+vim.keymap.set("n", "<leader>cd", function()
+    vim.diagnostic.open_float(nil, { focus = false, border = "rounded" })
+end, { desc = "Show Diagnostics (Cursor Float)" })
+
 -- vim.keymap.set('n', 'jj', 'i', { noremap = true, silent = true })
