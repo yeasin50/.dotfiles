@@ -12,5 +12,4 @@ alias ll='ls -lah'
 alias gs='git status'
 
 
-
-# alias cd='z'
+source ~/.dotfiles/bash/note_alias.bash
