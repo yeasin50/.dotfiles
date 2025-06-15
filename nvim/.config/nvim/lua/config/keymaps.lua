@@ -6,6 +6,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move down by half a page and c
 
 -- Move up by two half-pages and center
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up by half a page and center" })
+vim.keymap.set("v", "<leader>p", "\"_dP", { desc = "Paste without removing from  register" })
 
 vim.keymap.set("n", "<leader>f", function()
     require('conform').format({
