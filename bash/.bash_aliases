@@ -15,6 +15,7 @@ alias gs='git status'
 source ~/.dotfiles/bash/note_alias.bash
 
 alias tmuxp='tmuxinator start .'
+# alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
