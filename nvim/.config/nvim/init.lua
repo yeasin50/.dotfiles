@@ -76,5 +76,6 @@ vim.cmd [[
   highlight StatusLine guibg=NONE ctermbg=NONE
 ]]
 
+require("auto_wikilink_notes").setup()
 
 require("config.lazy")
