@@ -1,9 +1,11 @@
 return {
 	"nvim-flutter/flutter-tools.nvim",
-	lazy = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"stevearc/dressing.nvim", -- optional for vim.ui.select
+		"stevearc/dressing.nvim", -- optional UI enhancement
 	},
-	config = true,
+	config = function()
+		require("config.lsp.flutter")
+	end,
+	ft = { "dart" },
 }
