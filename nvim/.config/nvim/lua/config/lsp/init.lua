@@ -34,6 +34,16 @@ function M.setup()
 		},
 	})
 
+	vim.api.nvim_create_autocmd("LspAttach", {
+		group = vim.api.nvim_create_augroup("custom-lsp-attach", { clear = true }),
+		callback = function(event)
+			local client = vim.lsp.get_client_by_id(event.data.client_id)
+			if client then
+				require("config.lsp.handlers").on_attach(client, event.buf)
+			end
+		end,
+	})
+
 	-- Diagnostic UI setup (you already had this)
 	vim.diagnostic.config({
 		severity_sort = true,

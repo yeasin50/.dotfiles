@@ -10,4 +10,3 @@ return {
 		require("config.lsp").setup()
 	end,
 }
- 

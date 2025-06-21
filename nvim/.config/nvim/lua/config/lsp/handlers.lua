@@ -6,7 +6,7 @@ function M.on_attach(client, bufnr)
 		vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = "LSP: " .. desc })
 	end
 
-	map("gd", require("fzf-lua").lsp_definitions, "[G]oto [D]efinition")
+	map("<leader>gd", require("fzf-lua").lsp_definitions, "[G]oto [D]efinition")
 	map("gr", require("fzf-lua").lsp_references, "[G]oto [R]eferences")
 	map("gI", require("fzf-lua").lsp_implementations, "[G]oto [I]mplementation")
 	map("<leader>D", require("fzf-lua").lsp_typedefs, "Type [D]efinition")
