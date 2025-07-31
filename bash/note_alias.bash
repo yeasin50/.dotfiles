@@ -25,6 +25,7 @@ Author: Md. Yeasin Sheikh
 Date: ${date}
 Tags: [[in-progress]]
 Source: github.com/yeasin50
+wikilink: false
 ---
 
 # ${filename}

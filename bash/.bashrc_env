@@ -8,6 +8,7 @@ export PATH="$PATH":"$HOME/apps/go/bin"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$PATH:$HOME/go/bin"
 
+export LV2_PATH=$HOME/.lv2:/usr/lib/lv2:/usr/local/lib/lv2
 
 export GRADLE_USER_HOME=/mnt/debian_stuffs/.gradle
 export GRADLE_HOME=/mnt/debian_stuffs/gradle

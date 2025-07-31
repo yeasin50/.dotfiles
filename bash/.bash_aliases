@@ -7,7 +7,11 @@ alias cls='clear'
 alias reload='source ~/.bashrc'
 
 alias vi='nvim'
- 
+
+gv() {
+  nohup "$HOME/apps/neovide.AppImage" "$@" >/dev/null 2>&1 &
+}
+
 alias ll='ls -lah'
 alias gs='git status'
 

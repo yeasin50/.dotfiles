@@ -29,6 +29,8 @@ Thumbs.db
 *.crt
 *.token
 
+lazygit
+
 # Don't include user-specific things
 bash/.bash_history
 bash/.bash_logout
