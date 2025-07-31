@@ -5,9 +5,10 @@ return {
 	dev = true,
 	config = function()
 		require("wikilink").setup({
-			extension = "md", -- optional (default: "md")
-			pattern = "%[%[([%w%-%_/%s]+)%]%]", -- optional
-			-- location = "~/notes", -- optional, default: current file's directory
+			extension = "md",
+			featureLoc = "$HOME/github/writings/features",
+			tagLoc = "$HOME/github/writings/tags",
+			wikilink = false,
 		})
 	end,
 }

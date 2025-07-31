@@ -10,6 +10,7 @@ return {
 				".*/build/.*",
 				".*/%.pub/.*",
 				".*/%.packages$",
+				"*./example/*",
 			},
 		},
 	},

@@ -8,6 +8,11 @@ flutter_tools.setup({
 		capabilities = capabilities,
 		settings = {
 			renameFilesWithClasses = "prompt",
+			dart = {
+				completeFunctionCalls = true,
+				enableSnippets = true,
+				showTodos = true,
+			},
 		},
 	},
 	widget_guides = {
