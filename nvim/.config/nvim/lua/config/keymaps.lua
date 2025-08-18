@@ -25,3 +25,26 @@ end, {})
 -- vim.keymap.set("n", "<leader>fr", ":FlutterHotReload<CR>", { desc = "Flutter hot reload" })
 -- vim.keymap.set("n", "<leader>fR", ":FlutterHotRestart<CR>", { desc = "Flutter hot restart" })
 vim.api.nvim_set_keymap("n", "<leader>br", ":BuildRunner<CR>", { noremap = true, silent = true })
+
+---  switch  to buffer
+function _G.goto_buffer(n)
+	local buffers = {}
+	for _, buf in ipairs(vim.fn.getbufinfo({ buflisted = 1 })) do
+		if vim.api.nvim_buf_is_loaded(buf.bufnr) then
+			table.insert(buffers, buf.bufnr)
+		end
+	end
+	if n <= #buffers then
+		vim.api.nvim_set_current_buf(buffers[n])
+	end
+end
+
+-- mappings
+for i = 1, 9 do
+	vim.api.nvim_set_keymap(
+		"n",
+		"<M-" .. i .. ">",
+		string.format([[<cmd>lua _G.goto_buffer(%d)<CR>]], i),
+		{ noremap = true, silent = true }
+	)
+end
