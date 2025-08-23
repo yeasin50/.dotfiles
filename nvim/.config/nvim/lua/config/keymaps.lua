@@ -1,10 +1,13 @@
 vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "open parent directory in Oil" })
 
--- Move down by two half-pages and center
-vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move down by half a page and center" })
-
 -- Move up by two half-pages and center
-vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up by half a page and center" })
+vim.keymap.set("n", "<C-u>", function()
+	local lines = math.floor(vim.fn.winheight(0) / 4) -- 25% of window height
+	vim.cmd("normal! " .. lines .. "kzz") -- move up and center
+end, { desc = "Move up by 25% of a page and center" })
+
+vim.keymap.set("n", "<C-q>", "<cmd>bd<CR>", { desc = "Close current buffer" })
+
 vim.keymap.set("v", "<leader>p", '"_dP', { desc = "Paste without removing from  register" })
 
 vim.keymap.set("n", "<leader>f", function()
