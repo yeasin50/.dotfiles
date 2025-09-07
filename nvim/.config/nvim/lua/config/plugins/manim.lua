@@ -5,8 +5,8 @@ return {
 	dev = true,
 	cmd = "ManimCheck",
 	keys = {
-		-- { "<leader>c", "<cmd>ManimCheck<cr>", desc = "Check Manim class/path" },
 		{ "<leader>r", "<cmd>ManimPlay<cr>", desc = "Play Manim class" },
+		{ "<leader>re", "<cmd>ManimExport<cr>", desc = "Export manim class" },
 	},
 	ft = "python",
 	config = function()
@@ -14,7 +14,7 @@ return {
 			manim_path = "manim",
 			venv_path = "/home/yeasin/github/writings/manim/env",
 			play_args = { "-pql" },
-			export_args = { "-ql" },
+			export_args = { "-qk --transparent" },
 		})
 	end,
 }
