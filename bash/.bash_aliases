@@ -52,16 +52,16 @@ recordMode(){
     # primary  monitor
     xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 2x2 --pos 1280x0
     # Right monitor (portrait) to the right
-    xrandr --output DisplayPort-0 --mode 1920x1080 --pos 5120x240 --rotate right
+    # xrandr --output DisplayPort-0 --mode 1920x1080 --pos 5120x240 --rotate right
 }
 
 desktopMode(){
     xrandr --output DisplayPort-2 --mode 1280x1024 --pos 0x0
      # primary  monitor
-    # xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 1280x0
-    xrandr --output HDMI-A-0 --mode 1920x1080 --scale-from 3840x2160
+    xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 1280x0
+    # xrandr --output HDMI-A-0 --mode 1920x1080 --scale-from 3840x2160
     # Right monitor (portrait) to the right
-    xrandr --output DisplayPort-0 --mode 1920x1080 --pos 3200x-840 --rotate right
+    # xrandr --output DisplayPort-0 --mode 1920x1080 --pos 3200x-840 --rotate right
 }
 
 record() {
