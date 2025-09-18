@@ -75,5 +75,37 @@ record() {
     shift
 
     # Set environment variables and launch
-    GDK_SCALE=2 GDK_DPI_SCALE=1 GTK_THEME=Adwaita:light "$app" "$@"
+
+    GDK_SCALE=2 GDK_DPI_SCALE=1 GTK_THEME=Adwaita:dark "$app" "$@"
+}
+
+##  to check  how many  hours it can take for me  to edit 
+## `videoinfo 2` where 2 is depnt,  default is 1
+videoinfo() {
+    if ! command -v ffprobe >/dev/null 2>&1; then
+        echo "Not possible, ffmpeg/ffprobe not installed."
+        return
+    fi
+
+    depth=${1:-1}
+    total_duration=0
+    total_size=0
+
+    while IFS= read -r f; do
+        duration=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
+        # Convert duration to integer seconds
+        duration_int=${duration%.*}
+        total_duration=$((total_duration + duration_int))
+
+        size=$(stat -c%s "$f")
+        total_size=$((total_size + size))
+    done < <(find . -maxdepth "$depth" -type f \( -iname "*.mp4" -o -iname "*.mkv" -o -iname "*.avi" \))
+
+    hours=$((total_duration / 3600))
+    minutes=$(( (total_duration % 3600) / 60 ))
+    seconds=$((total_duration % 60))
+    human_size=$(numfmt --to=iec --suffix=B $total_size)
+
+    echo "Total duration: $hours:$minutes:$seconds"
+    echo "Total size: $human_size"
 }
