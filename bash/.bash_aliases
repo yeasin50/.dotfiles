@@ -48,21 +48,30 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 ## record mode
 recordMode(){
-    xrandr --output DisplayPort-2 --mode 1280x1024 --pos 0x1096
-    # primary  monitor
-    xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 2x2 --pos 1280x0
+
+    # Set large cursor for recording
+    gsettings set org.cinnamon.desktop.interface cursor-size 68
+
+    # primary monitor
+    xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 2x2 --pos 0x0 
+    xrandr --output DisplayPort-2 --mode 1280x1024 --pos 3840x0  --rotate right
+
     # Right monitor (portrait) to the right
     # xrandr --output DisplayPort-0 --mode 1920x1080 --pos 5120x240 --rotate right
 }
 
+## Work mode 
 desktopMode(){
-    xrandr --output DisplayPort-2 --mode 1280x1024 --pos 0x0
-     # primary  monitor
-    xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 1280x0
-    # xrandr --output HDMI-A-0 --mode 1920x1080 --scale-from 3840x2160
+     # Set normal cursor for desktop
+     gsettings set org.cinnamon.desktop.interface cursor-size 24
+
+     # primary monitor
+    xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 0x0  
+    xrandr --output DisplayPort-2 --mode 1280x1024 --pos 1920x0 --rotate right
     # Right monitor (portrait) to the right
     # xrandr --output DisplayPort-0 --mode 1920x1080 --pos 3200x-840 --rotate right
 }
+
 
 record() {
     if [ -z "$1" ]; then
