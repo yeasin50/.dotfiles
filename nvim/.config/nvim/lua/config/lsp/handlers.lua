@@ -13,7 +13,11 @@ function M.on_attach(client, bufnr)
 	map("<leader>ds", require("fzf-lua").lsp_document_symbols, "[D]ocument [S]ymbols")
 	map("<leader>ws", require("fzf-lua").lsp_live_workspace_symbols, "[W]orkspace [S]ymbols")
 	map("<leader>cr", vim.lsp.buf.rename, "[R]e[n]ame")
-	map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
+
+	vim.keymap.set({ "n", "x" }, "<leader>ca", function()
+		require("fzf-lua").lsp_code_actions()
+	end, { desc = "[C]ode [A]ction (fzf)" })
+
 	map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
 
 	-- Highlight references

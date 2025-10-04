@@ -1,7 +1,11 @@
 # ~/.bashrc_env 
 
-export PATH="$PATH:$HOME/apps/flutter/bin"
-export PATH="$PATH:$HOME/apps/flutter/bin/cache/dart-sdk/bin"
+
+export PATH="$PATH:$HOME/fvm/default/bin"
+export PATH="$PATH:$HOME/fvm/default/bin/cache/dart-sdk/bin"
+
+# export PATH="$PATH:$HOME/apps/flutter/bin"
+# export PATH="$PATH:$HOME/apps/flutter/bin/cache/dart-sdk/bin"
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/apps/go/bin"

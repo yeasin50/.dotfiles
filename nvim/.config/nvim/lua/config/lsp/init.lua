@@ -10,7 +10,7 @@ function M.setup()
 		lua_ls = require("config.lsp.servers.lua_ls"),
 		gopls = require("config.lsp.servers.gopls"),
 		marksman = require("config.lsp.servers.marksman"),
-		pyright = require("config.lsp.servers.pyright"), -- <- add this
+		pyright = require("config.lsp.servers.pyright"),
 	}
 
 	-- Ensure mason installs servers
