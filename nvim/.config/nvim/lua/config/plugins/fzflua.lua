@@ -14,6 +14,18 @@ return {
 			},
 		},
 	},
+
+	config = function(_, opts)
+		local fzf = require("fzf-lua")
+		fzf.setup(opts)
+
+		vim.api.nvim_create_autocmd("VimEnter", {
+			callback = function()
+				fzf.register_ui_select({ silent = true })
+			end,
+		})
+	end,
+
 	keys = {
 		{
 			"<leader>ff",

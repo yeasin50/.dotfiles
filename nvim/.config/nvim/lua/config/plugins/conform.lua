@@ -5,9 +5,20 @@ return {
 			lua = { "stylua" },
 			markdown = { "prettierd", "prettier" },
 			dart = { "dart_format" },
+			c = {
+				exe = "clang-format",
+				args = { "--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never, TabWidth: 4}" },
+				stdin = true,
+			},
+			-- -- C++
+			-- cpp = {
+			-- 	exe = "clang-format",
+			-- 	args = { "--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never, TabWidth: 4}" },
+			-- 	stdin = true,
+			-- },
 		},
 		format_on_save = {
-			timeout_ms = 500,
+			timeout_ms = 1000,
 			lsp_format = "fallback",
 		},
 	},

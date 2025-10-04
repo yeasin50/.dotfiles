@@ -1,37 +1,31 @@
-return {
-	{
-		"folke/tokyonight.nvim",
-		enabled = true,
-		lazy = false,
-		priority = 1000,
-		opts = {
-			style = "moon", -- Theme variant: "storm", "night", "moon", "day"
-			transparent = false,
-			styles = {
-				sidebars = "transparent",
-				floats = "transparent",
-			},
-		},
-		config = function()
-			vim.cmd("colorscheme tokyonight")
-		end,
+local M = {}
+
+-- 🔹 Theme selector: 1 = Tokyo Night, 2 = One Dark
+local theme_index = 1
+
+M[1] = {
+	"folke/tokyonight.nvim",
+	enabled = theme_index == 1,
+	lazy = false,
+	priority = 1000,
+	opts = {
+		style = "storm", -- Theme variant: "storm", "night", "moon", "day"
+		transparent = false,
+		styles = { sidebars = "transparent", floats = "transparent" },
 	},
-
-	{
-		"joshdick/onedark.vim",
-		enabled = false,
-		config = function()
-			vim.cmd("colorscheme onedark")
-
-			vim.g.onedark_style = "dark" -- Choose style: "dark", "light", "warmer", "cooler"
-			vim.g.onedark_terminal_italics = 1
-
-			vim.cmd([[
-                highlight SpellBad   guisp=#ff5f5f gui=undercurl
-                highlight SpellCap   guisp=#5f87ff gui=undercurl
-                highlight SpellLocal guisp=#5fffaf gui=undercurl
-                highlight SpellRare  guisp=#d787ff gui=undercurl
-            ]])
-		end,
-	},
+	config = function()
+		vim.cmd("colorscheme tokyonight")
+	end,
 }
+
+M[2] = {
+	"joshdick/onedark.vim",
+	enabled = theme_index == 2,
+	config = function()
+		vim.cmd("colorscheme onedark")
+		vim.g.onedark_style = "dark"
+		vim.g.onedark_terminal_italics = 1
+	end,
+}
+
+return M
