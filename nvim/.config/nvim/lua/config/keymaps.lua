@@ -24,11 +24,6 @@ vim.api.nvim_create_user_command("BuildRunner", function()
 	vim.cmd("botright vsplit | terminal dart pub run build_runner build --delete-conflicting-outputs")
 end, {})
 
--- Flutter
--- vim.keymap.set("n", "<leader>fr", ":FlutterHotReload<CR>", { desc = "Flutter hot reload" })
--- vim.keymap.set("n", "<leader>fR", ":FlutterHotRestart<CR>", { desc = "Flutter hot restart" })
-vim.api.nvim_set_keymap("n", "<leader>br", ":BuildRunner<CR>", { noremap = true, silent = true })
-
 ---  switch  to buffer
 function _G.goto_buffer(n)
 	local buffers = {}
@@ -51,3 +46,10 @@ for i = 1, 9 do
 		{ noremap = true, silent = true }
 	)
 end
+
+local run = require("config.run_file")
+
+-- Smart Run keymap
+vim.keymap.set("n", "<leader>r", run.fileRunner, {
+	desc = "Smart Run (Dart(Flutter HotRestart)/C(gcc)/Python(Manim))",
+})

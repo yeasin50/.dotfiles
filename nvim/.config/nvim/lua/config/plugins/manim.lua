@@ -5,7 +5,6 @@ return {
 	dev = true,
 	cmd = "ManimCheck",
 	keys = {
-		{ "<leader>r", "<cmd>ManimPlay<cr>", desc = "Play Manim class" },
 		{ "<leader>re", "<cmd>ManimExport<cr>", desc = "Export manim class" },
 	},
 	ft = "python",
