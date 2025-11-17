@@ -1,21 +1,22 @@
 return {
 	"stevearc/conform.nvim",
 	opts = {
+		formatters = {
+			clang_format = {
+				command = "clang-format",
+				args = {
+					"--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never, TabWidth: 4}",
+				},
+				stdin = true,
+			},
+		},
 		formatters_by_ft = {
 			lua = { "stylua" },
 			markdown = { "prettierd", "prettier" },
+			json = { "prettierd", "prettier" },
 			dart = { "dart_format" },
-			c = {
-				exe = "clang-format",
-				args = { "--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never, TabWidth: 4}" },
-				stdin = true,
-			},
-			-- -- C++
-			-- cpp = {
-			-- 	exe = "clang-format",
-			-- 	args = { "--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never, TabWidth: 4}" },
-			-- 	stdin = true,
-			-- },
+			c = { "clang_format" },
+			-- cpp = { "clang_format" }, -- Uncomment if you want C++ as well
 		},
 		format_on_save = {
 			timeout_ms = 1000,
@@ -24,7 +25,6 @@ return {
 	},
 	config = function(_, opts)
 		local conform = require("conform")
-
 		conform.setup(opts)
 
 		-- Optional: Notify on formatting result
@@ -43,8 +43,7 @@ return {
 								{ title = "Conform" }
 							)
 						else
-							-- vim.notify("Formatting failed: " .. (err or "Unknown error"), vim.log.levels.ERROR,
-							--     { title = "Conform" })
+							-- vim.notify("Formatting failed: " .. (err or "Unknown error"), vim.log.levels.ERROR, { title = "Conform" })
 						end
 					end,
 				})

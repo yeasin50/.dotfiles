@@ -1,10 +1,24 @@
 vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "open parent directory in Oil" })
 
+vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, { desc = "LSP Rename symbol" })
+
 -- Move up by two half-pages and center
 vim.keymap.set("n", "<C-u>", function()
-	local lines = math.floor(vim.fn.winheight(0) / 4) -- 25% of window height
+	local lines = math.floor(vim.fn.winheight(0) * 0.35) -- 35% of window height
 	vim.cmd("normal! " .. lines .. "kzz") -- move up and center
-end, { desc = "Move up by 25% of a page and center" })
+end, { desc = "Move up by 35% of a page and center" })
+
+vim.keymap.set("n", "zz", function()
+	local win_height = vim.fn.winheight(0)
+	local target_offset = math.floor(win_height / 4) -- 25% from top
+	local cursor_line = vim.fn.line(".")
+	local new_topline = cursor_line - target_offset
+	if new_topline < 1 then
+		new_topline = 1
+	end
+	vim.fn.winrestview({ topline = new_topline })
+end, { desc = "Scroll so current line is 25% from top" })
+---
 
 vim.keymap.set("n", "<C-q>", "<cmd>bd<CR>", { desc = "Close current buffer" })
 
