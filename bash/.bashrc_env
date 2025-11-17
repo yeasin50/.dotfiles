@@ -12,6 +12,10 @@ export PATH="$PATH":"$HOME/apps/go/bin"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$PATH:$HOME/go/bin"
 
+export ANDROID_SDK_ROOT=$HOME/Android
+export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export LV2_PATH=$HOME/.lv2:/usr/lib/lv2:/usr/local/lib/lv2
 
 export GRADLE_USER_HOME=/mnt/debian_stuffs/.gradle
