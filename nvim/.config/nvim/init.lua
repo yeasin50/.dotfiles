@@ -2,7 +2,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.opt.clipboard:append("unnamedplus")
-
+vim.opt.numberwidth = 2
+vim.opt.signcolumn = "auto"
 vim.o.number = true
 
 vim.o.mouse = "a"
@@ -87,17 +88,17 @@ vim.g.neovide_hide_mouse_when_typing = true
 ---
 
 ---
-vim.keymap.set("n", "<leader>rr", function()
-	vim.cmd("source $MYVIMRC")
-
-	vim.defer_fn(function()
-		if type(copyWith) == "function" then
-			copyWith()
-		else
-			vim.notify("copyWith() is not defined after reload", vim.log.levels.ERROR)
-		end
-	end, 50)
-end, { desc = "Reload init.lua and run copyWith()" })
+-- vim.keymap.set("n", "<leader>rr", function()
+-- 	vim.cmd("source $MYVIMRC")
+--
+-- 	vim.defer_fn(function()
+-- 		if type(copyWith) == "function" then
+-- 			copyWith()
+-- 		else
+-- 			vim.notify("copyWith() is not defined after reload", vim.log.levels.ERROR)
+-- 		end
+-- 	end, 50)
+-- end, { desc = "Reload init.lua and run copyWith()" })
 
 -- Disable F1 key in normal, insert, and visual mode
 vim.api.nvim_set_keymap("n", "<F1>", "<Nop>", { noremap = true, silent = true })
