@@ -46,9 +46,23 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
+vboxmode() {
+    sudo systemctl stop libvirtd 2>/dev/null
+    sudo rmmod kvm_intel 2>/dev/null
+    sudo rmmod kvm 2>/dev/null
+    echo "✅ VirtualBox mode activated (KVM disabled)"
+}
+
+kvmmode() {
+    sudo modprobe kvm 2>/dev/null
+    sudo modprobe kvm_intel 2>/dev/null
+    sudo systemctl start libvirtd 2>/dev/null
+    echo "✅ KVM mode activated (for QEMU/virt-manager)"
+}
+
 ## record mode
 recordMode(){
-
+    vboxmode
     # Set large cursor for recording
     gsettings set org.cinnamon.desktop.interface cursor-size 68
 
@@ -118,3 +132,5 @@ videoinfo() {
     echo "Total duration: $hours:$minutes:$seconds"
     echo "Total size: $human_size"
 }
+
+
