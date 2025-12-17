@@ -4,15 +4,15 @@
 export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH:$HOME/fvm/default/bin/cache/dart-sdk/bin"
 
-# export PATH="$PATH:$HOME/apps/flutter/bin"
-# export PATH="$PATH:$HOME/apps/flutter/bin/cache/dart-sdk/bin"
+export PATH="$PATH:$HOME/apps/flutter/bin"
+export PATH="$PATH:$HOME/apps/flutter/bin/cache/dart-sdk/bin"
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$HOME/apps/go/bin"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$PATH:$HOME/go/bin"
 
-export ANDROID_SDK_ROOT=$HOME/Android
+export ANDROID_SDK_ROOT=/mnt/debian_stuffs/android_studio_install
 export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/tools/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
