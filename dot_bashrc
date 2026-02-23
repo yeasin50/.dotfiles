@@ -1,0 +1,10 @@
+# Convert HOSTNAME to lowercase before checking
+if [[ "${HOSTNAME,,}" == *"workstation"* ]]; then
+    [ -f "$HOME/.config/bash/mint_bashrc.bash" ] && source "$HOME/.config/bash/mint_bashrc.bash"
+else
+    # This will tell us EXACTLY what the computer thinks its name is
+    echo "Debug: Hostname is [$HOSTNAME]" 
+    if command -v cowsay &> /dev/null; then
+        cowsay "Unknown Host: $HOSTNAME"
+    fi
+fi
