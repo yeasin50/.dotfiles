@@ -16,6 +16,8 @@ alias ll='ls -lah'
 alias gs='git status'
 
 
+source ~/.dotfiles/bash/note_alias.bash
+
 alias tmuxp='tmuxinator start .'
 # alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
 
@@ -38,9 +40,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-# mint users list 
-alias userlist='cut -d: -f1 /etc/passwd'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -133,5 +132,4 @@ videoinfo() {
     echo "Total duration: $hours:$minutes:$seconds"
     echo "Total size: $human_size"
 }
-
 

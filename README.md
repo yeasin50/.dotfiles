@@ -1,3 +1,11 @@
+# Playing with chezmoi
+
+TODO install
+
+- kitty
+- nevoim
+- gromit
+
 # Some basic stuff I will be needing
 
 ## Audio plugin
