@@ -95,7 +95,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 [ -f "$SCRIPT_DIR/.bash_aliases" ] && source "$SCRIPT_DIR/.bash_aliases"
 [ -f "$SCRIPT_DIR/note_alias.bash" ] && source "$SCRIPT_DIR/note_alias.bash"
 [ -f "$SCRIPT_DIR/system_profile.bash" ] && source "$SCRIPT_DIR/system_profile.bash"
-[ -f "$SCRIPT_DIR/bash_profile.bash" ] && source "$SCRIPT_DIR/bash_profile.bash"
 
 # it export export WAKATIME_API_KEY="YourApiKey"
 # alias debian='ssh myDebian' and other stuff
