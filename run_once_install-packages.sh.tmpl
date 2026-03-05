@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# --- 1. Tmux Plugin Manager ---
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+    echo "Installing TPM..."
+    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+    # Headless install of plugins listed in tmux.conf
+    "$HOME/.tmux/plugins/tpm/bin/install_plugins"
+fi
+
+# --- 2. System Packages ---
+
+# For Linux Mint / Debian (Current)
+{{ if or (eq .chezmoi.osRelease.id "linuxmint") (eq .chezmoi.osRelease.id "debian") -}}
+sudo apt update
+sudo apt install -y \
+    ripgrep \
+    kitty \
+    neovim \
+    gromit-mpx 
+{{ end -}}
+
+# For Arch Linux (Future Plan)
+# {{ if eq .chezmoi.osRelease.id "arch" -}}
+# sudo pacman -Syu --noconfirm \
+#     ripgrep \
+#     kitty \
+#     neovim \
+#     gromit-mpx \
+#     gource
+# {{ end -}}
+
+echo "Installation complete!"

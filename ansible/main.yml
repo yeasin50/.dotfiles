@@ -1,0 +1,52 @@
+---
+- name: Multi-Machine Dev Setup
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+
+    # --- OS NATIVE TOOLS ---
+    - name: Install System CLI Tools
+      package:
+        name: [git, tmux, ripgrep, gource, curl, build-essential, xclip]
+        state: present
+
+    # --- GO INSTALLATION ---
+    - name: Ensure ~/apps/go exists
+      file:
+        path: "{{ ansible_env.HOME }}/apps/go"
+        state: directory
+        mode: '0755'
+      become: false
+
+    - name: Check if Go is installed
+      command: "~/apps/go/bin/go version"
+      register: go_exists
+      ignore_errors: true
+      changed_when: false
+      become: false
+
+    - name: Download and Install Go (if missing)
+      unarchive:
+        src: "https://go.dev/dl/go1.22.0.linux-amd64.tar.gz" # Update version as needed
+        dest: "{{ ansible_env.HOME }}/apps"
+        remote_src: yes
+      when: go_exists.rc != 0
+      become: false
+
+    # --- FLUTTER INSTALLATION ---
+    - name: Clone Flutter SDK (if missing)
+      git:
+        repo: 'https://github.com/flutter/flutter.git'
+        dest: "{{ ansible_env.HOME }}/apps/flutter"
+        version: stable
+      become: false
+      tags: flutter
+
+    # --- ANDROID SDK (Headless) ---
+    - name: Ensure Android SDK Directory
+      file:
+        path: "/mnt/debian_stuffs/android_studio_install"
+        state: directory
+        owner: "{{ ansible_user_id }}"
+      when: ansible_facts['distribution'] == "Mint" or ansible_facts['distribution'] == "Debian"

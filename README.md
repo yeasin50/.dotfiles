@@ -5,6 +5,10 @@ TODO install
 - kitty
 - nevoim
 - gromit
+- gosource for visual of git animation
+
+manim and git-sim
+source /home/yeasin/github/writings/manim/env/bin/activate
 
 # Some basic stuff I will be needing
 

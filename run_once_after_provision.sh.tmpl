@@ -1,0 +1,12 @@
+#!/bin/bash
+# Install Ansible if it's not there
+if ! command -v ansible-playbook > /dev/null 2>&1; then
+    {{ if or (eq .chezmoi.osRelease.id "linuxmint") (eq .chezmoi.osRelease.id "debian") -}}
+    sudo apt update && sudo apt install -y ansible
+    {{ else if eq .chezmoi.osRelease.id "arch" -}}
+    sudo pacman -S --noconfirm ansible
+    {{ end -}}
+fi
+
+# Run the playbook locally
+ansible-playbook {{ joinPath .chezmoi.sourceDir "ansible/main.yml" | quote }} --ask-become-pass

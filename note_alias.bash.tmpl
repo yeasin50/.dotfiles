@@ -1,4 +1,4 @@
-# ~/.dotfiles/bash/note_alias.bash
+# note_alias.bash
 
 # --- Configuration ---
 NOTES_DIR="$HOME/github/writings"
@@ -56,4 +56,30 @@ note-gcp() {
     git -C "$NOTES_DIR" push
     echo "✅ Notes committed and pushed with message: \"$msg\""
   fi
+}
+
+
+obsnote() {
+  local NOTES_DIR="$HOME/github/writings"
+  mkdir -p "$NOTES_DIR"
+
+  # fzf with --print-query to capture typed input
+  local note=$(find "$NOTES_DIR" -type f -name "*.md" | sed "s|$NOTES_DIR/||" \
+               | fzf --prompt="Select or type note: " --print-query)
+
+  # use what was typed
+  note=$(echo "$note" | head -n1 | xargs)
+  [[ -z "$note" ]] && { echo "❌ No note name"; return 1; }
+
+  local full_path="$NOTES_DIR/$note"
+
+  # create if missing
+  if [[ ! -f "$full_path" ]]; then
+    mkdir -p "$(dirname "$full_path")"
+    touch "$full_path"
+    echo "✅ Created: $full_path"
+  fi
+
+  # open in Obsidian
+  obsidian "$full_path"
 }
