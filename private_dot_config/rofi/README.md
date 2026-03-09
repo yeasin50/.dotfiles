@@ -23,7 +23,11 @@ Custom Rofi-based environment control for a solo developer workflow. Integrated 
 
 ---
 
-## ⚙️ AppImage Setup
+## ⚙️ Configuration
+  
+Paths are managed centrally in [`scripts/config.sh`](./scripts/config.sh.tmpl).
+
+- **AppImage Setup**
 
 To enable the `kaban` deep-linking, ensure the Obsidian AppImage is registered as a URI handler:
 
@@ -43,6 +47,6 @@ To enable the `kaban` deep-linking, ensure the Obsidian AppImage is registered a
    ```
 2. registered MimeType
 
-```
-xdg-mime default obsidian.desktop x-scheme-handler/obsidian
-```
+   ```
+   xdg-mime default obsidian.desktop x-scheme-handler/obsidian
+   ```
