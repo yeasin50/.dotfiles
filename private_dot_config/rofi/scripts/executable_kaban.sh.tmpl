@@ -1,0 +1,60 @@
+#!/bin/bash
+# ==============================================================================
+# SCRIPT: rofi_kanban.sh
+# DESCRIPTION: Launch or create Obsidian Kanban notes via Rofi.
+# 
+# SETUP (One-time only for AppImage users):
+# 1. mkdir -p ~/.local/share/applications
+# 2. cat <<EOF > ~/.local/share/applications/obsidian.desktop
+# [Desktop Entry]
+# Name=Obsidian
+# Exec=/home/yeasin/.local/bin/obsidian %u
+# Terminal=false
+# Type=Application
+# Icon=obsidian
+# MimeType=x-scheme-handler/obsidian;
+# Categories=Office;
+# EOF
+# 3. xdg-mime default obsidian.desktop x-scheme-handler/obsidian
+# ==============================================================================
+
+VAULT_NAME="writings" 
+VAULT_ROOT="$HOME/github/writings"
+INBOX_DIR="$VAULT_ROOT/40 - Course"
+TEMPLATE_DIR="$VAULT_ROOT/templates"
+
+mkdir -p "$INBOX_DIR"
+
+matches=$(find "$INBOX_DIR" -maxdepth 1 -type f -name "*.md" -exec basename {} .md \;)
+
+#  Rofi selection
+note_choice=$(echo -e "$matches" | rofi -dmenu -i -p "Course Note:" -lines 10)
+[[ -z "$note_choice" ]] && exit 0
+
+FILE_PATH="$INBOX_DIR/${note_choice}.md"
+
+# Create note from template if new
+if [[ ! -f "$FILE_PATH" ]]; then
+    kanban_templates=$(grep -l "kanban-plugin" "$TEMPLATE_DIR"/*.md 2>/dev/null | xargs -I {} basename {} .md)
+    if [[ -n "$kanban_templates" ]]; then
+        template_choice=$(echo -e "Blank\n$kanban_templates" | rofi -dmenu -i -p "Template:" -lines 5)
+        if [[ "$template_choice" != "Blank" && -n "$template_choice" ]]; then
+            cp "$TEMPLATE_DIR/${template_choice}.md" "$FILE_PATH"
+            sed -i "s/{{title}}/$note_choice/g" "$FILE_PATH"
+        else
+            echo -e "---\nkanban-plugin: basic\n---\n\n# $note_choice" > "$FILE_PATH"
+        fi
+    else
+        echo -e "---\nkanban-plugin: basic\n---\n\n# $note_choice" > "$FILE_PATH"
+    fi
+fi
+
+# Open via URI
+# We need the path relative to the vault root: e.g., "40 - Course/MyNote.md"
+REL_PATH="40 - Course/${note_choice}.md"
+
+# URL encode the path so spaces don't break the link
+ENCODED_PATH=$(python3 -c "import urllib.parse; print(urllib.parse.quote('$REL_PATH'))")
+
+# Trigger the URI
+xdg-open "obsidian://open?vault=${VAULT_NAME}&file=${ENCODED_PATH}"
