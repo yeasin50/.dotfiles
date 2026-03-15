@@ -24,10 +24,14 @@ Custom Rofi-based environment control for a solo developer workflow. Integrated 
 ---
 
 ## ⚙️ Configuration
-  
-Paths are managed centrally in [`scripts/config.sh`](./scripts/config.sh.tmpl).
 
-- **AppImage Setup**
+Paths are managed centrally in `scripts/config.sh`.
+
+- `VAULT_ROOT`: Base directory for all markdown files.
+- `NOTE_DIR`: Target for general notes.
+- `KANBAN_DIR`: Target for course-specific Kanban boards.
+
+## ⚙️ AppImage Setup
 
 To enable the `kaban` deep-linking, ensure the Obsidian AppImage is registered as a URI handler:
 
@@ -47,6 +51,6 @@ To enable the `kaban` deep-linking, ensure the Obsidian AppImage is registered a
    ```
 2. registered MimeType
 
-   ```
-   xdg-mime default obsidian.desktop x-scheme-handler/obsidian
-   ```
+```
+xdg-mime default obsidian.desktop x-scheme-handler/obsidian
+```

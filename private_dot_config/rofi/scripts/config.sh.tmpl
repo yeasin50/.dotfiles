@@ -1,8 +1,16 @@
 #!/bin/bash
-# Paths used by Rofi scripts
-export VAULT_ROOT="$HOME/github/writings"
-export NOTE_DIR="$VAULT_ROOT"
-export KANBAN_DIR="$VAULT_ROOT/40 - Course"
-export TEMPLATE_DIR="$VAULT_ROOT/templates"
-export OBSIDIAN_BIN="/home/yeasin/.local/bin/obsidian"
+
+# Vault Configuration
 export VAULT_NAME="writings"
+export VAULT_ROOT="$HOME/github/writings"
+
+# Sub-directory for Kanban (Dynamic)
+export KANBAN_SUBDIR="40 - Course"
+
+# Derived Paths
+export KANBAN_DIR="$VAULT_ROOT/$KANBAN_SUBDIR"
+export TEMPLATE_DIR="$VAULT_ROOT/templates"
+export INBOX_DIR="$VAULT_ROOT"
+
+# Binary Paths
+export OBSIDIAN_BIN="/home/yeasin/.local/bin/obsidian"
