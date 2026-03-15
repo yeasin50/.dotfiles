@@ -3,6 +3,12 @@
 # set-option -g prefix C-b
 # bind-key C-a send-prefix
 
+# Reduce escape time to 10ms for snappier mode switching
+set-option -sg escape-time 10
+
+# Enable focus events so Neovim knows when you switch windows
+set-option -g focus-events on
+
 set-option -ga terminal-overrides ",xterm-256color:Tc"
 
 set -g mouse on
