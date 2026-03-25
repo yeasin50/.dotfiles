@@ -1,6 +1,7 @@
+
 #!/bin/bash
 
-# ─── 1. CORE BASH SETTINGS ──────────────────────────────────────────
+# ─── Default: CORE BASH SETTINGS ──────────────────────────────────────────
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -73,7 +74,7 @@ get_git_info() {
 prompt_command() {
     local EXIT="$?"
     local SYMBOL="❯"
-    
+
     # Color coding
     local G="\[\e[1;32m\]" # Green (User@Host)
     local B="\[\e[1;34m\]" # Blue (Path)

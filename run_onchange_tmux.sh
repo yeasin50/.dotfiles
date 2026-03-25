@@ -1,18 +1,17 @@
 #!/bin/sh
 
-# Check if tmux is installed
+# 1. Install tmux if missing
 if ! command -v tmux >/dev/null 2>&1; then
     echo "tmux not found! Installing..."
-    
-    # Example for Debian/Ubuntu
-    sudo apt-get update
-    sudo apt-get install -y tmux
+    sudo apt-get update && sudo apt-get install -y tmux
 fi
 
-# Install TPM if missing
+# 2. Install TPM if missing
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    echo "Cloning TPM..."
+    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 fi
 
-# Install plugins (non-interactive)
-~/.tmux/plugins/tpm/bin/install_plugins >/dev/null 2>&1 || true
+# 3. FIX: Use 'bindings' instead of 'bin'
+# Also, don't ignore errors with '|| true' yet so you can see if it actually works
+"$HOME/.tmux/plugins/tpm/bindings/install_plugins"

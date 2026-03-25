@@ -1,0 +1,6 @@
+{{- $machine := .chezmoi.hostname -}}
+{{- if not (stat (joinPath .chezmoi.sourceDir "machines" $machine)) -}}
+{{-   $machine = "default" -}}
+{{- end -}}
+data:
+  machine: {{ $machine | quote }}

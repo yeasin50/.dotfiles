@@ -1,0 +1,102 @@
+#!/bin/bash
+
+# ─── Laptop: CORE BASH SETTINGS ──────────────────────────────────────────
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# History Settings
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# Update window size after each command
+shopt -s checkwinsize
+
+# ─── 2. BASH-IT CONFIGURATION ───────────────────────────────────────
+export BASH_IT="$HOME/.bash_it"
+export BASH_IT_THEME="easy"
+export SCM_CHECK=true
+
+# Load Bash-it (if installed)
+if [ -f "$BASH_IT/bash_it.sh" ]; then
+    source "$BASH_IT"/bash_it.sh
+fi
+
+
+# FZF (Fuzzy Finder)
+[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
+
+# General Aliases
+alias v='nvim'
+alias vim='nvim'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias grep='grep --color=auto'
+alias fd='fdfind'
+
+# ─── 4. SMART POWERLINE PROMPT ──────────────────────────────────────
+# Function: Trim path to max 16 chars (shows last 2 segments if long)
+get_trimmed_path() {
+    local p="${PWD/#$HOME/~}"
+    if [ ${#p} -gt 16 ]; then
+        # Grab last 2 directory segments (e.g., ...share/chezmoi)
+        echo "...$(echo "$p" | rev | cut -d'/' -f1,2 | rev)" | cut -c1-16
+    else
+        echo "$p"
+    fi
+}
+
+# Function: Get Git Branch and Status
+get_git_info() {
+    if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        local branch=$(git branch --show-current)
+        local status=$(git status --porcelain | wc -l)
+        local icon="✔"
+        # If there are changes, show count and ✗
+        [ "$status" -ne 0 ] && icon="✗:$status"
+        echo " [ $branch $icon ]"
+    fi
+}
+
+# The Main Prompt Function
+prompt_command() {
+    local EXIT="$?"
+    local SYMBOL="❯"
+
+    # Color coding
+    local G="\[\e[1;32m\]" # Green (User@Host)
+    local B="\[\e[1;34m\]" # Blue (Path)
+    local Y="\[\e[1;33m\]" # Yellow (Git)
+    local P="\[\e[1;35m\]" # Purple (Arrow)
+    local R="\[\e[1;31m\]" # Red (Error)
+    local W="\[\e[0m\]"    # White/Reset
+
+    # Turn arrow red if last command failed
+    [ $EXIT != 0 ] && SYMBOL="$R$SYMBOL" || SYMBOL="$P$SYMBOL"
+
+    # Line 1: user@host:path [git branch status]
+    # Line 2: The Input Arrow
+    PS1="\n$G\u@\h$W:$B\$(get_trimmed_path)$Y\$(get_git_info)$W\n$SYMBOL $W"
+}
+
+# Set the prompt
+PROMPT_COMMAND=prompt_command
+
+# ─── 5. EXTERNAL SOURCES ───────────────────────────────────────────
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+[ -f ~/.bash_secrets ] && . ~/.bash_secrets
+
+export PATH="$HOME/bin:$PATH"
+
+
+
+# Zoxide (Smart cd)
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(zoxide init bash)"
+    alias cd='z'
+fi
