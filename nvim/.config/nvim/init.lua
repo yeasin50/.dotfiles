@@ -8,7 +8,7 @@ vim.o.number = true
 
 vim.o.mouse = "a"
 
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 vim.opt.spell = true
 vim.opt.spelllang = { "en_us" }
@@ -59,26 +59,28 @@ vim.api.nvim_set_keymap("i", "<S-Right>", "<Esc>vwea", { noremap = true, silent 
 -- vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true, silent = true })
 --
 
+require("config.plugins.go_modify_tags")
 require("config.lazy")
--- Transparent background
-vim.cmd([[
-  highlight Normal guibg=NONE ctermbg=NONE
-  highlight NormalNC guibg=NONE ctermbg=NONE
-  highlight SignColumn guibg=NONE ctermbg=NONE
-  highlight VertSplit guibg=NONE ctermbg=NONE
-  highlight StatusLine guibg=NONE ctermbg=NONE
-]])
 
+-- Transparent background
+-- vim.cmd([[
+--   highlight Normal guibg=NONE ctermbg=NONE
+--   highlight NormalNC guibg=NONE ctermbg=NONE
+--   highlight SignColumn guibg=NONE ctermbg=NONE
+--   highlight VertSplit guibg=NONE ctermbg=NONE
+--   highlight StatusLine guibg=NONE ctermbg=NONE
+-- ]])
+--
 -- For neovide
 
-local alpha = function()
-	return string.format("%x", math.floor(255 * (vim.g.transparency or 0.8)))
-end
+-- local alpha = function()
+-- 	return string.format("%x", math.floor(255 * (vim.g.transparency or 0.8)))
+-- end
 
-vim.g.transparency = 0.0
-vim.g.neovide_opacity = 0.70
-vim.g.neovide_background_color = "#1f2335" --- .. alpha()
-
+-- vim.g.transparency = 0.0
+-- vim.g.neovide_opacity = 0.70
+-- vim.g.neovide_background_color = "#1f2335" --- .. alpha()
+--
 -- vim.g.neovide_floating_blur_amount_x = 6.0
 -- vim.g.neovide_floating_blur_amount_y = 6.0
 -- vim.g.neovide_refresh_rate = 60

@@ -4,6 +4,8 @@
 *.bak
 *~
 
+*.lock
+
 # Node/npm/Python/Rust cache
 node_modules/
 __pycache__/

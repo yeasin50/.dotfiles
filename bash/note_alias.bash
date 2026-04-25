@@ -2,7 +2,7 @@
 
 # --- Configuration ---
 NOTES_DIR="$HOME/github/writings"
-INBOX_DIR="$NOTES_DIR/00 - Inbox"
+INBOX_DIR="$NOTES_DIR/"
 
 # --- Functions ---
 note() {

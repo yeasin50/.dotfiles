@@ -18,8 +18,8 @@ return {
 			export_args = {
 				"-qk",
 				"--media_dir=/home/yeasin/Videos/raw/manim_output",
-				"--transparent",
 				"--fps=30",
+				"--transparent",
 			},
 			project_config = {
 				resolution = { 3840, 2160 }, -- width x height

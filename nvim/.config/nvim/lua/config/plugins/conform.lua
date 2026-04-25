@@ -11,6 +11,7 @@ return {
 			},
 		},
 		formatters_by_ft = {
+			go = { "gofmt" },
 			lua = { "stylua" },
 			markdown = { "prettierd", "prettier" },
 			json = { "prettierd", "prettier" },

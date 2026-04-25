@@ -72,9 +72,14 @@ return {
 		{
 			"<leader>fw",
 			function()
-				require("fzf-lua").grep_cword()
+				local mode = vim.fn.mode()
+				if mode == "v" or mode == "V" then
+					require("fzf-lua").grep_visual()
+				else
+					require("fzf-lua").grep_cword()
+				end
 			end,
-			desc = "[F]ind current [W]ord",
+			desc = "[F]ind current word or visual selection",
 		},
 		{
 			"<leader>fW",
