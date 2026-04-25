@@ -21,7 +21,7 @@ alias ll='ls -lah'
 alias gs='git status'
 
 
-source ~/.dotfiles/bash/note_alias.bash
+source ~/.note_alias.bash
 
 alias tmuxp='tmuxinator start .'
 # alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
