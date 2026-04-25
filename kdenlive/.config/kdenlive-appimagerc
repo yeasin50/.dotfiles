@@ -1,0 +1,259 @@
+MenuBar=Disabled
+
+[Audio_Levels]
+drawBlockLines=false
+levelStyle=1
+peakIndicatorStyle=1
+
+[FileDialogSize]
+2 screens: Height=930
+2 screens: Width=995
+
+[KDE]
+widgetStyle=Breeze
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Enabled
+
+[Media Browser]
+Allow Expansion=false
+Decoration position=2
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+View Style=DetailTree
+
+[OnlineResources]
+provider=Freesound
+zoom=7
+
+[Recent Dirs]
+KdenliveAnimationFolder[$e]=$HOME/Videos/glaximate,$HOME/Documents
+KdenliveClipFolder[$e]=$HOME/Videos/raw/nvim/,/home/shared/nvim/mason_original;/,/home/shared/nvim/
+KdenliveFramesFolder[$e]=$HOME/Videos/output/,$HOME/Pictures/,$HOME/Videos/thubmnails/
+KdenliveProjectsFolder[$e]=$HOME/Videos/kdenlive_projects,/media/yeasin/Ventoy/video_edit,/media/yeasin/Ventoy/video_edit/
+KdenliveProjectsTitles[$e]=$HOME/.local/share/kdenlive/titles,/tmp/.mount_kdenlicNiJnE/usr/share/kdenlive/titles,$HOME/Documents
+KdenliveSlideShowFolder[$e]=$HOME/Videos/raw/switch/animation-sequence/,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Videos/kdenlive_projects/git_01.kdenlive
+File10[$e]=$HOME/Videos/kdenlive_projects/nvim.kdenlive
+File2[$e]=/media/yeasin/Ventoy/video_edit/git_branch.kdenlive
+File3[$e]=$HOME/Videos/kdenlive_projects/mint_install_exiting_windows.kdenlive
+File4[$e]=$HOME/Videos/kdenlive_projects/bangla_keyboard_git.kdenlive
+File5[$e]=$HOME/Videos/kdenlive_projects/git_merge.kdenlive
+File6[$e]=$HOME/Videos/kdenlive_projects/git_rest_of_series.kdenlive
+File7[$e]=$HOME/Videos/kdenlive_projects/trust.kdenlive
+File8[$e]=$HOME/Videos/kdenlive_projects/quaran__last10_split.kdenlive
+File9[$e]=$HOME/Videos/kdenlive_projects/java setup.kdenlive
+Name1[$e]=git_01.kdenlive
+Name10[$e]=nvim.kdenlive
+Name2[$e]=git_branch.kdenlive
+Name3[$e]=mint_install_exiting_windows.kdenlive
+Name4[$e]=bangla_keyboard_git.kdenlive
+Name5[$e]=git_merge.kdenlive
+Name6[$e]=git_rest_of_series.kdenlive
+Name7[$e]=trust.kdenlive
+Name8[$e]=quaran__last10_split.kdenlive
+Name9[$e]=java setup.kdenlive
+
+[Recent Profiles]
+recentProfileNames=4K UHD 2160p 30 fps,HD 1080p 30 fps
+recentProfiles=uhd_2160p_30,atsc_1080p_30
+
+[RenderWidget]
+showoptions=false
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+logScale=false
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[Shortcut Schemes]
+Current Scheme=vse
+
+[TitleGradients]
+Gradient=#ffffffff;#ff00ffff;48;100;90
+Gradient 1=#ffffff00;#ff00ff7f;56;100;130
+Gradient 3=#00ffff00;#6455ff00;30;91;180
+horizRotate=#00ffff00;#64ffff00;30;91;180
+
+[TitleWidget]
+background_alpha=0
+background_color=0,0,0
+dialog_geometry=AdnQywADAAAAAABEAAAAJgAABz0AAAQ3AAAARAAAAEQAAAc9AAAENwAAAAAAAAAAB4AAAABEAAAARAAABz0AAAQ3
+font_color=255,255,127
+font_family=FiraCode Nerd Font Med,-1,70,5,600,0,0,0,0,0,0,1,0,0,0,1
+font_italic=false
+font_outline=50
+font_outline_color=32,43,49
+font_pixel_size=170
+font_underlined=false
+font_weight=600
+rect_background_alpha=50
+rect_background_color=255,255,127,50
+rect_foreground_alpha=255
+rect_foreground_color=255,0,0
+rect_line_width=6
+splitter=1249,516
+unicode_number=2013
+use_grid=false
+
+[UiSettings]
+ColorScheme=BreezeDark
+ColorSchemePath=BreezeDark.colors
+
+[bin]
+bin_zoom=0
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAAC4AAAADAAAANwAAAAcAAAAwAAAAAQAAADcAAAAIAAAAZAAAAAIAAABfAAAABQAAAFAAAAAEAAAALwAAAPQAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAA9AAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA+AAAAAAAAAAAAAAAAAAAAAQ==
+
+[capture]
+decklink_capturedevice=4294967295
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+defaultaudiocapture=Easy Effects Source
+detectedv4ldevices=4294967295
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_format=4294967295
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+customprojectfolder=true
+defaultaudioapp=/usr/bin/audacity
+defaultprojectfolder[$e]=$HOME/Videos/kdenlive_projects
+encodethreads=8
+exportGuidesFormat={{timecode}} {{comment}}
+ffmpegpath[$e]=/tmp/.mount_kdenliEjFFdi/usr/bin/ffmpeg
+ffplaypath[$e]=/tmp/.mount_kdenliEjFFdi/usr/bin/ffplay
+ffprobepath[$e]=/tmp/.mount_kdenliEjFFdi/usr/bin/ffprobe
+glaxnimatePath=/usr/local/bin/glaxnimate
+kdenliverendererpath[$e]=/tmp/.mount_kdenliGOKmIO/usr/bin/kdenlive_render
+lastCacheCheck=2026,4,19,16,12,48.288
+maxcachesize=500
+meltpath[$e]=/tmp/.mount_kdenliEjFFdi/usr/bin/melt
+mltpath[$e]=/tmp/.mount_kdenliEjFFdi/usr/share/mlt-7/profiles/
+nice_tasks=false
+proxythreads=7
+
+[misc]
+assetsInfoHeight=170
+autosave_ops=32
+cleanCacheMonths=2
+openlastproject=true
+profile_fps_filter=30
+
+[project]
+SupportedHWCodecs=h264_vaapi,hevc_vaapi
+enableproxy=true
+externalProxyProfile=./;;.LRV;./;;.MP4
+generateimageproxy=true
+generateproxy=true
+hwDecoding=vaapi
+parallelrender=true
+previewextension=mp4
+previewparams=hwaccel=vaapi hwaccel_device=renderD129 hwaccel_output_format=vaapi vcodec=h264_vaapi vb=30000k
+proxyalphaextension=mkv
+proxyalphaparams=-vf scale=%width:-2 -f mov -vcodec ffv1 -pix_fmt bgra -c:a aac -ab 128k
+renderInterp=hyper
+transcodeFriendly=Lossy x264 I frame only (VAAPI GPU)
+
+[sam]
+sam_system_python_path[$e]=/usr/bin/python3
+
+[sdl]
+blackmagic_output_device=-1
+preferredcomposite=auto
+
+[settings]
+dialogSize=821,708
+
+[shuttle]
+shuttlebuttons=button0=monitor_pause
+
+[speech]
+samDevice=
+speech_system_python_path[$e]=/usr/bin/python3
+whisperDevice=
+whisperLanguage=Bengali
+whisperModel=small
+
+[startup]
+lastSeenVersionMajor=25
+lastSeenVersionMicro=1
+lastSeenVersionMinor=12
+
+[timeline]
+defaultkeyframeinterp=3
+enableBuiltInEffects=true
+headerwidth=170
+multistream_checktrack=false
+trackheight=69
+
+[titles]
+selected_template=simple.kdenlivetitle
+titlerShowGuides=true
+titlerShowbg=true
+titlerVersion=400
+
+[unmanaged]
+alwaysShowMonitorAudio=true
+applyEffectParamsToGroup=true
+clipMonitorOverlayGuides=2
+colorclipcolor=255,192,128
+consumerslist=avformat,multi,null,decklink,xgl,blipflash,cbrts,qglsl,rtaudio,sdl2,sdl2_audio,xml
+default_profile=uhd_2160p_30
+defaultrescaleheight=1080
+defaultrescalewidth=1920
+displayClipMonitorInfo=119
+guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
+kdockLayout={\n    "allDockWidgets": [\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 7,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": -1,\n                "wasFloating": false\n            },\n            "uniqueName": "timeline"\n        },\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 0,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 0,\n                "wasFloating": false\n            },\n            "uniqueName": "project_bin"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "library"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 2,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "subtitles"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 3,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "textedit"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 2,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "timeremap"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "markers"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 6,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 1,\n                "wasFloating": false\n            },\n            "uniqueName": "screengrab"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 6,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 1,\n                "wasFloating": false\n            },\n            "uniqueName": "audiospectrum"\n        },\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 3,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 1,\n                "wasFloating": false\n            },\n            "uniqueName": "clipmonitor"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 3,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 1,\n                "wasFloating": false\n            },\n            "uniqueName": "projectmonitor"\n        },\n        {\n            "lastCloseReason": 1,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 2,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 0,\n                "wasFloating": false\n            },\n            "uniqueName": "clip_properties"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "notes_widget"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 3,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 3,\n                "wasFloating": false\n            },\n            "uniqueName": "media_browser"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 2,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "onlineresources"\n        },\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 4,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 1,\n                "wasFloating": false\n            },\n            "uniqueName": "effect_stack"\n        },\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 5,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 0,\n                "wasFloating": false\n            },\n            "uniqueName": "effect_list"\n        },\n        {\n            "lastCloseReason": 0,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 5,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": -1,\n                "wasFloating": false\n            },\n            "uniqueName": "transition_list"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "undo_history"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 2,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "mixer"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 6,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "vectorscope"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 4,\n                "wasFloating": false\n            },\n            "uniqueName": "waveform"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 3,\n                "wasFloating": false\n            },\n            "uniqueName": "rgb_parade"\n        },\n        {\n            "lastCloseReason": 2,\n            "lastPosition": {\n                "lastFloatingGeometry": {\n                    "height": 0,\n                    "width": 0,\n                    "x": 0,\n                    "y": 0\n                },\n                "lastOverlayedGeometries": [],\n                "placeholders": [\n                    {\n                        "isFloatingWindow": false,\n                        "itemIndex": 1,\n                        "mainWindowUniqueName": "KdenliveKDDock"\n                    }\n                ],\n                "tabIndex": 2,\n                "wasFloating": false\n            },\n            "uniqueName": "histogram"\n        }\n    ],\n    "closedDockWidgets": [\n        "library",\n        "subtitles",\n        "textedit",\n        "timeremap",\n        "markers",\n        "screengrab",\n        "audiospectrum",\n        "clipmonitor",\n        "clip_properties",\n        "notes_widget",\n        "media_browser",\n        "onlineresources",\n        "transition_list",\n        "undo_history",\n        "mixer",\n        "vectorscope",\n        "waveform",\n        "rgb_parade",\n        "histogram"\n    ],\n    "floatingWindows": [],\n    "mainWindows": [\n        {\n            "affinities": null,\n            "geometry": {\n                "height": 1050,\n                "width": 1920,\n                "x": 0,\n                "y": 30\n            },\n            "isVisible": true,\n            "multiSplitterLayout": {\n                "frames": {\n                    "3998": {\n                        "currentTabIndex": 1,\n                        "dockWidgets": [\n                            "clipmonitor",\n                            "projectmonitor"\n                        ],\n                        "geometry": {\n                            "height": 461,\n                            "width": 910,\n                            "x": 397,\n                            "y": 0\n                        },\n                        "id": "3998",\n                        "isNull": false,\n                        "mainWindowUniqueName": "KdenliveKDDock",\n                        "objectName": "projectmonitor",\n                        "options": 0\n                    },\n                    "4060": {\n                        "currentTabIndex": 0,\n                        "dockWidgets": [\n                            "effect_list",\n                            "transition_list"\n                        ],\n                        "geometry": {\n                            "height": 461,\n                            "width": 222,\n                            "x": 1696,\n                            "y": 0\n                        },\n                        "id": "4060",\n                        "isNull": false,\n                        "mainWindowUniqueName": "KdenliveKDDock",\n                        "objectName": "effect_list",\n                        "options": 0\n                    },\n                    "4122": {\n                        "currentTabIndex": 0,\n                        "dockWidgets": [\n                            "timeline"\n                        ],\n                        "geometry": {\n                            "height": 509,\n                            "width": 1521,\n                            "x": 397,\n                            "y": 461\n                        },\n                        "id": "4122",\n                        "isNull": false,\n                        "mainWindowUniqueName": "KdenliveKDDock",\n                        "objectName": "timeline",\n                        "options": 0\n                    },\n                    "4153": {\n                        "currentTabIndex": 0,\n                        "dockWidgets": [\n                            "effect_stack"\n                        ],\n                        "geometry": {\n                            "height": 461,\n                            "width": 389,\n                            "x": 1307,\n                            "y": 0\n                        },\n                        "id": "4153",\n                        "isNull": false,\n                        "mainWindowUniqueName": "KdenliveKDDock",\n                        "objectName": "effect_stack",\n                        "options": 0\n                    },\n                    "4184": {\n                        "currentTabIndex": 0,\n                        "dockWidgets": [\n                            "project_bin"\n                        ],\n                        "geometry": {\n                            "height": 970,\n                            "width": 397,\n                            "x": 0,\n                            "y": 0\n                        },\n                        "id": "4184",\n                        "isNull": false,\n                        "mainWindowUniqueName": "KdenliveKDDock",\n                        "objectName": "project_bin",\n                        "options": 0\n                    }\n                },\n                "layout": {\n                    "children": [\n                        {\n                            "guestId": "4184",\n                            "isContainer": false,\n                            "isVisible": true,\n                            "sizingInfo": {\n                                "geometry": {\n                                    "height": 970,\n                                    "width": 397,\n                                    "x": 0,\n                                    "y": 0\n                                },\n                                "maxSizeHint": {\n                                    "height": 524323,\n                                    "width": 524293\n                                },\n                                "minSize": {\n                                    "height": 159,\n                                    "width": 94\n                                },\n                                "percentageWithinParent": 0.20698644421272158\n                            }\n                        },\n                        {\n                            "children": [\n                                {\n                                    "children": [\n                                        {\n                                            "isContainer": false,\n                                            "isVisible": false,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 470,\n                                                    "width": 180,\n                                                    "x": 0,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524323,\n                                                    "width": 524293\n                                                },\n                                                "minSize": {\n                                                    "height": 274,\n                                                    "width": 124\n                                                },\n                                                "percentageWithinParent": 0.0\n                                            }\n                                        },\n                                        {\n                                            "isContainer": false,\n                                            "isVisible": false,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 609,\n                                                    "width": 263,\n                                                    "x": 228,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524287,\n                                                    "width": 524116\n                                                },\n                                                "minSize": {\n                                                    "height": 90,\n                                                    "width": 80\n                                                },\n                                                "percentageWithinParent": 0.0\n                                            }\n                                        },\n                                        {\n                                            "guestId": "3998",\n                                            "isContainer": false,\n                                            "isVisible": true,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 461,\n                                                    "width": 910,\n                                                    "x": 0,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524322,\n                                                    "width": 524293\n                                                },\n                                                "minSize": {\n                                                    "height": 235,\n                                                    "width": 326\n                                                },\n                                                "percentageWithinParent": 0.5982905982905983\n                                            }\n                                        },\n                                        {\n                                            "guestId": "4153",\n                                            "isContainer": false,\n                                            "isVisible": true,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 461,\n                                                    "width": 389,\n                                                    "x": 910,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524323,\n                                                    "width": 524293\n                                                },\n                                                "minSize": {\n                                                    "height": 141,\n                                                    "width": 89\n                                                },\n                                                "percentageWithinParent": 0.25575279421433267\n                                            }\n                                        },\n                                        {\n                                            "guestId": "4060",\n                                            "isContainer": false,\n                                            "isVisible": true,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 461,\n                                                    "width": 222,\n                                                    "x": 1299,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524322,\n                                                    "width": 524310\n                                                },\n                                                "minSize": {\n                                                    "height": 273,\n                                                    "width": 141\n                                                },\n                                                "percentageWithinParent": 0.14595660749506903\n                                            }\n                                        }\n                                    ],\n                                    "isContainer": true,\n                                    "isVisible": false,\n                                    "orientation": 1,\n                                    "sizingInfo": {\n                                        "geometry": {\n                                            "height": 461,\n                                            "width": 1521,\n                                            "x": 0,\n                                            "y": 0\n                                        },\n                                        "maxSizeHint": {\n                                            "height": 524322,\n                                            "width": 1572896\n                                        },\n                                        "minSize": {\n                                            "height": 273,\n                                            "width": 556\n                                        },\n                                        "percentageWithinParent": 0.476\n                                    }\n                                },\n                                {\n                                    "children": [\n                                        {\n                                            "isContainer": false,\n                                            "isVisible": false,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 500,\n                                                    "width": 358,\n                                                    "x": 0,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524323,\n                                                    "width": 524293\n                                                },\n                                                "minSize": {\n                                                    "height": 159,\n                                                    "width": 94\n                                                },\n                                                "percentageWithinParent": 0.0\n                                            }\n                                        },\n                                        {\n                                            "guestId": "4122",\n                                            "isContainer": false,\n                                            "isVisible": true,\n                                            "sizingInfo": {\n                                                "geometry": {\n                                                    "height": 509,\n                                                    "width": 1521,\n                                                    "x": 0,\n                                                    "y": 0\n                                                },\n                                                "maxSizeHint": {\n                                                    "height": 524316,\n                                                    "width": 524293\n                                                },\n                                                "minSize": {\n                                                    "height": 119,\n                                                    "width": 179\n                                                },\n                                                "percentageWithinParent": 1.0\n                                            }\n                                        }\n                                    ],\n                                    "isContainer": true,\n                                    "isVisible": false,\n                                    "orientation": 1,\n                                    "sizingInfo": {\n                                        "geometry": {\n                                            "height": 509,\n                                            "width": 1521,\n                                            "x": 0,\n                                            "y": 461\n                                        },\n                                        "maxSizeHint": {\n                                            "height": 524316,\n                                            "width": 524293\n                                        },\n                                        "minSize": {\n                                            "height": 119,\n                                            "width": 179\n                                        },\n                                        "percentageWithinParent": 0.524\n                                    }\n                                }\n                            ],\n                            "isContainer": true,\n                            "isVisible": false,\n                            "orientation": 2,\n                            "sizingInfo": {\n                                "geometry": {\n                                    "height": 970,\n                                    "width": 1521,\n                                    "x": 397,\n                                    "y": 0\n                                },\n                                "maxSizeHint": {\n                                    "height": 1048638,\n                                    "width": 524293\n                                },\n                                "minSize": {\n                                    "height": 392,\n                                    "width": 556\n                                },\n                                "percentageWithinParent": 0.7930135557872784\n                            }\n                        }\n                    ],\n                    "isContainer": true,\n                    "isVisible": false,\n                    "orientation": 1,\n                    "sizingInfo": {\n                        "geometry": {\n                            "height": 970,\n                            "width": 1918,\n                            "x": 0,\n                            "y": 0\n                        },\n                        "maxSizeHint": {\n                            "height": 16777215,\n                            "width": 16777215\n                        },\n                        "minSize": {\n                            "height": 90,\n                            "width": 80\n                        },\n                        "percentageWithinParent": 0.0\n                    }\n                }\n            },\n            "normalGeometry": {\n                "height": 0,\n                "width": 0,\n                "x": 0,\n                "y": 0\n            },\n            "options": 0,\n            "screenIndex": 0,\n            "screenSize": {\n                "height": 1080,\n                "width": 1920\n            },\n            "uniqueName": "KdenliveKDDock",\n            "windowState": 2\n        }\n    ],\n    "screenInfo": [\n        {\n            "devicePixelRatio": 1.0,\n            "geometry": {\n                "height": 1080,\n                "width": 1920,\n                "x": 0,\n                "y": 0\n            },\n            "index": 0,\n            "name": "HDMI-A-0"\n        },\n        {\n            "devicePixelRatio": 1.0,\n            "geometry": {\n                "height": 1280,\n                "width": 1024,\n                "x": 1920,\n                "y": 0\n            },\n            "index": 1,\n            "name": "DisplayPort-2"\n        }\n    ],\n    "serializationVersion": 3\n}
+layoutsOrder=logging,editing,audio,effects,color,editor_re
+lockedGuides=false
+monitor_audio=false
+previewScaling=4
+producerslist=avformat,avformat-novalidate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,glaxnimate,ladspa.1221,ladspa.1849,ladspa.1069,ladspa.1086,ladspa.1222,ladspa.1226,ladspa.1844,ladspa.1841,ladspa.1843,ladspa.1066,ladspa.1223,framebuffer,blipflash,count,pgm,subtitle,qimage,qtext,kdenlivetitle,vorbis,xml,xml-string,xml-nogl,xml-clip
+projectMonitorOverlayGuides=1
+project_fps=30
+properties_panel_page=1
+renderProfile=GPU-2_updated
+showClipMonitorSafeZone=true
+showProjectMonitorSafeZone=true
+slideshowmimeextension=png
+
+[version]
+version=25.12.1

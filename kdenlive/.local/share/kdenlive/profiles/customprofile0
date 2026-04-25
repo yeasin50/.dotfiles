@@ -1,0 +1,12 @@
+description=4K UHD 2160p 30 fps  shorts
+frame_rate_num=30
+frame_rate_den=1
+width=2160
+height=3840
+progressive=1
+bottom_field_first=0
+sample_aspect_num=256
+sample_aspect_den=81
+display_aspect_num=16
+display_aspect_den=9
+colorspace=709

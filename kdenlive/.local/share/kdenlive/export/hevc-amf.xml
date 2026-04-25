@@ -1,0 +1,3 @@
+<profiles version="1">
+ <profile category="Hardware Accelerated (experimental)" name="AMF AMD HEVC/H265" extension="mkv" defaultaudioquality="75" defaultaudiobitrate="0" args="f=matroska vcodec=hevc_amf quality=balanced rc=cqp qp_i=%quality qp_p=%quality vq=%quality acodec=aac channels=2 ar=48000 aq=%audioquality hwaccel=auto high_motion_quality_boost_enable=true vbaq=true" defaultquality="23" defaultbitrate="0"/>
+</profiles>

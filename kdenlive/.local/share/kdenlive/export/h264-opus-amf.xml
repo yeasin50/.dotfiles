@@ -1,0 +1,3 @@
+<profiles version="1">
+ <profile args="acodec=libopus compression_level=%audioquality f=mp4 qp_b=%quality qp_i=%quality qp_p=%quality rc=cqp vbr=on vcodec=h264_amf vq=%quality" category="Hardware Accelerated (experimental)" defaultaudiobitrate="0" defaultaudioquality="92" defaultbitrate="0" defaultquality="22" extension="mp4" name="AMF AMD H264"/>
+</profiles>
