@@ -25,20 +25,33 @@ end
 -- C(gcc) on mini floating terminal on bottom
 -- Python(ManimPlay)
 -- java run on mini floating terminal on bottom
---
+-- .d2 render
 function M.fileRunner()
 	local ft = vim.bo.filetype
 	local file = vim.fn.expand("%:p")
 	local filename = vim.fn.expand("%:t:r")
 
-	if ft == "dart" then
+	if ft == "dart" or ft == "d2" then
 		local terms = require("toggleterm.terminal").get_all()
 		if #terms == 0 then
-			vim.notify("⚠️ No Flutter terminal running", vim.log.levels.WARN)
+			vim.notify("⚠️ No terminal running", vim.log.levels.WARN)
 			return
 		end
-		terms[1]:send("r\n")
-		vim.notify("🔥 Sent hot restart to Flutter terminal")
+
+		if ft == "dart" then
+			terms[1]:send("r\n")
+			vim.notify("🔥 Sent hot reload to Flutter terminal")
+		elseif ft == "d2" then
+			local input = file
+			local output = vim.fn.expand("%:p:r") .. ".svg"
+
+			local cmd = string.format("d2 --watch --sketch --layout=elk %s %s\n", input, output)
+
+			terms[1]:send(cmd)
+			vim.notify("🎬 D2 watching...")
+		end
+
+	---  Theses run on mini terminal
 	elseif ft == "c" then
 		local cmd = string.format("gcc '%s' -o '%s' && ./'%s'", file, filename, filename)
 		run_in_terminal(cmd)

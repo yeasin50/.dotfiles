@@ -8,7 +8,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.numberwidth = 2
 vim.opt.signcolumn = "auto"
 vim.o.number = true
-
+vim.opt.relativenumber = true
+-- set relativenumber
 vim.o.mouse = "a"
 
 vim.opt.wrap = true

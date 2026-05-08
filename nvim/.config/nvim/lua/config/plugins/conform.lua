@@ -14,6 +14,8 @@ return {
 			go = { "gofmt" },
 			templ = { "gofmt" },
 			lua = { "stylua" },
+			-- npm install -g prettierd
+			--- npm install -g prettier
 			markdown = { "prettierd", "prettier" },
 			json = { "prettierd", "prettier" },
 			dart = { "dart_format" },
