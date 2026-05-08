@@ -1,5 +1,16 @@
 # 🚀 Rofi Workflow
 
+## install
+
+`bash install.sh`
+
+or:
+
+```
+chmod +x install.sh
+./install.sh
+```
+
 Custom Rofi-based environment control for a solo developer workflow. Integrated with Obsidian, Neovim, and system virtualization modes.
 
 ## 🎨 Theme
@@ -19,7 +30,6 @@ Custom Rofi-based environment control for a solo developer workflow. Integrated 
 
 - **`desktopMode`** Resets workspace and window layouts.
 - **`recordMode`** Optimizes system for screen recording (educational content).
-- **`vboxmode` / `kvmmode`** Environment prep for VirtualBox and QEMU/KVM virtualization.
 
 ---
 

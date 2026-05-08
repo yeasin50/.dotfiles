@@ -26,7 +26,7 @@ elif command -v apt >/dev/null; then
     need npm && install_pkg npm
 fi
 
-install_nerd_font
+install_fonts
 
 sudo npm install -g prettier 2>/dev/null || true
 

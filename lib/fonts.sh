@@ -1,22 +1,37 @@
 #!/usr/bin/env bash
 
-install_nerd_font() {
-    if fc-list | grep -qi "FiraCode Nerd Font"; then
-        echo "Nerd Font already installed"
+set -e
+
+FONT_DIR="$HOME/.local/share/fonts"
+
+install_font() {
+    name="$1"
+    url="$2"
+
+    if fc-list | grep -qi "$name"; then
+        echo "$name already installed"
         return
     fi
 
-    echo "Installing Nerd Font..."
+    echo "Installing $name..."
 
-    mkdir -p "$HOME/.local/share/fonts"
+    mkdir -p "$FONT_DIR"
 
-    tmp="/tmp/nerdfont.zip"
+    tmp="/tmp/font.zip"
 
-    curl -fLo "$tmp" \
-        https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
-
-    unzip -o "$tmp" -d "$HOME/.local/share/fonts"
+    curl -fLo "$tmp" "$url"
+    unzip -o "$tmp" -d "$FONT_DIR"
     rm "$tmp"
-
-    fc-cache -fv
 }
+
+install_font \
+  "FiraCode Nerd Font" \
+  "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
+
+install_font \
+  "JetBrains Mono Nerd Font" \
+  "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
+
+fc-cache -fv
+
+echo "fonts done"
