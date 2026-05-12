@@ -31,7 +31,7 @@ return {
 
 	enable_tab_bar = true,
 	-- window_decorations = "NONE | RESIZE",
-	window_background_opacity = 1,
+	window_background_opacity = 0.9,
 
 	window_padding = {
 		left = 12,

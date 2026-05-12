@@ -1,0 +1,66 @@
+@define-color bg #1a1b26;
+@define-color bg-alt #24283b;
+@define-color fg #c0caf5;
+@define-color accent #7aa2f7;
+@define-color alert #f7768e;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", "JetBrainsMonoNL Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @bg;
+    color: @fg;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    padding: 0 12px;
+    margin: 4px 2px;
+    background-color: @bg-alt;
+    color: @fg;
+    border-radius: 4px;
+}
+
+#workspaces button.focused {
+    background-color: @accent;
+    color: @bg;
+}
+
+#workspaces button.urgent {
+    background-color: @alert;
+    color: @bg;
+}
+
+#clock {
+    color: @accent;
+}
+
+#pulseaudio, #memory, #cpu, #custom-obs {
+    padding: 0 8px;
+    margin: 0 4px;
+}
+
+#pulseaudio.muted {
+    color: @alert;
+}
+
+#memory {
+    color: @accent;
+}
+
+#cpu {
+    color: @fg;
+}
+
+#custom-powermenu {
+    color: @alert;
+    padding: 0 12px;
+    margin: 0 4px;
+    font-size: 16px;
+}

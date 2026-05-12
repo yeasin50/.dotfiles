@@ -1,0 +1,43 @@
+{
+    "output":"DP-3",
+    "layer": "top",
+    "position": "top",
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
+    "height": 34,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "memory", "cpu", "custom/obs", "custom/powermenu"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%I:%M %p - %A}",
+        "tooltip-format": "{:%A, %Y-%m-%d}"
+    },
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUTED"
+    },
+    "memory": {
+        "interval": 2,
+        "format": "RAM {percentage}%"
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "CPU {usage}%"
+    },
+    "custom/obs": {
+        "exec": "~/.config/polybar/scripts/obs.sh",
+        "interval": 2
+    },
+    "custom/powermenu": {
+        "format": "",
+        "on-click": "~/.config/rofi/scripts/powermenu.sh",
+        "tooltip": false
+    }
+}

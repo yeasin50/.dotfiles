@@ -1,0 +1,42 @@
+# Mod key (Windows key)
+set $mod Mod4
+
+# --- Launcher & Window Switcher ---
+bindsym $mod+space exec wofi --show drun --allow-images
+bindsym $mod+Tab exec wofi --show window
+
+
+# --- Basic controls ---
+bindsym $mod+Shift+q kill
+
+# 'reload' in Sway.
+bindsym $mod+Shift+r reload
+
+# --- Movement ---
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+
+# --- Workspace switch ---
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+
+# --- Move window to workspace ---
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+
+# --- Update Include Path ---
+include ~/.config/sway/config.d/*.conf
