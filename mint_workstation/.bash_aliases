@@ -89,8 +89,8 @@ recordMode() {
         gsettings set org.cinnamon.desktop.interface cursor-size 68
 
         # primary monitor
-        xrandr --output HDMI-A-1 --primary --mode 1920x1080 --scale 2x2 --pos 0x0 
-        xrandr --output DP-3 --mode 1280x1024 --pos 3840x0 --rotate right
+        xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 2x2 --pos 0x0 
+        xrandr --output DisplayPort-2 --mode 1280x1024 --pos 3840x0 --rotate right
     fi
 }
 
@@ -107,8 +107,8 @@ desktopMode() {
         gsettings set org.cinnamon.desktop.interface cursor-size 24
 
         # primary monitor
-        xrandr --output HDMI-A-1 --primary --mode 1920x1080 --scale 1x1 --pos 0x0  
-        xrandr --output DP-3 --mode 1280x1024 --pos 1920x0 --rotate right
+        xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 0x0  
+        xrandr --output DisplayPort-2 --mode 1280x1024 --pos 1920x0 --rotate right
     fi
 }
 
