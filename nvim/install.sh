@@ -20,6 +20,11 @@ if command -v pacman >/dev/null; then
     need npm && install_pkg npm
 
 elif command -v apt >/dev/null; then
+    
+    need curl && install_pkg curl
+    need unzip && install_pkg unzip
+    need fc-cache && install_pkg fontconfig
+
     need nvim && install_pkg neovim
     need fzf && install_pkg fzf
     need rg && install_pkg ripgrep

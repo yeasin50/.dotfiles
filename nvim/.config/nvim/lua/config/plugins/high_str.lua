@@ -1,5 +1,6 @@
 return {
 	"Pocco81/high-str.nvim",
+	enabled = false,
 	keys = {
 		-- Highlight visual selection (opens a small menu to pick color index)
 		{ "H", ":<C-U>HSHighlight<CR>", mode = "v", desc = "HighStr: Highlight Selection" },

@@ -10,7 +10,7 @@ M[1] = {
 	priority = 1000,
 	opts = {
 		style = "storm", -- Theme variant: "storm", "night", "moon", "day"
-		transparent = false,
+		transparent = true,
 		styles = { sidebars = "transparent", floats = "transparent" },
 	},
 	config = function()
