@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source ~/.config/bspwm/modules/monitors.sh
+source ~/.config/bspwm/modules/appearance.sh
+source ~/.config/bspwm/modules/autostart.sh
+
+
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_corner
+bspc config pointer_action3 none

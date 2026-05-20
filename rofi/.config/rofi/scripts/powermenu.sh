@@ -9,9 +9,16 @@ chosen=$(echo -e "$options" | rofi -dmenu -i -p "Power:" \
     -theme-str 'window {width: 250px;} listview {lines: 4;}' \
     -theme-str 'element {padding: 16px;}')
 
+# case "$chosen" in
+#     *Shutdown) systemctl poweroff ;;
+#     *Reboot) systemctl reboot ;;
+#     *Sleep) systemctl suspend ;;
+#     *Logout) i3-msg exit ;;
+# esac
+
 case "$chosen" in
     *Shutdown) systemctl poweroff ;;
     *Reboot) systemctl reboot ;;
     *Sleep) systemctl suspend ;;
-    *Logout) i3-msg exit ;;
+    *Logout) bspc quit ;;  # <-- Changed from i3-msg exit
 esac

@@ -20,7 +20,9 @@ bindsym $mod+Right focus right
 
 bindsym $mod+h split h
 bindsym $mod+v split v
-
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
 
 # --- Workspace switch ---
 bindsym $mod+1 workspace number 1

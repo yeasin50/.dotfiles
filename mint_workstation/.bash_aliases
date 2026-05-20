@@ -84,6 +84,7 @@ recordMode() {
 
         # Virtual 4K layout (Atomic execution)
         swaymsg 'output HDMI-A-1 mode 1920x1080 scale 0.5 pos 0 0; output DP-3 mode 1280x1024 transform 90 pos 3840 0'
+        gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
     else
         # Cinnamon / i3 (X11)
         gsettings set org.cinnamon.desktop.interface cursor-size 68
@@ -91,6 +92,7 @@ recordMode() {
         # primary monitor
         xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 2x2 --pos 0x0 
         xrandr --output DisplayPort-2 --mode 1280x1024 --pos 3840x0 --rotate right
+        # gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
     fi
 }
 
@@ -102,6 +104,7 @@ desktopMode() {
 
         # 1080p layout (Atomic execution)
         swaymsg 'output HDMI-A-1 mode 1920x1080 scale 1 pos 0 0; output DP-3 mode 1280x1024 transform 90 pos 1920 0'
+
     else
         # Cinnamon / i3 (X11)
         gsettings set org.cinnamon.desktop.interface cursor-size 24
@@ -110,6 +113,8 @@ desktopMode() {
         xrandr --output HDMI-A-0 --primary --mode 1920x1080 --scale 1x1 --pos 0x0  
         xrandr --output DisplayPort-2 --mode 1280x1024 --pos 1920x0 --rotate right
     fi
+
+    gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
 }
 
 

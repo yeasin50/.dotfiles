@@ -37,6 +37,13 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 
-
+# Move focused window with Vim keys
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 include ~/.config/i3/config.d/*.conf
+
+exec_always --no-startup-id killall picom; picom --backend glx --vsync -b
+
 
