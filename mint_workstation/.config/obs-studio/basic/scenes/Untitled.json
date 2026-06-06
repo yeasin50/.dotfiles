@@ -3,16 +3,16 @@
     "DesktopAudioDevice1": {
         "prev_ver": 536936449,
         "name": "Desktop Audio",
-        "uuid": "0268aa37-d793-4c71-8737-fb11d4afe25b",
+        "uuid": "7490b712-b647-4d3a-ad88-1f57800331fc",
         "id": "pulse_output_capture",
         "versioned_id": "pulse_output_capture",
         "settings": {
             "device_id": "default"
         },
-        "mixers": 194,
+        "mixers": 255,
         "sync": 0,
         "flags": 0,
-        "volume": 0.98513942956924438,
+        "volume": 1.0,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -38,9 +38,9 @@
         "id": "pulse_input_capture",
         "versioned_id": "pulse_input_capture",
         "settings": {
-            "device_id": "default"
+            "device_id": "easyeffects_source"
         },
-        "mixers": 193,
+        "mixers": 194,
         "sync": 0,
         "flags": 0,
         "volume": 1.0,
@@ -200,12 +200,12 @@
         },
         {
             "prev_ver": 536936449,
-            "name": "Window Capture (Xcomposite)",
-            "uuid": "ba2d7563-e65c-4f0d-8f9a-bbb847fb5bb6",
-            "id": "xcomposite_input",
-            "versioned_id": "xcomposite_input",
+            "name": "Screen Capture (PipeWire)",
+            "uuid": "aa8266ff-7a2d-4899-8f81-aaef30736123",
+            "id": "pipewire-screen-capture-source",
+            "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "capture_window": "54701248\r\nQuick Connect\r\norg.remmina.Remmina"
+                "RestoreToken": "921752d7-2e93-4a81-872c-052434144fc0"
             },
             "mixers": 0,
             "sync": 0,
@@ -231,7 +231,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 14,
+                "id_counter": 18,
                 "custom_size": false,
                 "items": [
                     {
@@ -400,8 +400,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Window Capture (Xcomposite)",
-                        "source_uuid": "ba2d7563-e65c-4f0d-8f9a-bbb847fb5bb6",
+                        "name": "Screen Capture (PipeWire)",
+                        "source_uuid": "aa8266ff-7a2d-4899-8f81-aaef30736123",
                         "visible": false,
                         "locked": false,
                         "rot": 0.0,
@@ -417,7 +417,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 13,
+                        "id": 18,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -428,12 +428,12 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.9327902793884277,
-                            "y": 1.9333933591842651
+                            "x": 2.0,
+                            "y": 2.0
                         },
                         "scale_rel": {
-                            "x": 1.9327902793884277,
-                            "y": 1.9333933591842651
+                            "x": 2.0,
+                            "y": 2.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -447,10 +447,10 @@
                         "blend_method": "default",
                         "blend_type": "normal",
                         "show_transition": {
-                            "duration": 0
+                            "duration": 300
                         },
                         "hide_transition": {
-                            "duration": 0
+                            "duration": 300
                         },
                         "private_settings": {}
                     }
@@ -475,8 +475,8 @@
                 "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.12": [],
                 "libobs.hide_scene_item.12": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": []
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -523,7 +523,7 @@
     "saved_projectors": [],
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -22,
+    "scaling_level": -40,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
