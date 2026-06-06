@@ -12,7 +12,7 @@ return {
 		require("manim").setup({
 			manim_path = "manim",
 			-- /home/yeasin/github/writings/manim/env -qk --transparent --fps=30  --media_dir=/home/yeasin/Videos/raw/manim_output
-			venv_path = "/home/yeasin/github/writings/manim/env",
+			venv_path = "/home/yeasin/github/manim/env",
 			play_lines = 4,
 			play_args = { "-pql" },
 			export_args = {

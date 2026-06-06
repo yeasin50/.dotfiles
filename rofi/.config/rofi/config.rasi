@@ -70,7 +70,6 @@ listview {
     scrollbar: false;
 }
 
-/* --- THE FIX IS HERE --- */
 
 element {
     background-color: transparent; /* Melts perfectly into the main window */

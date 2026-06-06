@@ -20,5 +20,5 @@ case "$chosen" in
     *Shutdown) systemctl poweroff ;;
     *Reboot) systemctl reboot ;;
     *Sleep) systemctl suspend ;;
-    *Logout) bspc quit ;;  # <-- Changed from i3-msg exit
+    *Logout) bspc quit ;;  # 
 esac
