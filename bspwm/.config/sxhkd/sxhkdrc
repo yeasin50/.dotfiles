@@ -1,6 +1,10 @@
 # Mod key
 super + ...   (already default Mod4 in sxhkd/bspwm)
 
+
+# making capslock to esc for nvim  motion ; uum doesn't work
+setxkbmap -option caps:escape
+
 super + Return
     wezterm
 

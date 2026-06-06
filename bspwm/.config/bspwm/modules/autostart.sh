@@ -6,7 +6,7 @@ sxhkd &
 feh --bg-fill ~/Pictures/bg/window_bluish.png &
 
 # start compositor 
- picom --config ~/.config/picom/picom.conf -b &
+ # picom --config ~/.config/picom/picom.conf -b &
 
 # polybar after layout
 ~/.config/polybar/launch.sh &

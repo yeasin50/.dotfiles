@@ -22,6 +22,7 @@ alias gs='git status'
 
 
 source ~/.note_alias.bash
+source ~/.task.bash
 
 alias tmuxp='tmuxinator start .'
 # alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
@@ -215,13 +216,6 @@ ventoryQemu() {
 }
 
 
-
-
-# make sure to pair with code before it 
-# for that use `adb pair ...`
-alias adbphone='adb connect 192.168.0.102:45123'
-
-
 alias showKeys='screenkey -p fixed -g 1000x150+1240+1610 -s large -f "Sans Bold 40"'
 
 alias ffmerge='f(){ 
@@ -233,4 +227,6 @@ alias ffmerge='f(){
 }; f'
 
 
+
+# cat=>bat
 alias cat='batcat --paging=never --theme=OneHalfDark'
