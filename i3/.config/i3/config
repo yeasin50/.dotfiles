@@ -11,16 +11,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+c reload
 
-# Movement
-# bindsym $mod+h focus left
-# bindsym $mod+j focus down
-# bindsym $mod+k focus up
-# bindsym $mod+l focus right
-
-# Split
-# bindsym $mod+v split v
-# bindsym $mod+b split h
-
 # Workspace switch
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -28,6 +18,7 @@ bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
 
 # Move window to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -36,14 +27,25 @@ bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
 
-# Move focused window with Vim keys
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+# Move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# # Split
+bindsym $mod+v split v
+# bindsym $mod+b split h
+
+floating_modifier $mod
+
 include ~/.config/i3/config.d/*.conf
-
-exec_always --no-startup-id killall picom; picom --backend glx --vsync -b
-
 
