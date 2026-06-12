@@ -10,6 +10,9 @@ bspc config pointer_action1 move
 bspc config pointer_action2 resize_corner
 bspc config pointer_action3 none
 
-bspc config focus_follows_pointer true
-bspc config pointer_follows_focus true
-bspc config auto_raise true
+bspc config focus_follows_pointer false
+bspc config pointer_follows_focus false
+bspc config auto_raise false
+
+
+# chmod +x bspwmrc modules/appearance.sh  modules/autostart.sh modules/monitors.sh 
