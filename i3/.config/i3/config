@@ -43,7 +43,6 @@ bindsym $mod+Right focus right
 
 # # Split
 bindsym $mod+v split v
-# bindsym $mod+b split h
 
 floating_modifier $mod
 

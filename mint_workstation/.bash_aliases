@@ -167,54 +167,6 @@ videoinfo() {
     echo "Total size: $human_size"
 }
 
-# Deprecated 
-# =============================================================================
-# Function: ventoryQemu
-# Purpose : Mount Ventoy USB and Windows KVM folder for virt-manager/QEMU
-#           Ensures libvirt-qemu user has WRITE access to NTFS.
-# =============================================================================
-ventoryQemu() {
-    # --- 1. Ventoy USB ---
-    sudo mkdir -p /mnt/VentoyLibvirt
-    if mountpoint -q /mnt/VentoyLibvirt; then
-        echo "✅ Ventoy USB already mounted at /mnt/VentoyLibvirt/"
-    else
-        # Using $USER so it dynamically grabs your username instead of hardcoding
-        sudo mount --bind "/media/$USER/Ventoy" /mnt/VentoyLibvirt
-        echo "✅ Ventoy USB mounted at /mnt/VentoyLibvirt/"
-    fi
-
-    # --- 2. Windows NTFS KVM Storage ---
-    # WARNING: Run 'lsblk' in your terminal to confirm your Windows partition.
-    # It might be /dev/sda1, /dev/sda2, or /dev/nvme0n1p3. Change this if needed!
-    WIN_PART="/dev/sda1"  
-    
-    sudo mkdir -p /mnt/WinKVM
-    if mountpoint -q /mnt/WinKVM; then
-        echo "✅ Windows KVM folder already mounted at /mnt/WinKVM/"
-    else
-        # THE FIX: umask=000 gives libvirt/QEMU the WRITE permissions it needs.
-        sudo mount -t ntfs-3g -o rw,umask=000 "$WIN_PART" /mnt/WinKVM
-        
-        # Check if the mount actually succeeded
-        if [ $? -ne 0 ]; then
-            echo "❌ Mount failed! Is Windows 'Fast Startup' enabled? (You must fully shut down Windows, not Restart/Hibernate)."
-            return 1
-        fi
-        echo "✅ Windows partition mounted at /mnt/WinKVM/"
-    fi
-
-    # Ensure KVM folder exists NOW that the drive is mounted with write access
-    sudo mkdir -p /mnt/WinKVM/KVM
-
-    # --- 3. Show Contents ---
-    echo -e "\n📂 Ventoy ISOs:"
-    ls -lh /mnt/VentoyLibvirt/OS/ 2>/dev/null || ls -lh /mnt/VentoyLibvirt/
-    
-    echo -e "\n📂 KVM VM storage (/mnt/WinKVM/KVM/):"
-    ls -lh /mnt/WinKVM/KVM/
-}
-
 
 alias showKeys='screenkey -p fixed -g 1000x150+1240+1610 -s large -f "Sans Bold 40"'
 

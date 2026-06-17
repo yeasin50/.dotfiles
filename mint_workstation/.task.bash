@@ -18,6 +18,12 @@ INBOX_DIR="$NOTES_DIR/jurnal"
 DAY_START_HOUR=6
 DAY_START_MIN=0
 
+
+## stack todo
+TODO="$NOTES_DIR/jurnal/todo.md"
+alias t='nvim "$TODO"'
+
+
 # --- Functions ---
 task() {
   mkdir -p "$INBOX_DIR"
@@ -112,6 +118,7 @@ task() {
 
   local filepath="$INBOX_DIR/${filename}.md"
   local frontmatter_date=$(date +%d-%m-%Y)
+  local frontmatter_Title=$(date "+%A %d-%m-%Y")
 
   # Create the file and inject frontmatter if it does not exist
   if [[ ! -f "$filepath" ]]; then
@@ -127,7 +134,7 @@ Source: github.com/yeasin50
 wikilink: false
 ---
 
-# TASK: ${frontmatter_date}
+# TASK: ${frontmatter_Title}
 
 EOF
     echo "Created task: $filepath"
