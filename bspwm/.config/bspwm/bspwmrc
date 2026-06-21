@@ -1,8 +1,53 @@
 #!/bin/bash
 
-source ~/.config/bspwm/modules/monitors.sh
-source ~/.config/bspwm/modules/appearance.sh
-source ~/.config/bspwm/modules/autostart.sh
+# monitor configs; run  `xrandr` to get your displace names
+
+ xrandr \
+   --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
+   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 1920x0
+
+# xrandr \
+#   --output HDMI-A-0 --primary --mode 1920x1080 --scale-from 3840x2160 --pos 0x0 \
+#   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 3840x0
+
+
+# --- Work-Spaces per monitor
+bspc monitor HDMI-A-0 -d 1 2 3 4
+bspc monitor DisplayPort-2 -d 5 6 7
+
+
+xrandr --output HDMI-A-0 --set TearFree on
+xrandr --output DisplayPort-2 --set TearFree on
+
+# fixed mouse stuck
+xsetroot -cursor_name left_ptr &
+## 
+# appearance
+bspc config border_width 1
+bspc config window_gap 6
+bspc config split_ratio 0.5
+
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+bspc config top_padding 0
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+
+# AutoStart 
+killall -q sxhkd picom polybar
+
+sxhkd &
+
+# wallpaper first (optional but clean)
+feh --bg-fill ~/Pictures/bg/window_bluish.png &
+
+# start compositor 
+ picom --config ~/.config/picom/picom.conf -b &
+
+# polybar after layout
+~/.config/polybar/launch.sh &
 
 
 bspc config pointer_modifier mod4
@@ -11,8 +56,8 @@ bspc config pointer_action2 resize_corner
 bspc config pointer_action3 none
 
 bspc config focus_follows_pointer true
-bspc config pointer_follows_focus true
-bspc config auto_raise true
+bspc config pointer_follows_focus false
+bspc config auto_raise false
 
 
-# chmod +x bspwmrc modules/appearance.sh  modules/autostart.sh modules/monitors.sh 
+# chmod +x bspwmrc and then reboot/stow

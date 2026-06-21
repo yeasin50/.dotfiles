@@ -19,6 +19,7 @@ super + Tab
 super + shift + q
     bspc node -c
 
+# restart bspwm
 super + shift + r
     bspc wm -r && pkill -USR1 -x sxhkd
 
@@ -39,6 +40,15 @@ super + shift + s
 # Emoji picker
 ctrl + period
     /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=emoji-mart io.github.vemonet.EmojiMart
+
+
+## Keyboard volume nob
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # --- Focus movement  ---
 super + Left
