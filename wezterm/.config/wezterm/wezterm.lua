@@ -1,7 +1,24 @@
 local wezterm = require("wezterm")
 
+-- get color schema from  colors if failes then  use Tokyo Night
+local function get_color_scheme()
+	-- 2. Use the absolute path, because Lua doesn't understand "~"
+	local wallust_path = "/home/yeasin/.config/wezterm/colors/wallust.toml"
+	--
+	local file = io.open(wallust_path, "r")
+	if file then
+		file:close()
+		return "wallust"
+	end
+	return "Tokyo Night Storm"
+end
+
+-- 3. Now this line will work, because 'config' exists!
+
 return {
 	front_end = "WebGpu",
+	color_scheme = get_color_scheme(),
+
 	-- FONT (fix bold issue)
 	font = wezterm.font_with_fallback({
 		{ family = "JetBrains Mono", weight = "Regular" },
@@ -18,9 +35,6 @@ return {
 			font = wezterm.font("FiraCode Nerd Font", { weight = "Medium" }),
 		},
 	},
-
-	-- THEME (Tokyo Night)
-	color_scheme = "Tokyo Night Storm",
 
 	-- WINDOW LOOK (clean like kitty)
 	hide_tab_bar_if_only_one_tab = true,

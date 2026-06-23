@@ -8,7 +8,7 @@ alias reload='source ~/.bashrc'
 
 alias vi='nvim'
 
-alias viyt='NVIM_APPNAME=nvim.yt nvim'
+# alias viyt='NVIM_APPNAME=nvim.yt nvim'
 
 alias docker-compose='podman-compose'
 alias docker='podman'
@@ -19,6 +19,30 @@ gv() {
 
 alias ll='ls -lah'
 alias gs='git status'
+
+
+## Set wall-paper and config theme
+setwall() {
+    if [ -z "$1" ]; then
+        echo "Usage: setwall <image>"
+        cowsay "no image given"
+        return 1
+    fi
+
+    img="$(realpath "$1" 2>/dev/null)"
+
+    if [ ! -f "$img" ]; then
+        echo "File not found"
+        cowsay "bad path"
+        return 1
+    fi
+
+    feh --bg-fill "$img"
+    wallust run "$img"
+
+    # saving for bspwm restart
+    sed -i "s|^WALLPAPER=.*|WALLPAPER=\"$img\"|" ~/.config/bspwm/env.sh
+}
 
 
 source ~/.note_alias.bash

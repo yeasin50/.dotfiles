@@ -6,9 +6,14 @@ last-update: 2026-05-19
 
 Installed stuff
 
+## TODO
+
+- [ ] readme what why I use
+- [ ] install script
+
 ```sh
 sudo apt update
-sudo apt install bspwm sxhkd picom rofi
+sudo apt install bspwm sxhkd picom rofi wallust feh
 ```
 
 After config make it executable

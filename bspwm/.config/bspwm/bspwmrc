@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # monitor configs; run  `xrandr` to get your displace names
+source "${HOME}/.config/bspwm/env.sh"
 
  xrandr \
    --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
@@ -41,7 +42,7 @@ killall -q sxhkd picom polybar
 sxhkd &
 
 # wallpaper first (optional but clean)
-feh --bg-fill ~/Pictures/bg/window_bluish.png &
+feh --bg-fill "$WALLPAPER" &
 
 # start compositor 
  picom --config ~/.config/picom/picom.conf -b &

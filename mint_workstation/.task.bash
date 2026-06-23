@@ -19,10 +19,11 @@ DAY_START_HOUR=6
 DAY_START_MIN=0
 
 
-## stack todo
+## stack todo for weeked or later
 TODO="$NOTES_DIR/jurnal/todo.md"
-alias t='nvim "$TODO"'
+alias todo='nvim "$TODO"'
 
+alias  t=task
 
 # --- Functions ---
 task() {

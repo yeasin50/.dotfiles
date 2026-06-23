@@ -6,7 +6,7 @@ super + ...   (already default Mod4 in sxhkd/bspwm)
 setxkbmap -option caps:escape
 
 super + Return
-    wezterm
+    wezterm --config-file ~/.config/wezterm/wezterm.lua
 
 # --- Launcher & Switcher ---
 super + space
