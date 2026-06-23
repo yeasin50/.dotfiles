@@ -21,6 +21,8 @@ alias ll='ls -lah'
 alias gs='git status'
 
 
+alias wall='~/.config/rofi/scripts/wall_picker.sh'
+
 ## Set wall-paper and config theme
 setwall() {
     if [ -z "$1" ]; then

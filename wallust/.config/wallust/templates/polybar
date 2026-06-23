@@ -1,0 +1,7 @@
+[colors]
+bg = {{background}}
+bg-alt = {{color0}}
+fg = {{foreground}}
+accent = {{color4}}
+alert = {{color1}}
+empty = #00000000
