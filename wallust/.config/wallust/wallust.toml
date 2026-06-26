@@ -89,6 +89,18 @@ btop = {
 }
 
 
+gtk = {
+    template = 'gtk.css', 
+    target = '~/.config/gtk-3.0/gtk.css'
+}
+
+
+bspwm = {
+    template = 'bspwm_colors', 
+    target = '~/.config/bspwm/colors.sh'
+}
+
+
 [hooks]
 # Run commands when wallust is invoked. Useful to avoid scripting.
 #wallpaper = """swww img "$(find ~/Media/Pictures/Wallpapers -iregex '.*.\\(jpg\\|jpeg\\|png\\|gif\\)' -type f | shuf -n 1)" """

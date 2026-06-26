@@ -20,5 +20,6 @@ if [[ -n "$selected" ]]; then
 
     # saving for bspwm restart
     sed -i "s|^WALLPAPER=.*|WALLPAPER=\"$img\"|" ~/.config/bspwm/env.sh
-    
+    bspc wm -r && pkill -USR1 -x sxhkd
+    cowsay "theme updated"
 fi
