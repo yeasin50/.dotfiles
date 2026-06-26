@@ -12,8 +12,13 @@ done | rofi -dmenu -i -p "󰸉 Wallpapers" -theme-str '
     element-text { horizontal-align: 0.1; }')
 
 if [[ -n "$selected" ]]; then
-    IMAGE="$WALL_DIR/$selected"
+    img="$WALL_DIR/$selected"
     
-    feh --bg-fill "$IMAGE"
+    # feh --bg-fill "$IMAGE"
+    feh --bg-fill "$img"
+    wallust run "$img"
+
+    # saving for bspwm restart
+    sed -i "s|^WALLPAPER=.*|WALLPAPER=\"$img\"|" ~/.config/bspwm/env.sh
     
 fi

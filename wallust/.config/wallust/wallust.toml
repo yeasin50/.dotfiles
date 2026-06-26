@@ -9,9 +9,31 @@ backend = "full"
 # palette = "saliencedarkbalanced" 
 # color_space = "labmixed"
 
-# What color space to use to produce and select the most prominent colors:
-# lab - labmixed - lch - lchmixed - salience
+# | `color_space` | Best for                        |
+# | ------------- | ------------------------------- |
+# | `lab`         | Balanced, general use           |
+# | `labmixed`    | Most wallpapers (recommended)   |
+# | `lch`         | Colorful artwork                |
+# | `lchmixed`    | Vibrant artwork                 |
+# | `salience`    | Wallpapers with a clear subject |
 color_space = "lch"
+
+
+
+# Note`16` = same palette, but with 16 colors instead of the default count.
+#
+# | Palette                   | Best for                       | Result                                  |
+# | ------------------------- | ------------------------------ | --------------------------------------- |
+# | `dark`                    | General dark images            | Standard dark palette                   |
+# | `darkcomp`                | Dark images needing contrast   | Adds complementary colors               |
+# | `harddark`                | High-contrast, vivid art       | Strong, saturated colors                |
+# | `harddarkcomp`            | Bold art with maximum contrast | Strong colors + complementary accents   |
+# | `softdark`                | Muted, moody art               | Softer, less saturated colors           |
+# | `softdarkcomp`            | Soft dark with extra contrast  | Balanced complementary accents          |
+# | `saliencedark`            | Subject-focused images         | Uses the most visually important colors |
+# | `saliencedarkbalanced`    | Same                           | More even color balance                 |
+# | `saliencedarkdistributed` | Same                           | Better color coverage across the image  |
+# | `saliencedarklow`         | Same                           | Less aggressive color selection         |
 
 
 # Use the most prominent colors in a way that makes sense, a scheme color palette:
@@ -22,7 +44,7 @@ color_space = "lch"
 # softlight - softlight16 - softlightcomp - softlightcomp16
 # saliencedark - saliencedarkbalanced - saliencedarkdistributed - saliencedarklow (each has the 16 variations)
 # salienceligh - saliencelightbalanced - saliencelightdistributed - saliencelightlow (each has the 16 variations)
-palette = "harddark"
+palette = "harddark" # just perfect
 
 # Ensures a "readable contrast" (OPTIONAL, disabled by default)
 # Should only be enabled when you notice an unreadable contrast frequently happening
@@ -58,6 +80,12 @@ polybar = {
 nvim = {
     template = 'nvim', 
     target = '~/.config/nvim/lua/wallust_theme.lua'
+}
+
+
+btop = {
+    template = 'btop', 
+    target = '~/.config/btop/themes/wallust.theme'
 }
 
 

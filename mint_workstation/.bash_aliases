@@ -208,3 +208,50 @@ alias ffmerge='f(){
 
 # cat=>bat
 alias cat='batcat --paging=never --theme=OneHalfDark'
+
+
+clipfiles() {
+    #  Detect the correct clipboard utility based on the OS ONLY Linux tested
+    local clip_cmd
+    if command -v pbcopy &> /dev/null; then 
+        clip_cmd=(pbcopy)                               # macOS
+    elif command -v xclip &> /dev/null; then 
+        clip_cmd=(xclip -selection clipboard)           # Linux (X11)
+    elif command -v wl-copy &> /dev/null; then 
+        clip_cmd=(wl-copy)                              # Linux (Wayland)
+    elif command -v clip.exe &> /dev/null; then 
+        clip_cmd=(clip.exe)                             # WSL / Windows
+    else
+        echo "Error: No clipboard utility found (need pbcopy, xclip, wl-copy, or clip.exe)." >&2
+        return 1
+    fi
+
+    {
+        for file in "$@"; do
+            if [[ -f "$file" ]]; then
+                local filename="${file##*/}"  
+                local ext="${filename##*.}"   
+                
+                # If the file has no extension, default to 'text'
+                [[ "$filename" == "$ext" ]] && ext="text"
+
+                # Generate the formatted output
+                echo "<details> <summary> ${filename} </summary>"
+                echo ""
+                echo '```'"${ext}"
+                cat "$file"
+                echo "" 
+                echo '```'
+                echo ""
+                echo "</details>"
+                echo ""
+                echo "<br>"
+                echo ""
+            else
+                echo "Warning: '$file' not found or is a directory. Skipping." >&2
+            fi
+        done
+    } | tee /dev/tty | "${clip_cmd[@]}"
+
+    echo -e "\n✅ Success: Contents formatted and copied to clipboard!" >&2
+}
