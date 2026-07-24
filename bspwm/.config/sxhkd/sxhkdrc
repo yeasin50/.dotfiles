@@ -33,6 +33,10 @@ super + b
 super + k
     /home/yeasin/apps/kdenlive-26.04.0-x86_64.AppImage
 
+
+super + l
+    flatpak run org.localsend.localsend_app
+
 # Screenshot select area
 super + shift + s 
     flameshot gui
@@ -49,6 +53,15 @@ XF86AudioLowerVolume
     pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+## tabbed from  suckless
+super + t
+	~/.config/bspwm/scripts/tabbed_add
+
+super + shift + t
+	~/.config/bspwm/scripts/tabbed_detach
+
 
 # --- Focus movement  ---
 super + Left

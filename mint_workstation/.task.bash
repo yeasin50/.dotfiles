@@ -23,10 +23,9 @@ DAY_START_MIN=0
 TODO="$NOTES_DIR/jurnal/todo.md"
 alias todo='nvim "$TODO"'
 
-alias  t=task
 
 # --- Functions ---
-task() {
+t() {
   mkdir -p "$INBOX_DIR"
 
   local is_append=0

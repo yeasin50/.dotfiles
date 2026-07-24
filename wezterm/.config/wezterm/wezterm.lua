@@ -4,7 +4,6 @@ local wezterm = require("wezterm")
 local function get_color_scheme()
 	-- 2. Use the absolute path, because Lua doesn't understand "~"
 	local wallust_path = "/home/yeasin/.config/wezterm/colors/wallust.toml"
-	--
 	local file = io.open(wallust_path, "r")
 	if file then
 		file:close()
@@ -46,16 +45,17 @@ return {
 	enable_tab_bar = true,
 	-- window_decorations = "NONE | RESIZE",
 	window_background_opacity = 0.8,
-
+	text_background_opacity = 1.0,
 	window_padding = {
-		left = 12,
-		right = 12,
-		top = 12,
-		bottom = 12,
+		left = 0,
+		right = 0,
+		top = 0,
+		bottom = 0,
 	},
 
 	-- PERFORMANCE / UX
 	scrollback_lines = 20000,
+	enable_scroll_bar = true,
 	scroll_to_bottom_on_input = true,
 	audible_bell = "Disabled",
 
@@ -83,5 +83,15 @@ return {
 
 		-- quick select links
 		{ key = "o", mods = "CTRL|SHIFT", action = wezterm.action.QuickSelect },
+		{
+			key = "t",
+			mods = "SUPER",
+			action = wezterm.action.DisableDefaultAssignment,
+		},
+		{
+			key = "T",
+			mods = "SUPER",
+			action = wezterm.action.DisableDefaultAssignment,
+		},
 	},
 }

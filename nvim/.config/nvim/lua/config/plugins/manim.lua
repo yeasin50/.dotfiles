@@ -3,7 +3,10 @@ return {
 	dir = "/home/yeasin/github/manim.nvim",
 	enabled = true,
 	dev = true,
-	cmd = "ManimCheck",
+	cmd = {
+		"ManimCheck",
+		"ManimEnvInstall",
+	},
 	keys = {
 		{ "<leader>re", "<cmd>ManimExport<cr>", desc = "Export manim class" },
 	},
@@ -15,12 +18,14 @@ return {
 			venv_path = "/home/yeasin/github/manim/env",
 			play_lines = 4,
 			play_args = { "-pql" },
+			export_folder = "/home/yeasin/Videos/raw/manim_output", --  this gonna extend the class name for the file
 			export_args = {
 				"-qk",
 				"--media_dir=/home/yeasin/Videos/raw/manim_output",
 				"--fps=30",
 				"--transparent",
 			},
+			export_file_dest = "/home/yeasin/Videos/raw/manim_output/", -- move exported videos into  specific files with `mv`
 			project_config = {
 				resolution = { 3840, 2160 }, -- width x height
 				fps = 30, -- frames per second

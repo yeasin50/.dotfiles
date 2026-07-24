@@ -19,6 +19,7 @@ ansi = [
 ]
 
 brights = [
+  "{{color0}}",
   "{{color8}}",
   "{{color9}}",
   "{{color10}}",

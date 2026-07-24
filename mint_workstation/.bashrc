@@ -57,15 +57,15 @@ get_trimmed_path() {
 }
 
 # Function: Get Git Branch and Status
-get_git_info() {
-    if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        local branch=$(git branch --show-current)
-        local status=$(git status --porcelain | wc -l)
-        local icon="✔"
-        # If there are changes, show count and ✗
-        [ "$status" -ne 0 ] && icon="✗:$status"
-        echo " [ $branch $icon ]"
-    fi
+get_git_branch() {
+    git rev-parse --is-inside-work-tree >/dev/null 2>&1 || return
+    git branch --show-current
+}
+
+get_git_status() {
+    git rev-parse --is-inside-work-tree >/dev/null 2>&1 || return
+    local status=$(git status --porcelain | wc -l)
+    [ "$status" -eq 0 ] && echo "✔" || echo "✗:$status"
 }
 
 # The Main Prompt Function
@@ -84,9 +84,11 @@ prompt_command() {
     # Turn arrow red if last command failed
     [ $EXIT != 0 ] && SYMBOL="$R$SYMBOL" || SYMBOL="$P$SYMBOL"
 
-    # Line 1: user@host:path [git branch status]
-    # Line 2: The Input Arrow
-    PS1="\n$G\u@\h$W:$B\$(get_trimmed_path)$Y\$(get_git_info)$W\n$SYMBOL $W"
+    local BRANCH="\[\e[38;5;250m\]"   # gray
+    local STATUS="\[\e[38;5;203m\]"   # red
+
+
+    PS1="\n$G\u@\h$W:$B\$(get_trimmed_path)$W [ $BRANCH\$(get_git_branch)$W $STATUS\$(get_git_status)$W ]\n$SYMBOL $W"
 }
 
 # Set the prompt

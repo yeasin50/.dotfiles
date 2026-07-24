@@ -4,9 +4,10 @@ vim.g.maplocalleader = " "
 vim.opt.colorcolumn = "120"
 
 vim.opt.clipboard = "unnamedplus"
+vim.opt.cmdheight = 0
 
-vim.opt.numberwidth = 2
-vim.opt.signcolumn = "auto"
+vim.opt.numberwidth = 4
+vim.opt.signcolumn = "yes"
 vim.o.number = true
 vim.opt.relativenumber = true
 -- set relativenumber
@@ -49,7 +50,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 	end,
 })
 
-vim.opt.guifont = "Fira Code Medium:h14"
+vim.opt.guifont = "Fira Code:h14"
 
 vim.api.nvim_set_keymap("i", "<S-Left>", "<Esc>vbgi", { noremap = true, silent = true })
 
@@ -65,6 +66,9 @@ vim.api.nvim_set_keymap("i", "<S-Right>", "<Esc>vwea", { noremap = true, silent 
 -- -- Auto-close curly braces
 -- vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true, silent = true })
 --
+
+-- for wallust
+-- vim.opt.termguicolors = true
 
 require("config.plugins.go_modify_tags")
 require("config.lazy")
@@ -123,7 +127,7 @@ end
 -- end, { desc = "Reload init.lua and run copyWith()" })
 
 -- Disable F1 key in normal, insert, and visual mode;
--- it convicts with  my recording hotkey
+-- it conflicts with  my recording hotkey
 vim.api.nvim_set_keymap("n", "<F1>", "<Nop>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<F1>", "<Nop>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<F1>", "<Nop>", { noremap = true, silent = true })

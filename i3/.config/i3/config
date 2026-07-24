@@ -3,7 +3,7 @@ set $mod Mod4
 
 
 # Rofi launcher
-bindsym $mod+space exec --no-startup-id ~/.config/rofi/scripts/menu.sh
+bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym $mod+Tab exec rofi -show window
 
 # Basic controls

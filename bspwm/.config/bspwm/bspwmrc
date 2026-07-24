@@ -6,7 +6,7 @@ source "${HOME}/.config/bspwm/env.sh"
  xrandr \
    --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
    --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 1920x0
-
+#
 # xrandr \
 #   --output HDMI-A-0 --primary --mode 1920x1080 --scale-from 3840x2160 --pos 0x0 \
 #   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 3840x0
@@ -62,6 +62,8 @@ bspc config auto_raise false
 
 
 source "${HOME}/.config/bspwm/colors.sh"
+
+bspc rule -a Gsimplecal state=floating rectangle=300x250+800+44
 
 #
 # chmod +x bspwmrc and then reboot/stow

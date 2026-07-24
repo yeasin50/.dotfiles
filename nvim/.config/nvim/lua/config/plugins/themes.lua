@@ -1,7 +1,6 @@
 local M = {}
-
 -- 🔹 Theme selector: 1 = Tokyo Night, 2 = One Dark, 3 = rose-pine, 4 = Wallust
-local theme_index = 4
+local theme_index = 1
 
 M[1] = {
 	"folke/tokyonight.nvim",
@@ -84,4 +83,22 @@ M[4] = {
 		set_hl(0, "PmenuSel", { bg = colors.color4, fg = colors.bg })
 	end,
 }
+
+M[5] = {
+	"RedsXDD/neopywal.nvim",
+	name = "neopywal",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("neopywal").setup({
+			use_palette = "wallust",
+			transparent_background = true,
+			terminal_colors = true,
+		})
+
+		-- Apply the colorscheme
+		vim.cmd.colorscheme("neopywal")
+	end,
+}
+
 return M

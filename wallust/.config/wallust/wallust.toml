@@ -2,62 +2,24 @@
 
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
-backend = "full"
-
-
-# FOR yellowish  landscape_house_yellowish.jpg
-# palette = "saliencedarkbalanced" 
+# backend = "full"
 # color_space = "labmixed"
-
-# | `color_space` | Best for                        |
-# | ------------- | ------------------------------- |
-# | `lab`         | Balanced, general use           |
-# | `labmixed`    | Most wallpapers (recommended)   |
-# | `lch`         | Colorful artwork                |
-# | `lchmixed`    | Vibrant artwork                 |
-# | `salience`    | Wallpapers with a clear subject |
-color_space = "lch"
+# palette = "dark" # just perfect
+# check_contrast = true
+# saturation = 75
+# alpha = 90
 
 
-
-# Note`16` = same palette, but with 16 colors instead of the default count.
+backend = "full"
+color_space = "salience"
+palette = "saliencedarkdistributed"
+saturation = 90
 #
-# | Palette                   | Best for                       | Result                                  |
-# | ------------------------- | ------------------------------ | --------------------------------------- |
-# | `dark`                    | General dark images            | Standard dark palette                   |
-# | `darkcomp`                | Dark images needing contrast   | Adds complementary colors               |
-# | `harddark`                | High-contrast, vivid art       | Strong, saturated colors                |
-# | `harddarkcomp`            | Bold art with maximum contrast | Strong colors + complementary accents   |
-# | `softdark`                | Muted, moody art               | Softer, less saturated colors           |
-# | `softdarkcomp`            | Soft dark with extra contrast  | Balanced complementary accents          |
-# | `saliencedark`            | Subject-focused images         | Uses the most visually important colors |
-# | `saliencedarkbalanced`    | Same                           | More even color balance                 |
-# | `saliencedarkdistributed` | Same                           | Better color coverage across the image  |
-# | `saliencedarklow`         | Same                           | Less aggressive color selection         |
+# backend = "resized"
+# color_space = "salience"
+# palette = "salience-dark-balanced"
+# saturation = 60
 
-
-# Use the most prominent colors in a way that makes sense, a scheme color palette:
-# dark - dark16 - darkcomp - darkcomp16
-# light - light16 - lightcomp - lightcomp16
-# harddark - harddark16 - harddarkcomp - harddarkcomp16
-# softdark - softdark16 - softdarkcomp - softdarkcomp16
-# softlight - softlight16 - softlightcomp - softlightcomp16
-# saliencedark - saliencedarkbalanced - saliencedarkdistributed - saliencedarklow (each has the 16 variations)
-# salienceligh - saliencelightbalanced - saliencelightdistributed - saliencelightlow (each has the 16 variations)
-palette = "harddark" # just perfect
-
-# Ensures a "readable contrast" (OPTIONAL, disabled by default)
-# Should only be enabled when you notice an unreadable contrast frequently happening
-# with your images. The reference color for the contrast is the background color.
-check_contrast = true
-
-# Color saturation, between [1% and 100%] (OPTIONAL, disabled by default)
-# usually something higher than 50 increases the saturation and below
-# decreases it (on a scheme with strong and vivid colors)
-saturation = 75
-
-# Alpha value for templating, by default 100 (no other use whatsoever)
-#alpha = 100
 
 #no_hooks = true
 

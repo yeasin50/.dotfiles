@@ -14,7 +14,7 @@ configuration {
     blue: #7AA2F7;
     fg-col: #C0CAF5;        /* Main text color */
     fg-col-muted: #565F89;  /* Muted text for placeholder */
-
+    text-box-text: #FFFFFF;
     /* Base resets */
     background-color: transparent;
     text-color: @fg-col;
@@ -96,4 +96,12 @@ element selected {
     text-color: @blue;             /* Changes the text to match your outline */
     border: 2px solid;             /* Thicker outline for that neon/border vibe */
     border-color: @blue;           /* The Tokyo Night blue outline you liked */
+}
+
+textbox {
+    padding: 16px;
+    text-color: @text-box-text;
+    font: "JetBrains Mono Nerd Font 16";
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
 }

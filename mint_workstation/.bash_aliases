@@ -73,9 +73,29 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# remind 30 "sleep", downside is it can not show repeated remind
+remind() {
+    local mins="$1"
+    shift
+
+    [[ -z "$mins" ]] && {
+        echo "Usage: remind <minutes> [message]"
+        return 1
+    }
+
+    local start
+    start=$(date '+%-I:%M %p')
+
+    printf "⏰ Reminder set for %s (+%sm)\n" "$start" "$mins"
+
+    (
+        sleep "${mins}m"
+
+        rofi -e "$(printf '⏰ %s\n\n%s' \
+            "$(date '+%-I:%M %p')" \
+            "${*:-Time is up!}")"
+    ) >/dev/null 2>&1 & disown
+}
 
 vboxmode() {
     echo "[*] Stopping KVM services..."
@@ -210,6 +230,8 @@ alias ffmerge='f(){
 alias cat='batcat --paging=never --theme=OneHalfDark'
 
 
+# copy files on description  format to put on yt markdown
+# `clipfiles filename.java`
 clipfiles() {
     #  Detect the correct clipboard utility based on the OS ONLY Linux tested
     local clip_cmd
@@ -254,4 +276,82 @@ clipfiles() {
     } | tee /dev/tty | "${clip_cmd[@]}"
 
     echo -e "\n✅ Success: Contents formatted and copied to clipboard!" >&2
+}
+
+# Correct typos (if any) and display the word's definition.
+# cmd: `define hallo`
+define() {
+    local word="$1" fixed json
+
+    [[ -z "$word" ]] && {
+        echo "Usage: define <word>"
+        return 1
+    }
+
+    # Try original word
+    json=$(curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/$word")
+
+    if jq -e 'type=="array"' >/dev/null <<<"$json"; then
+        fixed="$word"
+    else
+        fixed=$(curl -s "https://api.datamuse.com/sug?s=$word" \
+            | jq -r '.[0].word // empty')
+
+        [[ -z "$fixed" ]] && {
+            echo "No definition found."
+            return 1
+        }
+
+        printf "\nDid you mean: %s\n\n" "$fixed"
+        json=$(curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/$fixed")
+
+        jq -e 'type=="array"' >/dev/null <<<"$json" || {
+            echo "No definition found."
+            return 1
+        }
+    fi
+
+    printf "📖 %s\n" "${fixed^}"
+    printf '──────────────────────────────────────────────\n\n'
+
+    jq -r '
+        .[0].meanings[:3][] |
+        [
+            .partOfSpeech,
+            .definitions[0].definition,
+            (.definitions[0].example // "")
+        ] | @tsv
+    ' <<<"$json" |
+    while IFS=$'\t' read -r pos def ex; do
+        printf " %s\n\n" "${pos^}"
+
+        fold -s -w 72 <<<"$def" | sed 's/^/   /'
+
+        if [[ -n "$ex" ]]; then
+            printf "\n   Example\n"
+            fold -s -w 68 <<<"\"$ex\"" | sed 's/^/     /'
+        fi
+
+        echo
+    done
+}
+
+grammar() {
+    local text="$*"
+
+    curl -s https://api.languagetool.org/v2/check \
+      -d "text=$text" \
+      -d "language=en-US" |
+    jq -r '
+      if (.matches | length) == 0 then
+        "✓ No issues found."
+      else
+        .matches[] |
+        "• " + .message +
+        (if .replacements|length>0
+         then "\n  Suggestion: " + .replacements[0].value
+         else ""
+         end)
+      end
+    '
 }
