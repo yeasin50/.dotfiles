@@ -13,6 +13,8 @@ chmod +x install.sh
 
 Custom Rofi-based environment control for a solo developer workflow. Integrated with Obsidian, Neovim, and system virtualization modes.
 
+Download emoji as well
+
 ## 🎨 Theme
 
 - **Carbonized:** Based on [yuky2020/rofi-themes](https://github.com/yuky2020/rofi-themes/blob/main/carbonized/config.rasi).
