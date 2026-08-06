@@ -32,6 +32,7 @@ super + b
 
 super + k
     /home/yeasin/apps/kdenlive-26.04.0-x86_64.AppImage
+    # ./kdenlive_track.sh
 
 
 super + l
@@ -42,8 +43,8 @@ super + shift + s
     flameshot gui
 
 # Emoji picker
-ctrl + period
-    /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=emoji-mart io.github.vemonet.EmojiMart
+super + period
+     ~/.config/rofi/scripts/emoji.sh
 
 
 ## Keyboard volume nob
@@ -55,74 +56,40 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
-## tabbed from  suckless
-super + t
-	~/.config/bspwm/scripts/tabbed_add
+# Tab attach: focused window into a tab group on this monitor TODO: not working
+# ctrl + alt + {Left,Down,Up,Right}
+#     tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
+#
+# # create/remove from tabbed container
+# super + z
+#     id=$(bspc query -N -n); \
+#     [[ "$(tabc printclass $id)" == "tabbed" ]] \
+#     && tabc detach $id \
+#     || tabc create $id
+#
+# # toggle autoattach in tabbed container
+# super + shift + z
+#     tabc autoattach $(bspc query -N -n)
+# # ---- xxxx
 
-super + shift + t
-	~/.config/bspwm/scripts/tabbed_detach
 
 
 # --- Focus movement  ---
-super + Left
-    bspc node -f west
-
-super + Down
-    bspc node -f south
-
-super + Up
-    bspc node -f north
-
-super + Right
-    bspc node -f east
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
 
 # --- Move window (like sway move container) ---
-super + shift + Left
-    bspc node -s west
+super + shift + {Left,Right,Up,Down}
+    bspc node -s {west,east,north,south}
 
-super + shift + Right
-    bspc node -s east
+# toggle between floating and tiling
+super + shift + space
+    bspc node -t ~floating
 
-super + shift + Up
-    bspc node -s north
+# workspace navigation
+super + {1-6}
+    bspc desktop -f {1-6}
 
-super + shift + Down
-    bspc node -s south
-
-# --- Workspaces ---
-super + 1
-    bspc desktop -f 1
-
-super + 2
-    bspc desktop -f 2
-
-super + 3
-    bspc desktop -f 3
-
-super + 4
-    bspc desktop -f 4
-
-super + 5
-    bspc desktop -f 5
-
-super + 6
-    bspc desktop -f 6
-
-# --- Move window to workspace ---
-super + shift + 1
-    bspc node -d 1
-
-super + shift + 2
-    bspc node -d 2
-
-super + shift + 3
-    bspc node -d 3
-
-super + shift + 4
-    bspc node -d 4
-
-super + shift + 5
-    bspc node -d 5
-
-super + shift + 6
-    bspc node -d 6
+# move window between workspace
+super + shift + {1-6}
+    bspc node -d {1-6}

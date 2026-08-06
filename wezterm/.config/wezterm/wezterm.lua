@@ -93,5 +93,13 @@ return {
 			mods = "SUPER",
 			action = wezterm.action.DisableDefaultAssignment,
 		},
+
+		{
+			key = "F",
+			mods = "SHIFT|CTRL",
+			action = wezterm.action.Search({
+				CaseSensitiveString = "hash",
+			}),
+		},
 	},
 }
