@@ -13,7 +13,6 @@ local function get_color_scheme()
 end
 
 -- 3. Now this line will work, because 'config' exists!
-
 return {
 	front_end = "WebGpu",
 	color_scheme = get_color_scheme(),

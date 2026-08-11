@@ -267,8 +267,6 @@ clipfiles() {
                 echo ""
                 echo "</details>"
                 echo ""
-                echo "<br>"
-                echo ""
             else
                 echo "Warning: '$file' not found or is a directory. Skipping." >&2
             fi

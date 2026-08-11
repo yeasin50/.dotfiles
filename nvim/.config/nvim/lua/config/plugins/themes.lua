@@ -1,6 +1,6 @@
 local M = {}
 -- 🔹 Theme selector: 1 = Tokyo Night, 2 = One Dark, 3 = rose-pine, 4 = Wallust
-local theme_index = 1
+local theme_index = 5
 
 M[1] = {
 	"folke/tokyonight.nvim",
@@ -36,7 +36,7 @@ M[3] = {
 	end,
 }
 
---  Wallust
+-- Wallust
 M[4] = {
 	name = "wallust-theme",
 	dir = vim.fn.stdpath("config"),
@@ -86,6 +86,7 @@ M[4] = {
 
 M[5] = {
 	"RedsXDD/neopywal.nvim",
+	enabled = theme_index == 5,
 	name = "neopywal",
 	lazy = false,
 	priority = 1000,

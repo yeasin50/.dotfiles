@@ -77,17 +77,17 @@ require("config.neovide")
 --
 
 ---
-vim.keymap.set("n", "<leader>rr", function()
-	vim.cmd("source $MYVIMRC")
-
-	vim.defer_fn(function()
-		if type(copyWith) == "function" then
-			copyWith()
-		else
-			vim.notify("copyWith() is not defined after reload", vim.log.levels.ERROR)
-		end
-	end, 50)
-end, { desc = "Reload init.lua and run copyWith()" })
+-- vim.keymap.set("n", "<leader>rr", function()
+-- 	vim.cmd("source $MYVIMRC")
+--
+-- 	vim.defer_fn(function()
+-- 		if type(copyWith) == "function" then
+-- 			copyWith()
+-- 		else
+-- 			vim.notify("copyWith() is not defined after reload", vim.log.levels.ERROR)
+-- 		end
+-- 	end, 50)
+-- end, { desc = "Reload init.lua and run copyWith()" })
 
 -- Disable F1 key in normal, insert, and visual mode; it conflicts with  my recording hotkey
 -- And Alt+Enter for toggle full screen in bspwm
@@ -95,3 +95,38 @@ for _, mode in ipairs({ "n", "i", "v" }) do
 	vim.keymap.set(mode, "<F1>", "<Nop>", { silent = true })
 	vim.keymap.set(mode, "<Alt+Enter>", "<Nop>", { silent = true })
 end
+
+-------
+local function generate_barrel()
+	-- Folder containing the current buffer
+	local dir = vim.fn.expand("%:p:h")
+
+	-- Folder name = barrel filename
+	local folder_name = vim.fn.fnamemodify(dir, ":t")
+
+	-- Barrel file: <folder>/<folder>.dart
+	local barrel = dir .. "/" .. folder_name .. ".dart"
+
+	-- Find all Dart files in the folder
+	local files = vim.fn.glob(dir .. "/*.dart", false, true)
+
+	local exports = {}
+
+	for _, file in ipairs(files) do
+		local filename = vim.fn.fnamemodify(file, ":t")
+
+		-- Don't export the barrel itself
+		if filename ~= folder_name .. ".dart" then
+			table.insert(exports, string.format("export '%s';", filename))
+		end
+	end
+
+	table.sort(exports)
+
+	-- Create/overwrite barrel file
+	vim.fn.writefile(exports, barrel)
+
+	print("Generated: " .. barrel)
+end
+
+vim.api.nvim_create_user_command("Barrel", generate_barrel, {})
