@@ -353,3 +353,23 @@ grammar() {
       end
     '
 }
+
+## For android debugging
+# use `adb_charge 0` to disable charging,
+# use `adb_charge 1` to enable charging
+adb_charge() {
+    local status="$1"
+
+    case "$status" in
+        0|1)
+            adb shell dumpsys battery set ac "$1"
+            adb shell dumpsys battery set usb "$1"
+            adb shell dumpsys battery set wireless "$1"
+            ;;
+        *)
+            echo "Usage: adb_charge {0|1}"
+            return 1
+            ;;
+    esac
+}
+

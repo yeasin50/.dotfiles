@@ -1,6 +1,6 @@
 return {
 	"iamcco/markdown-preview.nvim",
-	enable = false,
+	enabled = false,
 	build = "cd app && npm install",
 	ft = { "markdown" },
 	config = function()

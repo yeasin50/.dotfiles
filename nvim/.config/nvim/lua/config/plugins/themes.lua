@@ -1,6 +1,6 @@
 local M = {}
 -- 🔹 Theme selector: 1 = Tokyo Night, 2 = One Dark, 3 = rose-pine, 4 = Wallust
-local theme_index = 5
+local theme_index = 1
 
 M[1] = {
 	"folke/tokyonight.nvim",

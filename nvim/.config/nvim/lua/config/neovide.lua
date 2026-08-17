@@ -1,7 +1,6 @@
 if not vim.g.neovide then
 	return
 end
--- vim.g.neovide_fullscreen = true
 vim.o.guifont = "FiraCode Nerd Font:h25"
 
 local g = vim.g
@@ -22,6 +21,7 @@ local opts = {
 	hide_mouse = true,
 }
 
+g.neovide_line_height = 1.2
 g.transparency = opts.transparency
 g.neovide_opacity = opts.opacity
 g.neovide_background_color = opts.background .. alpha()
