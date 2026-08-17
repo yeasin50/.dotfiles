@@ -38,6 +38,9 @@ super + k
 super + l
     flatpak run org.localsend.localsend_app
 
+super + o
+    obsidian
+
 # Screenshot select area
 super + shift + s 
     flameshot gui
@@ -73,6 +76,8 @@ XF86AudioMute
 # # ---- xxxx
 
 
+super + shift + v
+    bspc node @/ -R 90
 
 # --- Focus movement  ---
 super + {Left,Down,Up,Right}
@@ -93,3 +98,13 @@ super + {1-6}
 # move window between workspace
 super + shift + {1-6}
     bspc node -d {1-6}
+
+
+
+# game specifics 
+#
+Page_Up 
+    ~/.config/sxhkd/click_loop 8
+
+Page_Down
+    ~/.config/sxhkd/click_loop

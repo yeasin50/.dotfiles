@@ -1,0 +1,30 @@
+#!/bin/sh
+
+PIDFILE="/tmp/click_loop.pid"
+
+# No argument = stop current loop
+if [ -z "$1" ]; then
+    [ -f "$PIDFILE" ] && kill "$(cat "$PIDFILE")" 2>/dev/null
+    rm -f "$PIDFILE"
+    exit 0
+fi
+
+# Cancel previous sequence
+if [ -f "$PIDFILE" ]; then
+    kill "$(cat "$PIDFILE")" 2>/dev/null
+    rm -f "$PIDFILE"
+fi
+
+key="$1"
+
+(
+    for i in $(seq 1 10); do
+        xdotool key "$key"
+        xdotool key "$key"
+        xdotool click 1
+    done
+
+    rm -f "$PIDFILE"
+) &
+
+echo $! > "$PIDFILE"

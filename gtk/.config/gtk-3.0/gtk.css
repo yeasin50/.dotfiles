@@ -1,45 +1,45 @@
 /* Sidebar */
 .nemo-window .sidebar,
 .nemo-window .sidebar .view {
-    background: #090501;
-    color: #FFE153;
+    background: #37393A;
+    color: #F3F7FB;
 }
 
 /* Sidebar hover */
 .nemo-window .places-treeview .view.cell:hover,
 .nemo-window .places-treeview iconview.cell:hover {
-    background: #BA8B00;
+    background: #A1A5A9;
 }
 
 /* Sidebar selected */
 .nemo-window .places-treeview .view.cell:selected,
 .nemo-window .places-treeview iconview.cell:selected {
-    background: #9E7908;
-    color: #070400;
+    background: #35BEE3;
+    color: #0C0E0F;
 }
 
 /* Main file view selection */
 .nemo-window .view:selected,
 .nemo-window iconview.view:selected,
 .nemo-window treeview.view:selected {
-    background: #9E7908;
-    color: #070400;
+    background: #35BEE3;
+    color: #0C0E0F;
 }
 
 /* Path bar buttons */
 .nemo-window .path-bar button:checked {
-    background: #9E7908;
-    color: #070400;
+    background: #35BEE3;
+    color: #0C0E0F;
 }
 
 /* Search entry */
 .nemo-window entry {
-    background: #090501;
-    color: #FFE153;
-    border-color: #BA8B00;
+    background: #37393A;
+    color: #F3F7FB;
+    border-color: #A1A5A9;
 }
 
 .nemo-window .places-treeview {
-    -NemoPlacesTreeView-disk-full-bg-color: #BA8B00;
-    -NemoPlacesTreeView-disk-full-fg-color: #9E7908;
+    -NemoPlacesTreeView-disk-full-bg-color: #A1A5A9;
+    -NemoPlacesTreeView-disk-full-fg-color: #35BEE3;
 }

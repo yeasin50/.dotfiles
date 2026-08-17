@@ -1,2 +1,2 @@
-WALLPAPER="/home/yeasin/Pictures/bg/landscape_house_yellowish.jpg"
+WALLPAPER="/home/yeasin/.dotfiles/themes/ever_forest//wallpaper.jpg"
 

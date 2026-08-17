@@ -3,10 +3,12 @@
 # monitor configs; run  `xrandr` to get your displace names
 source "${HOME}/.config/bspwm/env.sh"
 
- xrandr \
-   --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
-   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 1920x0
-#
+## DesktopMode
+xrandr \
+  --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
+  --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 1920x0
+
+## Record mode
 # xrandr \
 #   --output HDMI-A-0 --primary --mode 1920x1080 --scale-from 3840x2160 --pos 0x0 \
 #   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 3840x0
@@ -40,10 +42,7 @@ bspc config right_padding 0
 killall -q sxhkd picom polybar
 
 sxhkd &
-
-# wallpaper first (optional but clean)
 feh --bg-fill "$WALLPAPER" &
-
 # start compositor 
  picom --config ~/.config/picom/picom.conf -b &
 
