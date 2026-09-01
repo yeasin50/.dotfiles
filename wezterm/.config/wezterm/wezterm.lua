@@ -16,7 +16,8 @@ end
 return {
 	front_end = "WebGpu",
 	color_scheme = get_color_scheme(),
-
+	-- color_scheme = "Catppuccin Mocha",
+	term = "xterm-256color",
 	-- FONT (fix bold issue)
 	font = wezterm.font_with_fallback({
 		{ family = "JetBrains Mono", weight = "Regular" },
@@ -57,8 +58,6 @@ return {
 	enable_scroll_bar = true,
 	scroll_to_bottom_on_input = true,
 	audible_bell = "Disabled",
-
-	term = "xterm-256color",
 
 	-- KEYS (tmux-like control)
 	keys = {

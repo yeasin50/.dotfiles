@@ -20,7 +20,20 @@ vim.keymap.set("n", "zz", function()
 end, { desc = "Scroll so current line is 25% from top" })
 ---
 
-vim.keymap.set("n", "<C-q>", "<cmd>bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<C-q>", function()
+	local bufnr = vim.api.nvim_get_current_buf()
+	local buffers = vim.tbl_filter(function(buf)
+		return vim.api.nvim_buf_is_valid(buf) and vim.api.nvim_buf_is_loaded(buf)
+	end, vim.api.nvim_list_bufs())
+
+	if #buffers > 1 then
+		vim.cmd("bp")
+		vim.cmd("bd " .. bufnr)
+	else
+		vim.cmd("enew")
+		vim.cmd("bd " .. bufnr)
+	end
+end, { desc = "Close current buffer" })
 
 vim.keymap.set("v", "<leader>p", '"_dP', { desc = "Paste without removing from  register" })
 

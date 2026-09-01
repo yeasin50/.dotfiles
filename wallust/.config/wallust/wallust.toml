@@ -2,18 +2,18 @@
 
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
+backend = "resized"
+color_space = "labmixed"
+palette = "dark" # just perfect
+check_contrast = true
+saturation = 75
+alpha = 90
+
+
 # backend = "full"
-# color_space = "labmixed"
-# palette = "dark" # just perfect
-# check_contrast = true
-# saturation = 75
-# alpha = 90
-
-
-backend = "full"
-color_space = "salience"
-palette = "saliencedarkdistributed"
-saturation = 90
+# color_space = "salience"
+# palette = "saliencedarkdistributed"
+# saturation = 90
 #
 # backend = "resized"
 # color_space = "salience"

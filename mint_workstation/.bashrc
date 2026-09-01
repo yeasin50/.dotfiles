@@ -137,8 +137,20 @@ esac
 export PATH=$PATH:/usr/local/bin
 export PATH="$HOME/apps/blender-4.5.2-linux-x64:$PATH"
 
+
+function y() {
+	local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+	command rm -f -- "$tmp"
+}
+
 # Zoxide (Smart cd)
 if command -v zoxide >/dev/null 2>&1; then
     eval "$(zoxide init bash)"
     alias cd='z'
 fi
+
+
+

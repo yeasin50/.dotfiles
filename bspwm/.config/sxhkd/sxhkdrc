@@ -40,6 +40,7 @@ super + l
 
 super + o
     obsidian
+    # bspc desktop -f '^5'; xdotool search --class obsidian windowactivate || obsidian
 
 # Screenshot select area
 super + shift + s 
@@ -103,8 +104,8 @@ super + shift + {1-6}
 
 # game specifics 
 #
-Page_Up 
-    ~/.config/sxhkd/click_loop 8
-
-Page_Down
-    ~/.config/sxhkd/click_loop
+# Page_Up 
+#     ~/.config/sxhkd/click_loop 8
+#
+# Page_Down
+#     ~/.config/sxhkd/click_loop

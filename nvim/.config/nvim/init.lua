@@ -59,8 +59,8 @@ vim.api.nvim_set_keymap("i", "<S-Right>", "<Esc>vwea", { noremap = true, silent 
 -- vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true, silent = true })
 --
 
--- for wallust
--- vim.opt.termguicolors = true
+-- for wallust or capicino
+vim.opt.termguicolors = false
 
 require("config.plugins.go_modify_tags")
 require("config.lazy")

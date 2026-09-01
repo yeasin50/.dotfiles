@@ -102,4 +102,28 @@ M[5] = {
 	end,
 }
 
+M[6] = {
+	"catppuccin/nvim",
+	name = "catppuccin",
+	enabled = theme_index == 6,
+	lazy = false,
+	priority = 1000,
+	opts = {
+		flavour = "macchiato", -- "latte", "frappe", "macchiato", "mocha"
+		transparent_background = false,
+		integrations = {
+			treesitter = true,
+			telescope = true,
+			nvimtree = true,
+			lualine = true,
+			which_key = true,
+			notify = true,
+		},
+	},
+	config = function(_, opts)
+		require("catppuccin").setup(opts)
+		vim.cmd("colorscheme catppuccin")
+	end,
+}
+
 return M

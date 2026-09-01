@@ -1,0 +1,63 @@
+* {
+    bg-col: #1A1B26;
+    bg-col-light: #24283B;
+    border-col: #7AA2F7;
+    blue: #7AA2F7;
+    fg-col: #C0CAF5;
+    fg-col-muted: #565F89;
+    text-box-text: #FFFFFF;
+
+    background-color: transparent;
+    text-color: @fg-col;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-color: @bg-col;
+    border: 2px solid;
+    border-color: @border-col;
+    border-radius: 10px;
+}
+
+inputbar {
+    background-color: @bg-col-light;
+    border-radius: 8px;
+}
+
+prompt {
+    background-color: @blue;
+    text-color: @bg-col;
+    border-radius: 6px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg-col;
+    placeholder-color: @fg-col-muted;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg-col;
+}
+
+element-icon {
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element selected {
+    background-color: transparent;
+    text-color: @blue;
+    border: 2px solid;
+    border-color: @blue;
+}
+
+textbox {
+    text-color: @text-box-text;
+}
