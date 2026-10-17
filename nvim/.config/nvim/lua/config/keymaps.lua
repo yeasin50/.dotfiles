@@ -22,16 +22,14 @@ end, { desc = "Scroll so current line is 25% from top" })
 
 vim.keymap.set("n", "<C-q>", function()
 	local bufnr = vim.api.nvim_get_current_buf()
-	local buffers = vim.tbl_filter(function(buf)
-		return vim.api.nvim_buf_is_valid(buf) and vim.api.nvim_buf_is_loaded(buf)
-	end, vim.api.nvim_list_bufs())
+	local alt = vim.fn.bufnr("#")
 
-	if #buffers > 1 then
-		vim.cmd("bp")
-		vim.cmd("bd " .. bufnr)
+	vim.cmd("bdelete " .. bufnr)
+
+	if alt ~= -1 and vim.api.nvim_buf_is_valid(alt) then
+		vim.cmd("buffer " .. alt)
 	else
 		vim.cmd("enew")
-		vim.cmd("bd " .. bufnr)
 	end
 end, { desc = "Close current buffer" })
 
@@ -55,9 +53,7 @@ end, {})
 function _G.goto_buffer(n)
 	local buffers = {}
 	for _, buf in ipairs(vim.fn.getbufinfo({ buflisted = 1 })) do
-		if vim.api.nvim_buf_is_loaded(buf.bufnr) then
-			table.insert(buffers, buf.bufnr)
-		end
+		table.insert(buffers, buf.bufnr)
 	end
 	if n <= #buffers then
 		vim.api.nvim_set_current_buf(buffers[n])

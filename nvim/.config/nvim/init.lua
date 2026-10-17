@@ -4,6 +4,7 @@ vim.opt.colorcolumn = "120"
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cmdheight = 0
+vim.opt.linespace = 8
 
 vim.opt.numberwidth = 4
 vim.opt.signcolumn = "yes"
@@ -130,3 +131,26 @@ local function generate_barrel()
 end
 
 vim.api.nvim_create_user_command("Barrel", generate_barrel, {})
+
+vim.keymap.set("n", "<leader>ww", function()
+	vim.lsp.buf.code_action({
+		apply = true,
+		filter = function(action)
+			return action.title:find("Wrap with widget") ~= nil
+		end,
+	})
+
+	-- Wait 50ms for the LSP to apply the text, then move back one word
+	vim.defer_fn(function()
+		vim.cmd("normal! b")
+
+		-- Optional: Replace `b` with `cw` above if you want it to
+		-- instantly delete the word and drop you into Insert mode.
+	end, 50)
+end, { desc = "Wrap with widget and target name" })
+
+vim.filetype.add({
+	extension = {
+		drift = "sql",
+	},
+})

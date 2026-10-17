@@ -1,10 +1,14 @@
 return {
-	"norcalli/nvim-colorizer.lua",
+	"eatgrass/colorizer",
 	config = function()
 		require("colorizer").setup({
-			"*",
-			css = { rgb_fn = true },
-			html = { names = true },
+			filetypes = {
+				"*",
+			},
+			user_default_options = {
+				AARRGGBB = true,
+				mode = "background",
+			},
 		})
 	end,
 }

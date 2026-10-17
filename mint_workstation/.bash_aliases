@@ -50,6 +50,8 @@ setwall() {
 source ~/.note_alias.bash
 source ~/.task.bash
 
+alias tv='tmux new-session nvim'
+
 alias tmuxp='tmuxinator start .'
 # alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
 
@@ -217,7 +219,8 @@ videoinfo() {
 alias showKeys='screenkey -p fixed -g 1000x150+1240+1610 -s large -f "Sans Bold 40"'
 
 alias ffmerge='f(){ 
-  ls -t *.mp4 | tac | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
+  # ls -t *.mp4 | tac | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
+  ls *.mp4 | sort -n | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
   echo "Merge order:"
   cat list.txt
   read -p "Proceed? (y/n): " yn

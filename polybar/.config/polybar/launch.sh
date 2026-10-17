@@ -13,4 +13,4 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # fi
 
 # just prefer on right monitor
-MONITOR=DisplayPort-2 polybar --reload example &
+MONITOR=DisplayPort-1 polybar --reload example &

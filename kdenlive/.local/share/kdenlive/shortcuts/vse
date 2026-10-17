@@ -1,6 +1,7 @@
 <gui name="kdenlive" version="1">
   <ActionProperties>
     <Action name="open_kcommand_bar" shortcut="Ctrl+Alt+I"/>
+    <Action name="add_text_clip" shortcut="Ctrl+T"/>
     <Action name="duplicate_clip" shortcut="Shift+D"/>
     <Action name="go_up" shortcut="Alt+Up"/>
     <Action name="monitor_play" shortcut="Space"/>
@@ -28,7 +29,6 @@
     <Action name="view_zoom_in" shortcut="Ctrl++; Ctrl+="/>
     <Action name="view_zoom_out" shortcut="Ctrl+-"/>
     <Action name="project_render" shortcut="Ctrl+Return"/>
-    <Action name="monitor_loop_zone" shortcut="Ctrl+Shift+Space"/>
     <Action name="switch_monitor" shortcut="T"/>
     <Action name="focus_timecode" shortcut="="/>
     <Action name="insert_project_tree" shortcut="Ctrl+I"/>
@@ -52,11 +52,12 @@
     <Action name="select_timeline_transition" shortcut="Shift++"/>
     <Action name="deselect_timeline_transition" shortcut="Shift+-"/>
     <Action name="select_add_timeline_transition" shortcut="Alt+Shift++"/>
-    <Action name="add_marker_guide_quickly" shortcut="Alt+1"/>
-    <Action name="add_marker_guide_2" shortcut="Num+2"/>
-    <Action name="add_marker_guide_3" shortcut="Num+3"/>
-    <Action name="add_marker_guide_4" shortcut="Num+4"/>
-    <Action name="add_marker_guide_5" shortcut="Num+5"/>
+    <Action name="add_marker_guide_quickly" shortcut="; "/>
+    <Action name="add_marker_guide_1" shortcut="Alt+1"/>
+    <Action name="add_marker_guide_2" shortcut="Alt+2"/>
+    <Action name="add_marker_guide_3" shortcut="Alt+3"/>
+    <Action name="add_marker_guide_4" shortcut="Alt+4"/>
+    <Action name="add_marker_guide_5" shortcut="Alt+5"/>
     <Action name="add_marker_guide_6" shortcut="Num+6"/>
     <Action name="add_marker_guide_7" shortcut="Num+7"/>
     <Action name="add_marker_guide_8" shortcut="Num+8"/>
@@ -72,11 +73,11 @@
     <Action name="paste_effects" shortcut="Ctrl+Shift+V"/>
     <Action name="group_clip" shortcut="Ctrl+G"/>
     <Action name="ungroup_clip" shortcut="Ctrl+Shift+G"/>
-    <Action name="edit_copy" shortcut="Ctrl+C; Ctrl+Ins"/>
     <Action name="edit_cut" shortcut="Ctrl+X; Shift+Del"/>
+    <Action name="edit_copy" shortcut="Ctrl+C; Ctrl+Ins"/>
     <Action name="edit_paste" shortcut="Ctrl+V; Shift+Ins"/>
     <Action name="keyframe_add" shortcut="Ctrl+E"/>
-    <Action name="delete_space" shortcut="Ctrl+Space"/>
+    <Action name="delete_space_all_tracks" shortcut="Ctrl+Space"/>
     <Action name="switch_target_stream" shortcut="'"/>
     <Action name="select_all_tracks" shortcut="Ctrl+A"/>
     <Action name="unselect_all_tracks" shortcut="Ctrl+Shift+A"/>
@@ -86,7 +87,7 @@
     <Action name="file_quit" shortcut="Ctrl+Q"/>
     <Action name="options_configure_keybinding" shortcut="Ctrl+Alt+,"/>
     <Action name="options_configure" shortcut="Ctrl+Shift+,"/>
-    <Action name="fullscreen" shortcut="Ctrl+Shift+F"/>
+    <Action name="fullscreen" shortcut="; "/>
     <Action name="edit_undo" shortcut="Ctrl+Z"/>
     <Action name="edit_redo" shortcut="Ctrl+Shift+Z"/>
     <Action name="switch_track_disabled" shortcut="Shift+H"/>
@@ -99,16 +100,16 @@
     <Action name="activate_all_targets" shortcut="Alt+Shift+A"/>
     <Action name="activate_video_1" shortcut="1"/>
     <Action name="activate_target_1" shortcut="Ctrl+1"/>
-    <Action name="activate_audio_2" shortcut="Alt+2"/>
+    <Action name="activate_audio_2" shortcut="; "/>
     <Action name="activate_video_2" shortcut="2"/>
     <Action name="activate_target_2" shortcut="Ctrl+2"/>
-    <Action name="activate_audio_3" shortcut="Alt+3"/>
+    <Action name="activate_audio_3" shortcut="; "/>
     <Action name="activate_video_3" shortcut="3"/>
     <Action name="activate_target_3" shortcut="Ctrl+3"/>
-    <Action name="activate_audio_4" shortcut="Alt+4"/>
+    <Action name="activate_audio_4" shortcut="; "/>
     <Action name="activate_video_4" shortcut="4"/>
     <Action name="activate_target_4" shortcut="Ctrl+4"/>
-    <Action name="activate_audio_5" shortcut="Alt+5"/>
+    <Action name="activate_audio_5" shortcut="; "/>
     <Action name="activate_video_5" shortcut="5"/>
     <Action name="activate_target_5" shortcut="Ctrl+5"/>
     <Action name="activate_audio_6" shortcut="Alt+6"/>
@@ -126,7 +127,10 @@
     <Action name="audio_record" shortcut="R"/>
     <Action name="sequence_next" shortcut="Ctrl+Tab"/>
     <Action name="sequence_previous" shortcut="Ctrl+Shift+Backtab"/>
-    <Action name="effect_freeze" shortcut="Ctrl+F"/>
+    <Action name="effect_fade_to_black" shortcut="; "/>
+    <Action name="effect_freeze" shortcut="; "/>
+    <Action name="effect_fadein" shortcut="Ctrl+F"/>
+    <Action name="effect_fadeout" shortcut="Ctrl+Shift+F"/>
     <Action name="help_whats_this" shortcut="Shift+F1"/>
     <Action name="hamburger_menu" shortcut="F10"/>
   </ActionProperties>

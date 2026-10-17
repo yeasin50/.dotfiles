@@ -1,6 +1,7 @@
 return {
 	"3rd/image.nvim",
 	build = false, -- handled by luarocks
+	enabled = false,
 	dependencies = {
 		{
 			"vhyrro/luarocks.nvim",

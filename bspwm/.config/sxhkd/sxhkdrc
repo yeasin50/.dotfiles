@@ -31,7 +31,7 @@ super + b
     /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=launch-script.sh app.zen_browser.zen
 
 super + k
-    /home/yeasin/apps/kdenlive-26.04.0-x86_64.AppImage
+    /home/yeasin/apps/kdenlive.AppImage
     # ./kdenlive_track.sh
 
 
@@ -104,8 +104,8 @@ super + shift + {1-6}
 
 # game specifics 
 #
-# Page_Up 
-#     ~/.config/sxhkd/click_loop 8
-#
-# Page_Down
-#     ~/.config/sxhkd/click_loop
+Page_Up ; {1-9}
+    ~/.config/sxhkd/click_loop {1-9}
+
+Page_Down
+    ~/.config/sxhkd/click_loop

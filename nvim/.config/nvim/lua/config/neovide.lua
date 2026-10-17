@@ -10,8 +10,8 @@ local function alpha()
 end
 
 local opts = {
-	transparency = 0.95,
-	opacity = 0.95,
+	transparency = 1,
+	opacity = 1,
 	background = "#1f2335",
 
 	blur = 6,

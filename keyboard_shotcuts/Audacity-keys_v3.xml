@@ -1,0 +1,1002 @@
+<audacitykeyboard audacityversion="3.4.2">
+	<command name="New" key="Ctrl+N"/>
+	<command name="Open" key="Ctrl+O"/>
+	<command name="Close" key="Ctrl+W"/>
+	<command name="Save" key="Ctrl+S"/>
+	<command name="SaveAs" key=""/>
+	<command name="SaveCopy" key=""/>
+	<command name="Export" key="Ctrl+Shift+E"/>
+	<command name="ExportLabels" key=""/>
+	<command name="ExportMIDI" key=""/>
+	<command name="ImportAudio" key="Ctrl+Shift+I"/>
+	<command name="ImportMIDI" key=""/>
+	<command name="ImportLabels" key=""/>
+	<command name="ImportRaw" key=""/>
+	<command name="PageSetup" key=""/>
+	<command name="Print" key=""/>
+	<command name="Exit" key="Ctrl+Q"/>
+	<command name="Undo" key="Ctrl+Z"/>
+	<command name="Redo" key="Ctrl+Shift+Z"/>
+	<command name="Cut" key="Ctrl+X"/>
+	<command name="Delete" key="Ctrl+K"/>
+	<command name="Copy" key="Ctrl+C"/>
+	<command name="Paste" key="Ctrl+V"/>
+	<command name="Duplicate" key="Ctrl+D"/>
+	<command name="SplitCut" key="Ctrl+Alt+X"/>
+	<command name="SplitDelete" key="Ctrl+Alt+K"/>
+	<command name="Silence" key="Shift+Q"/>
+	<command name="Trim" key="Ctrl+T"/>
+	<command name="Split" key="Ctrl+I"/>
+	<command name="SplitNew" key=""/>
+	<command name="Join" key="Ctrl+J"/>
+	<command name="Disjoin" key=""/>
+	<command name="RenameClip" key="Ctrl+F2"/>
+	<command name="ChangeClipSpeed" key=""/>
+	<command name="RenderClipStretching" key=""/>
+	<command name="EditLabels" key=""/>
+	<command name="AddLabel" key="Ctrl+B"/>
+	<command name="AddLabelPlaying" key="Ctrl+M"/>
+	<command name="PasteNewLabel" key=""/>
+	<command name="TypeToCreateLabel" key=""/>
+	<command name="CutLabels" key=""/>
+	<command name="DeleteLabels" key=""/>
+	<command name="SplitCutLabels" key="Alt+Shift+X"/>
+	<command name="SplitDeleteLabels" key="Alt+Shift+K"/>
+	<command name="SilenceLabels" key=""/>
+	<command name="CopyLabels" key="Alt+Shift+C"/>
+	<command name="SplitLabels" key=""/>
+	<command name="JoinLabels" key=""/>
+	<command name="DisjoinLabels" key="Alt+Shift+J"/>
+	<command name="EditMetaData" key=""/>
+	<command name="Preferences" key="Ctrl+P"/>
+	<command name="SelectAll" key="Ctrl+A"/>
+	<command name="SelectNone" key=""/>
+	<command name="SelAllTracks" key="Ctrl+Shift+K"/>
+	<command name="SelSyncLockTracks" key="Ctrl+Shift+Y"/>
+	<command name="SetLeftSelection" key="["/>
+	<command name="SetRightSelection" key="]"/>
+	<command name="SelTrackStartToCursor" key="Shift+J"/>
+	<command name="SelCursorToTrackEnd" key="Shift+K"/>
+	<command name="SelTrackStartToEnd" key=""/>
+	<command name="SelSave" key=""/>
+	<command name="SelRestore" key=""/>
+	<command name="ToggleSpectralSelection" key="Q"/>
+	<command name="NextHigherPeakFrequency" key=""/>
+	<command name="NextLowerPeakFrequency" key=""/>
+	<command name="SelPrevClipBoundaryToCursor" key=""/>
+	<command name="SelCursorToNextClipBoundary" key=""/>
+	<command name="SelPrevClip" key="Alt+,"/>
+	<command name="SelNextClip" key="Alt+."/>
+	<command name="SelCursorStoredCursor" key=""/>
+	<command name="StoreCursorPosition" key=""/>
+	<command name="ZeroCross" key="Z"/>
+	<command name="ZoomIn" key="Ctrl+1"/>
+	<command name="ZoomNormal" key="Ctrl+2"/>
+	<command name="ZoomOut" key="Ctrl+3"/>
+	<command name="ZoomSel" key="Ctrl+E"/>
+	<command name="ZoomToggle" key="Shift+Z"/>
+	<command name="AdvancedVZoom" key=""/>
+	<command name="FitInWindow" key=""/>
+	<command name="FitV" key=""/>
+	<command name="CollapseAllTracks" key="Ctrl+Shift+C"/>
+	<command name="ExpandAllTracks" key="Ctrl+Shift+X"/>
+	<command name="SkipSelStart" key=""/>
+	<command name="SkipSelEnd" key=""/>
+	<command name="UndoHistory" key=""/>
+	<command name="MixerBoard" key=""/>
+	<command name="Karaoke" key=""/>
+	<command name="ResetToolbars" key=""/>
+	<command name="ShowTransportTB" key=""/>
+	<command name="ShowToolsTB" key=""/>
+	<command name="ShowRecordMeterTB" key=""/>
+	<command name="ShowPlayMeterTB" key=""/>
+	<command name="ShowEditTB" key=""/>
+	<command name="ShowCutCopyPasteTB" key=""/>
+	<command name="ShowTranscriptionTB" key=""/>
+	<command name="ShowDeviceTB" key=""/>
+	<command name="ShowSelectionTB" key=""/>
+	<command name="ShowTimeTB" key=""/>
+	<command name="ShowSpectralSelectionTB" key=""/>
+	<command name="ShowAudioSetupTB" key=""/>
+	<command name="ShowSnappingTB" key=""/>
+	<command name="ShowTimeSignatureTB" key=""/>
+	<command name="ShowScrubbingTB" key=""/>
+	<command name="ShowExtraMenus" key=""/>
+	<command name="ShowTrackNameInWaveform" key=""/>
+	<command name="ShowClipping" key=""/>
+	<command name="DefaultPlayStop" key="Space"/>
+	<command name="PlayStopSelect" key="X"/>
+	<command name="OncePlayStop" key="Shift+Space"/>
+	<command name="Pause" key="P"/>
+	<command name="Record1stChoice" key="R"/>
+	<command name="Record2ndChoice" key=""/>
+	<command name="TimerRecord" key="Shift+T"/>
+	<command name="PunchAndRoll" key=""/>
+	<command name="Scrub" key=""/>
+	<command name="Seek" key=""/>
+	<command name="ToggleScrubRuler" key=""/>
+	<command name="CursSelStart" key=""/>
+	<command name="CursSelEnd" key=""/>
+	<command name="CursTrackStart" key="J"/>
+	<command name="CursTrackEnd" key="K"/>
+	<command name="CursPrevClipBoundary" key=""/>
+	<command name="CursNextClipBoundary" key=""/>
+	<command name="CursProjectStart" key="Home"/>
+	<command name="CursProjectEnd" key="End"/>
+	<command name="TogglePlayRegion" key="L"/>
+	<command name="ClearPlayRegion" key="Shift+Alt+L"/>
+	<command name="SetPlayRegionToSelection" key="Shift+L"/>
+	<command name="SetPlayRegionIn" key=""/>
+	<command name="SetPlayRegionOut" key=""/>
+	<command name="RescanDevices" key=""/>
+	<command name="SoundActivationLevel" key=""/>
+	<command name="SoundActivation" key=""/>
+	<command name="PinnedHead" key=""/>
+	<command name="Overdub" key=""/>
+	<command name="SWPlaythrough" key=""/>
+	<command name="NewMonoTrack" key=""/>
+	<command name="NewStereoTrack" key=""/>
+	<command name="NewLabelTrack" key=""/>
+	<command name="NewTimeTrack" key=""/>
+	<command name="Stereo to Mono" key=""/>
+	<command name="MixAndRender" key=""/>
+	<command name="MixAndRenderToNewTrack" key=""/>
+	<command name="Resample" key=""/>
+	<command name="RemoveTracks" key=""/>
+	<command name="MuteAllTracks" key="Ctrl+U"/>
+	<command name="UnmuteAllTracks" key="Ctrl+Shift+U"/>
+	<command name="MuteTracks" key="Ctrl+Alt+U"/>
+	<command name="UnmuteTracks" key="Ctrl+Alt+Shift+U"/>
+	<command name="PanLeft" key=""/>
+	<command name="PanRight" key=""/>
+	<command name="PanCenter" key=""/>
+	<command name="Align_EndToEnd" key=""/>
+	<command name="Align_Together" key=""/>
+	<command name="Align_StartToZero" key=""/>
+	<command name="Align_StartToSelStart" key=""/>
+	<command name="Align_StartToSelEnd" key=""/>
+	<command name="Align_EndToSelStart" key=""/>
+	<command name="Align_EndToSelEnd" key=""/>
+	<command name="MoveSelectionWithTracks" key=""/>
+	<command name="SortByTime" key=""/>
+	<command name="SortByName" key=""/>
+	<command name="SyncLock" key=""/>
+	<command name="ManageGenerators" key=""/>
+	<command name="RepeatLastGenerator" key=""/>
+	<command name="Effect_Audacity_Audacity_Chirp_Built-in Effect: Chirp" key=""/>
+	<command name="Effect_Audacity_Audacity_DTMF Tones_Built-in Effect: DTMF Tones" key=""/>
+	<command name="Effect_Audacity_Audacity_Noise_Built-in Effect: Noise" key=""/>
+	<command name="Effect_Nyquist_David R.Sky_Pluck_/usr/share/audacity/plug-ins/pluck.ny" key=""/>
+	<command name="Effect_Nyquist_Dominic Mazzoni, David R. Sky and Steve Daulton_Rhythm Track_/usr/share/audacity/plug-ins/rhythmtrack.ny" key=""/>
+	<command name="Effect_Nyquist_Steven Jones_Risset Drum_/usr/share/audacity/plug-ins/rissetdrum.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Silence_Built-in Effect: Silence" key=""/>
+	<command name="Effect_Audacity_Audacity_Tone_Built-in Effect: Tone" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Fluid Synth_urn:ardour:a-fluidsynth" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Reasonable Synth_https://community.ardour.org/node/7596" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Fluidsynth_http://calf.sourceforge.net/plugins/Fluidsynth" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Monosynth_http://calf.sourceforge.net/plugins/Monosynth" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Organ_http://calf.sourceforge.net/plugins/Organ" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Wavetable_http://calf.sourceforge.net/plugins/Wavetable" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Audio File_http://kxstudio.sf.net/carla/plugins/audiofile" key=""/>
+	<command name="ManageEffects" key=""/>
+	<command name="AddRealtimeEffects" key="E"/>
+	<command name="RepeatLastEffect" key="Ctrl+R"/>
+	<command name="Effect_Audacity_Audacity_Amplify_Built-in Effect: Amplify" key=""/>
+	<command name="Effect_Audacity_Audacity_Auto Duck_Built-in Effect: Auto Duck" key=""/>
+	<command name="Effect_Audacity_Audacity_Compressor_Built-in Effect: Compressor" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Limiter_/usr/share/audacity/plug-ins/limiter.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Loudness Normalization_Built-in Effect: Loudness Normalization" key=""/>
+	<command name="Effect_Audacity_Audacity_Normalize_Built-in Effect: Normalize" key="Ctrl+Shift+R"/>
+	<command name="Effect_Nyquist_Steve Daulton_Adjustable Fade_/usr/share/audacity/plug-ins/adjustable-fade.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Crossfade Clips_/usr/share/audacity/plug-ins/crossfadeclips.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Crossfade Tracks_/usr/share/audacity/plug-ins/crossfadetracks.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Fade In_Built-in Effect: Fade In" key="Ctrl+F"/>
+	<command name="Effect_Audacity_Audacity_Fade Out_Built-in Effect: Fade Out" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Studio Fade Out_/usr/share/audacity/plug-ins/StudioFadeOut.ny" key="Ctrl+Shift+F"/>
+	<command name="Effect_Audacity_Audacity_Change Pitch_Built-in Effect: Change Pitch" key=""/>
+	<command name="Effect_Audacity_Audacity_Change Speed and Pitch_Built-in Effect: Change Speed and Pitch" key=""/>
+	<command name="Effect_Audacity_Audacity_Change Tempo_Built-in Effect: Change Tempo" key=""/>
+	<command name="Effect_Audacity_Audacity_Paulstretch_Built-in Effect: Paulstretch" key=""/>
+	<command name="Effect_Audacity_Audacity_Sliding Stretch_Built-in Effect: Sliding Stretch" key=""/>
+	<command name="Effect_Audacity_Audacity_Bass and Treble_Built-in Effect: Bass and Treble" key=""/>
+	<command name="Effect_Audacity_Audacity_Filter Curve_Built-in Effect: Filter Curve" key=""/>
+	<command name="Effect_Audacity_Audacity_Graphic EQ_Built-in Effect: Graphic EQ" key=""/>
+	<command name="Effect_Nyquist_Dominic Mazzoni_High-Pass Filter_/usr/share/audacity/plug-ins/highpass.ny" key=""/>
+	<command name="Effect_Nyquist_Dominic Mazzoni_Low-Pass Filter_/usr/share/audacity/plug-ins/lowpass.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton and Bill Wharrie_Notch Filter_/usr/share/audacity/plug-ins/notch.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Shelf Filter_/usr/share/audacity/plug-ins/ShelfFilter.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Click Removal_Built-in Effect: Click Removal" key=""/>
+	<command name="Effect_Nyquist_Benjamin Schwartz and Steve Daulton_Clip Fix_/usr/share/audacity/plug-ins/clipfix.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Noise Gate_/usr/share/audacity/plug-ins/noisegate.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Noise Reduction_Built-in Effect: Noise Reduction" key=""/>
+	<command name="Effect_Audacity_Audacity_Repair_Built-in Effect: Repair" key="Shift+F"/>
+	<command name="Effect_Nyquist_Steve Daulton_Delay_/usr/share/audacity/plug-ins/delay.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Echo_Built-in Effect: Echo" key=""/>
+	<command name="Effect_Audacity_Audacity_Reverb_Built-in Effect: Reverb" key=""/>
+	<command name="Effect_Audacity_Audacity_Distortion_Built-in Effect: Distortion" key=""/>
+	<command name="Effect_Audacity_Audacity_Phaser_Built-in Effect: Phaser" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Tremolo_/usr/share/audacity/plug-ins/tremolo.ny" key=""/>
+	<command name="Effect_Nyquist_Edgar-RFT and Steve Daulton_Vocoder_/usr/share/audacity/plug-ins/vocoder.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Wahwah_Built-in Effect: Wahwah" key=""/>
+	<command name="Effect_Audacity_Audacity_Invert_Built-in Effect: Invert" key=""/>
+	<command name="Effect_Audacity_Audacity_Repeat_Built-in Effect: Repeat" key=""/>
+	<command name="Effect_Audacity_Audacity_Reverse_Built-in Effect: Reverse" key=""/>
+	<command name="Effect_Audacity_Audacity_Truncate Silence_Built-in Effect: Truncate Silence" key=""/>
+	<command name="Effect_Nyquist_Robert Haenggi_Vocal Reduction and Isolation_/usr/share/audacity/plug-ins/vocalrediso.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Spectral Delete_/usr/share/audacity/plug-ins/spectral-delete.ny" key=""/>
+	<command name="Effect_Nyquist_Paul Licameli_Spectral Edit Multi Tool_/usr/share/audacity/plug-ins/SpectralEditMulti.ny" key=""/>
+	<command name="Effect_Nyquist_Paul Licameli_Spectral Edit Parametric EQ_/usr/share/audacity/plug-ins/SpectralEditParametricEQ.ny" key=""/>
+	<command name="Effect_Nyquist_Paul Licameli_Spectral Edit Shelves_/usr/share/audacity/plug-ins/SpectralEditShelves.ny" key="Shift+D"/>
+	<command name="Effect_LV2_Ardour Community_ACE Compressor_urn:ardour:a-comp" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Compressor (stereo)_urn:ardour:a-comp#stereo" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Delay_urn:ardour:a-delay" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE EQ_urn:ardour:a-eq" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Expander_urn:ardour:a-exp" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Expander (stereo)_urn:ardour:a-exp#stereo" key=""/>
+	<command name="Effect_LV2_Ardour Community_ACE Reverb_urn:ardour:a-reverb" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Analyzer_http://calf.sourceforge.net/plugins/Analyzer" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Bass Enhancer_http://calf.sourceforge.net/plugins/BassEnhancer" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Compensation Delay Line_http://calf.sourceforge.net/plugins/CompensationDelay" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Compressor_http://calf.sourceforge.net/plugins/Compressor" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Crusher_http://calf.sourceforge.net/plugins/Crusher" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Deesser_http://calf.sourceforge.net/plugins/Deesser" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Emphasis_http://calf.sourceforge.net/plugins/Emphasis" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Envelope Filter_http://calf.sourceforge.net/plugins/EnvelopeFilter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Equalizer 12 Band_http://calf.sourceforge.net/plugins/Equalizer12Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Equalizer 30 Band_http://calf.sourceforge.net/plugins/Equalizer30Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Equalizer 5 Band_http://calf.sourceforge.net/plugins/Equalizer5Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Equalizer 8 Band_http://calf.sourceforge.net/plugins/Equalizer8Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Exciter_http://calf.sourceforge.net/plugins/Exciter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Filter_http://calf.sourceforge.net/plugins/Filter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Filterclavier_http://calf.sourceforge.net/plugins/Filterclavier" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Flanger_http://calf.sourceforge.net/plugins/Flanger" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Gate_http://calf.sourceforge.net/plugins/Gate" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Haas Stereo Enhancer_http://calf.sourceforge.net/plugins/HaasEnhancer" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Limiter_http://calf.sourceforge.net/plugins/Limiter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Mono Compressor_http://calf.sourceforge.net/plugins/MonoCompressor" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Mono Input_http://calf.sourceforge.net/plugins/MonoInput" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multi Chorus_http://calf.sourceforge.net/plugins/MultiChorus" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multi Spread_http://calf.sourceforge.net/plugins/MultiSpread" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multiband Compressor_http://calf.sourceforge.net/plugins/MultibandCompressor" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multiband Enhancer_http://calf.sourceforge.net/plugins/MultibandEnhancer" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multiband Gate_http://calf.sourceforge.net/plugins/MultibandGate" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Multiband Limiter_http://calf.sourceforge.net/plugins/MultibandLimiter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Phaser_http://calf.sourceforge.net/plugins/Phaser" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Pitch Tools_http://calf.sourceforge.net/plugins/Pitch" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Pulsator_http://calf.sourceforge.net/plugins/Pulsator" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Reverb_http://calf.sourceforge.net/plugins/Reverb" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Reverse Delay_http://calf.sourceforge.net/plugins/ReverseDelay" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Ring Modulator_http://calf.sourceforge.net/plugins/RingModulator" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Rotary Speaker_http://calf.sourceforge.net/plugins/RotarySpeaker" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Saturator_http://calf.sourceforge.net/plugins/Saturator" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Sidechain Compressor_http://calf.sourceforge.net/plugins/SidechainCompressor" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Sidechain Gate_http://calf.sourceforge.net/plugins/SidechainGate" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Sidechain Limiter_http://calf.sourceforge.net/plugins/SidechainLimiter" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Stereo Tools_http://calf.sourceforge.net/plugins/StereoTools" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Tape Simulator_http://calf.sourceforge.net/plugins/TapeSimulator" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Transient Designer_http://calf.sourceforge.net/plugins/TransientDesigner" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Vintage Delay_http://calf.sourceforge.net/plugins/VintageDelay" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf Vocoder_http://calf.sourceforge.net/plugins/Vocoder" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf X-Over 2 Band_http://calf.sourceforge.net/plugins/XOver2Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf X-Over 3 Band_http://calf.sourceforge.net/plugins/XOver3Band" key=""/>
+	<command name="Effect_LV2_Calf Studio Gear_Calf X-Over 4 Band_http://calf.sourceforge.net/plugins/XOver4Band" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZaMaximX2_/usr/lib/ladspa/ZaMaximX2-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZaMaximX2_/usr/lib/vst/ZaMaximX2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZaMaximX2_urn:zamaudio:ZaMaximX2" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZaMultiComp_/usr/lib/vst/ZaMultiComp-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZaMultiComp_urn:zamaudio:ZaMultiComp" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZaMultiCompX2_/usr/lib/ladspa/ZaMultiCompX2-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZaMultiCompX2_/usr/lib/vst/ZaMultiCompX2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZaMultiCompX2_urn:zamaudio:ZaMultiCompX2" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamAutoSat_/usr/lib/ladspa/ZamAutoSat-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamAutoSat_/usr/lib/vst/ZamAutoSat-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamAutoSat_urn:zamaudio:ZamAutoSat" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamComp_/usr/lib/ladspa/ZamComp-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamComp_/usr/lib/vst/ZamComp-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamComp_urn:zamaudio:ZamComp" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamCompX2_/usr/lib/ladspa/ZamCompX2-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamCompX2_/usr/lib/vst/ZamCompX2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamCompX2_urn:zamaudio:ZamCompX2" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamDelay_/usr/lib/ladspa/ZamDelay-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamDelay_/usr/lib/vst/ZamDelay-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamDelay_urn:zamaudio:ZamDelay" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamDynamicEQ_/usr/lib/ladspa/ZamDynamicEQ-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamDynamicEQ_/usr/lib/vst/ZamDynamicEQ-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamDynamicEQ_urn:zamaudio:ZamDynamicEQ" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamEQ2_/usr/lib/ladspa/ZamEQ2-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamEQ2_/usr/lib/vst/ZamEQ2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamEQ2_urn:zamaudio:ZamEQ2" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamGEQ31_/usr/lib/ladspa/ZamGEQ31-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamGEQ31_/usr/lib/vst/ZamGEQ31-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamGEQ31_urn:zamaudio:ZamGEQ31" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamGate_/usr/lib/ladspa/ZamGate-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamGate_/usr/lib/vst/ZamGate-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamGate_urn:zamaudio:ZamGate" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamGateX2_/usr/lib/ladspa/ZamGateX2-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamGateX2_/usr/lib/vst/ZamGateX2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamGateX2_urn:zamaudio:ZamGateX2" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamGrains_/usr/lib/ladspa/ZamGrains-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamGrains_/usr/lib/vst/ZamGrains-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamGrains_urn:zamaudio:ZamGrains" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamHeadX2_/usr/lib/vst/ZamHeadX2-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamHeadX2_urn:zamaudio:ZamHeadX2" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamPhono_/usr/lib/vst/ZamPhono-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamPhono_urn:zamaudio:ZamPhono" key=""/>
+	<command name="Effect_LADSPA_Damien Zammit_ZamTube_/usr/lib/ladspa/ZamTube-ladspa.so;0" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamTube_/usr/lib/vst/ZamTube-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamTube_urn:zamaudio:ZamTube" key=""/>
+	<command name="Effect_VST_Damien Zammit_ZamVerb_/usr/lib/vst/ZamVerb-vst.so;0" key=""/>
+	<command name="Effect_LV2_Damien Zammit_ZamVerb_urn:zamaudio:ZamVerb" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Audio Gain (Mono)_http://kxstudio.sf.net/carla/plugins/audiogain" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Audio Gain (Stereo)_http://kxstudio.sf.net/carla/plugins/audiogain\_s" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay_http://kxstudio.sf.net/carla/plugins/carlapatchbay" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay (16chan)_http://kxstudio.sf.net/carla/plugins/carlapatchbay16" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay (32chan)_http://kxstudio.sf.net/carla/plugins/carlapatchbay32" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay (64chan)_http://kxstudio.sf.net/carla/plugins/carlapatchbay64" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay (CV)_http://kxstudio.sf.net/carla/plugins/carlapatchbaycv" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Patchbay (sidechain)_http://kxstudio.sf.net/carla/plugins/carlapatchbay3s" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Carla-Rack_http://kxstudio.sf.net/carla/plugins/carlarack" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x2 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;0" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x2 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;1" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x4 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;2" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x4 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;3" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x8 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;4" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_A/B Tester x8 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;5" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Artistic Delay Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;6" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Artistic Delay Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;7" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Autogain Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;8" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Autogain Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;9" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Beat Breather Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;10" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Beat Breather Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;11" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Clipper Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;12" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Clipper Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;13" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Compressor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;17" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Compressor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;19" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Compressor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;18" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Compressor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;20" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Crossover LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;21" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Crossover MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;23" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Crossover Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;22" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Crossover Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;24" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Delay Compensator Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;14" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Delay Compensator Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;15" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Delay Compensator x2 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;16" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Dynamics Processor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;25" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Dynamics Processor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;27" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Dynamics Processor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;26" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Dynamics Processor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;28" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Expander LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;29" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Expander MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;31" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Expander Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;30" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Expander Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;32" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Filter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;33" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Filter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;34" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Flanger Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;35" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Flanger Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;36" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_GOTT Compressor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;41" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_GOTT Compressor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;43" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_GOTT Compressor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;42" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_GOTT Compressor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;44" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Gate LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;37" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Gate MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;39" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Gate Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;38" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Gate Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;40" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x16 LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;45" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x16 MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;47" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x16 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;46" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x16 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;48" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x32 LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;49" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x32 MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;51" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x32 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;50" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Graphic Equalizer x32 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;52" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Latency Meter_/usr/lib/ladspa/lsp-plugins-ladspa.so;53" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Limiter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;54" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Limiter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;55" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Loudness Compensator Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;56" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Loudness Compensator Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;57" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x16 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;78" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x16 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;79" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x4 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;80" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x4 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;81" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x8 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;82" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Mixer x8 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;83" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Clipper Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;58" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Clipper Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;59" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Compressor LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;60" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Compressor MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;62" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Compressor Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;61" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Compressor Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;63" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Dynamics Processor LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;64" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Dynamics Processor MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;66" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Dynamics Processor Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;65" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Dynamics Processor Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;67" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Expander LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;68" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Expander MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;70" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Expander Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;69" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Expander Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;71" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Gate LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;72" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Gate MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;74" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Gate Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;73" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Gate Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;75" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Limiter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;76" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Multiband Limiter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;77" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Noise Generator x1_/usr/lib/ladspa/lsp-plugins-ladspa.so;84" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Noise Generator x2_/usr/lib/ladspa/lsp-plugins-ladspa.so;85" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Noise Generator x4_/usr/lib/ladspa/lsp-plugins-ladspa.so;86" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Oscillator Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;87" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Oscilloscope x1_/usr/lib/ladspa/lsp-plugins-ladspa.so;88" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Oscilloscope x2_/usr/lib/ladspa/lsp-plugins-ladspa.so;89" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Oscilloscope x4_/usr/lib/ladspa/lsp-plugins-ladspa.so;90" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x16 LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;91" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x16 MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;93" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x16 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;92" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x16 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;94" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x32 LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;95" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x32 MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;97" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x32 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;96" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x32 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;98" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x8 LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;99" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x8 MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;101" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x8 Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;100" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Parametric Equalizer x8 Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;102" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Phase Detector_/usr/lib/ladspa/lsp-plugins-ladspa.so;103" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Autogain Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;104" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Autogain Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;105" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Compressor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;106" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Compressor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;108" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Compressor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;107" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Compressor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;109" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Dynamics Processor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;110" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Dynamics Processor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;112" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Dynamics Processor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;111" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Dynamics Processor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;113" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Expander LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;114" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Expander MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;116" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Expander Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;115" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Expander Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;117" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain GOTT Compressor LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;122" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain GOTT Compressor MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;124" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain GOTT Compressor Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;123" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain GOTT Compressor Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;125" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Gate LeftRight_/usr/lib/ladspa/lsp-plugins-ladspa.so;118" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Gate MidSide_/usr/lib/ladspa/lsp-plugins-ladspa.so;120" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Gate Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;119" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Gate Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;121" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Limiter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;126" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Limiter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;127" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Compressor LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;128" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Compressor MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;130" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Compressor Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;129" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Compressor Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;131" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Dynamics Processor LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;132" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Dynamics Processor MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;134" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Dynamics Processor Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;133" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Dynamics Processor Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;135" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Expander LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;136" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Expander MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;138" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Expander Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;137" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Expander Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;139" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Gate LeftRight x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;140" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Gate MidSide x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;142" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Gate Mono x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;141" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Gate Stereo x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;143" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Limiter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;144" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Sidechain Multiband Limiter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;145" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Slapback Delay Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;146" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Slapback Delay Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;147" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x1_/usr/lib/ladspa/lsp-plugins-ladspa.so;148" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x12_/usr/lib/ladspa/lsp-plugins-ladspa.so;149" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x16_/usr/lib/ladspa/lsp-plugins-ladspa.so;150" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x2_/usr/lib/ladspa/lsp-plugins-ladspa.so;151" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x4_/usr/lib/ladspa/lsp-plugins-ladspa.so;152" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Spectrum Analyzer x8_/usr/lib/ladspa/lsp-plugins-ladspa.so;153" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Surge Filter Mono_/usr/lib/ladspa/lsp-plugins-ladspa.so;154" key=""/>
+	<command name="Effect_LADSPA_LSP LADSPA_Surge Filter Stereo_/usr/lib/ladspa/lsp-plugins-ladspa.so;155" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x2 Mono_http://lsp-plug.in/plugins/lv2/ab\_tester\_x2\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x2 Stereo_http://lsp-plug.in/plugins/lv2/ab\_tester\_x2\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x4 Mono_http://lsp-plug.in/plugins/lv2/ab\_tester\_x4\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x4 Stereo_http://lsp-plug.in/plugins/lv2/ab\_tester\_x4\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x8 Mono_http://lsp-plug.in/plugins/lv2/ab\_tester\_x8\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP A/B Tester x8 Stereo_http://lsp-plug.in/plugins/lv2/ab\_tester\_x8\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Artistic Delay Mono_http://lsp-plug.in/plugins/lv2/art\_delay\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Artistic Delay Stereo_http://lsp-plug.in/plugins/lv2/art\_delay\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Autogain Mono_http://lsp-plug.in/plugins/lv2/autogain\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Autogain Stereo_http://lsp-plug.in/plugins/lv2/autogain\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Beat Breather Mono_http://lsp-plug.in/plugins/lv2/beat\_breather\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Beat Breather Stereo_http://lsp-plug.in/plugins/lv2/beat\_breather\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Clipper Mono_http://lsp-plug.in/plugins/lv2/clipper\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Clipper Stereo_http://lsp-plug.in/plugins/lv2/clipper\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Compressor LeftRight_http://lsp-plug.in/plugins/lv2/compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Compressor MidSide_http://lsp-plug.in/plugins/lv2/compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Compressor Mono_http://lsp-plug.in/plugins/lv2/compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Compressor Stereo_http://lsp-plug.in/plugins/lv2/compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Crossover LeftRight x8_http://lsp-plug.in/plugins/lv2/crossover\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Crossover MidSide x8_http://lsp-plug.in/plugins/lv2/crossover\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Crossover Mono x8_http://lsp-plug.in/plugins/lv2/crossover\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Crossover Stereo x8_http://lsp-plug.in/plugins/lv2/crossover\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Delay Compensator Mono_http://lsp-plug.in/plugins/lv2/comp\_delay\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Delay Compensator Stereo_http://lsp-plug.in/plugins/lv2/comp\_delay\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Delay Compensator x2 Stereo_http://lsp-plug.in/plugins/lv2/comp\_delay\_x2\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Dynamics Processor LeftRight_http://lsp-plug.in/plugins/lv2/dyna\_processor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Dynamics Processor MidSide_http://lsp-plug.in/plugins/lv2/dyna\_processor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Dynamics Processor Mono_http://lsp-plug.in/plugins/lv2/dyna\_processor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Dynamics Processor Stereo_http://lsp-plug.in/plugins/lv2/dyna\_processor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Expander LeftRight_http://lsp-plug.in/plugins/lv2/expander\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Expander MidSide_http://lsp-plug.in/plugins/lv2/expander\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Expander Mono_http://lsp-plug.in/plugins/lv2/expander\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Expander Stereo_http://lsp-plug.in/plugins/lv2/expander\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Filter Mono_http://lsp-plug.in/plugins/lv2/filter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Filter Stereo_http://lsp-plug.in/plugins/lv2/filter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Flanger Mono_http://lsp-plug.in/plugins/lv2/flanger\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Flanger Stereo_http://lsp-plug.in/plugins/lv2/flanger\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP GOTT Compressor LeftRight_http://lsp-plug.in/plugins/lv2/gott\_compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP GOTT Compressor MidSide_http://lsp-plug.in/plugins/lv2/gott\_compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP GOTT Compressor Mono_http://lsp-plug.in/plugins/lv2/gott\_compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP GOTT Compressor Stereo_http://lsp-plug.in/plugins/lv2/gott\_compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Gate LeftRight_http://lsp-plug.in/plugins/lv2/gate\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Gate MidSide_http://lsp-plug.in/plugins/lv2/gate\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Gate Mono_http://lsp-plug.in/plugins/lv2/gate\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Gate Stereo_http://lsp-plug.in/plugins/lv2/gate\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x16 LeftRight_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x16\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x16 MidSide_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x16\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x16 Mono_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x16\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x16 Stereo_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x16\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x32 LeftRight_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x32\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x32 MidSide_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x32\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x32 Mono_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x32\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Graphic Equalizer x32 Stereo_http://lsp-plug.in/plugins/lv2/graph\_equalizer\_x32\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Impulse Responses Mono_http://lsp-plug.in/plugins/lv2/impulse\_responses\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Impulse Responses Stereo_http://lsp-plug.in/plugins/lv2/impulse\_responses\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Impulse Reverb Mono_http://lsp-plug.in/plugins/lv2/impulse\_reverb\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Impulse Reverb Stereo_http://lsp-plug.in/plugins/lv2/impulse\_reverb\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Latency Meter_http://lsp-plug.in/plugins/lv2/latency\_meter" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Limiter Mono_http://lsp-plug.in/plugins/lv2/limiter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Limiter Stereo_http://lsp-plug.in/plugins/lv2/limiter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Loudness Compensator Mono_http://lsp-plug.in/plugins/lv2/loud\_comp\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Loudness Compensator Stereo_http://lsp-plug.in/plugins/lv2/loud\_comp\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x16 Mono_http://lsp-plug.in/plugins/lv2/mixer\_x16\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x16 Stereo_http://lsp-plug.in/plugins/lv2/mixer\_x16\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x4 Mono_http://lsp-plug.in/plugins/lv2/mixer\_x4\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x4 Stereo_http://lsp-plug.in/plugins/lv2/mixer\_x4\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x8 Mono_http://lsp-plug.in/plugins/lv2/mixer\_x8\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Mixer x8 Stereo_http://lsp-plug.in/plugins/lv2/mixer\_x8\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x12 DirectOut_http://lsp-plug.in/plugins/lv2/multisampler\_x12\_do" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x12 Stereo_http://lsp-plug.in/plugins/lv2/multisampler\_x12" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x24 DirectOut_http://lsp-plug.in/plugins/lv2/multisampler\_x24\_do" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x24 Stereo_http://lsp-plug.in/plugins/lv2/multisampler\_x24" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x48 DirectOut_http://lsp-plug.in/plugins/lv2/multisampler\_x48\_do" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multi-Sampler x48 Stereo_http://lsp-plug.in/plugins/lv2/multisampler\_x48" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Clipper Mono_http://lsp-plug.in/plugins/lv2/mb\_clipper\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Clipper Stereo_http://lsp-plug.in/plugins/lv2/mb\_clipper\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Compressor LeftRight x8_http://lsp-plug.in/plugins/lv2/mb\_compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Compressor MidSide x8_http://lsp-plug.in/plugins/lv2/mb\_compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Compressor Mono x8_http://lsp-plug.in/plugins/lv2/mb\_compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Compressor Stereo x8_http://lsp-plug.in/plugins/lv2/mb\_compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Dynamics Processor LeftRight x8_http://lsp-plug.in/plugins/lv2/mb\_dyna\_processor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Dynamics Processor MidSide x8_http://lsp-plug.in/plugins/lv2/mb\_dyna\_processor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Dynamics Processor Mono x8_http://lsp-plug.in/plugins/lv2/mb\_dyna\_processor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Dynamics Processor Stereo x8_http://lsp-plug.in/plugins/lv2/mb\_dyna\_processor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Expander LeftRight x8_http://lsp-plug.in/plugins/lv2/mb\_expander\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Expander MidSide x8_http://lsp-plug.in/plugins/lv2/mb\_expander\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Expander Mono x8_http://lsp-plug.in/plugins/lv2/mb\_expander\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Expander Stereo x8_http://lsp-plug.in/plugins/lv2/mb\_expander\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Gate LeftRight x8_http://lsp-plug.in/plugins/lv2/mb\_gate\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Gate MidSide x8_http://lsp-plug.in/plugins/lv2/mb\_gate\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Gate Mono x8_http://lsp-plug.in/plugins/lv2/mb\_gate\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Gate Stereo x8_http://lsp-plug.in/plugins/lv2/mb\_gate\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Limiter Mono_http://lsp-plug.in/plugins/lv2/mb\_limiter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Multiband Limiter Stereo_http://lsp-plug.in/plugins/lv2/mb\_limiter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Noise Generator x1_http://lsp-plug.in/plugins/lv2/noise\_generator\_x1" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Noise Generator x2_http://lsp-plug.in/plugins/lv2/noise\_generator\_x2" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Noise Generator x4_http://lsp-plug.in/plugins/lv2/noise\_generator\_x4" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Oscillator Mono_http://lsp-plug.in/plugins/lv2/oscillator\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Oscilloscope x1_http://lsp-plug.in/plugins/lv2/oscilloscope\_x1" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Oscilloscope x2_http://lsp-plug.in/plugins/lv2/oscilloscope\_x2" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Oscilloscope x4_http://lsp-plug.in/plugins/lv2/oscilloscope\_x4" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x16 LeftRight_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x16\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x16 MidSide_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x16\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x16 Mono_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x16\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x16 Stereo_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x16\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x32 LeftRight_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x32\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x32 MidSide_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x32\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x32 Mono_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x32\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x32 Stereo_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x32\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x8 LeftRight_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x8\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x8 MidSide_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x8\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x8 Mono_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x8\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Parametric Equalizer x8 Stereo_http://lsp-plug.in/plugins/lv2/para\_equalizer\_x8\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Phase Detector_http://lsp-plug.in/plugins/lv2/phase\_detector" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Profiler Mono_http://lsp-plug.in/plugins/lv2/profiler\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Profiler Stereo_http://lsp-plug.in/plugins/lv2/profiler\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Room Builder Mono_http://lsp-plug.in/plugins/lv2/room\_builder\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Room Builder Stereo_http://lsp-plug.in/plugins/lv2/room\_builder\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sampler Mono_http://lsp-plug.in/plugins/lv2/sampler\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sampler Stereo_http://lsp-plug.in/plugins/lv2/sampler\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Autogain Mono_http://lsp-plug.in/plugins/lv2/sc\_autogain\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Autogain Stereo_http://lsp-plug.in/plugins/lv2/sc\_autogain\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Compressor LeftRight_http://lsp-plug.in/plugins/lv2/sc\_compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Compressor MidSide_http://lsp-plug.in/plugins/lv2/sc\_compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Compressor Mono_http://lsp-plug.in/plugins/lv2/sc\_compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Compressor Stereo_http://lsp-plug.in/plugins/lv2/sc\_compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Dynamics Processor LeftRight_http://lsp-plug.in/plugins/lv2/sc\_dyna\_processor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Dynamics Processor MidSide_http://lsp-plug.in/plugins/lv2/sc\_dyna\_processor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Dynamics Processor Mono_http://lsp-plug.in/plugins/lv2/sc\_dyna\_processor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Dynamics Processor Stereo_http://lsp-plug.in/plugins/lv2/sc\_dyna\_processor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Expander LeftRight_http://lsp-plug.in/plugins/lv2/sc\_expander\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Expander MidSide_http://lsp-plug.in/plugins/lv2/sc\_expander\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Expander Mono_http://lsp-plug.in/plugins/lv2/sc\_expander\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Expander Stereo_http://lsp-plug.in/plugins/lv2/sc\_expander\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain GOTT Compressor LeftRight_http://lsp-plug.in/plugins/lv2/sc\_gott\_compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain GOTT Compressor MidSide_http://lsp-plug.in/plugins/lv2/sc\_gott\_compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain GOTT Compressor Mono_http://lsp-plug.in/plugins/lv2/sc\_gott\_compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain GOTT Compressor Stereo_http://lsp-plug.in/plugins/lv2/sc\_gott\_compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Gate LeftRight_http://lsp-plug.in/plugins/lv2/sc\_gate\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Gate MidSide_http://lsp-plug.in/plugins/lv2/sc\_gate\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Gate Mono_http://lsp-plug.in/plugins/lv2/sc\_gate\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Gate Stereo_http://lsp-plug.in/plugins/lv2/sc\_gate\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Limiter Mono_http://lsp-plug.in/plugins/lv2/sc\_limiter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Limiter Stereo_http://lsp-plug.in/plugins/lv2/sc\_limiter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Compressor LeftRight x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_compressor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Compressor MidSide x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_compressor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Compressor Mono x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_compressor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Compressor Stereo x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_compressor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Dynamics Processor LeftRight x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_dyna\_processor\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Dynamics Processor MidSide x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_dyna\_processor\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Dynamics Processor Mono x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_dyna\_processor\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Dynamics Processor Stereo x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_dyna\_processor\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Expander LeftRight x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_expander\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Expander MidSide x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_expander\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Expander Mono x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_expander\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Expander Stereo x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_expander\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Gate LeftRight x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_gate\_lr" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Gate MidSide x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_gate\_ms" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Gate Mono x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_gate\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Gate Stereo x8_http://lsp-plug.in/plugins/lv2/sc\_mb\_gate\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Limiter Mono_http://lsp-plug.in/plugins/lv2/sc\_mb\_limiter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Sidechain Multiband Limiter Stereo_http://lsp-plug.in/plugins/lv2/sc\_mb\_limiter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Slapback Delay Mono_http://lsp-plug.in/plugins/lv2/slap\_delay\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Slapback Delay Stereo_http://lsp-plug.in/plugins/lv2/slap\_delay\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x1_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x1" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x12_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x12" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x16_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x16" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x2_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x2" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x4_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x4" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Spectrum Analyzer x8_http://lsp-plug.in/plugins/lv2/spectrum\_analyzer\_x8" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Surge Filter Mono_http://lsp-plug.in/plugins/lv2/surge\_filter\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Surge Filter Stereo_http://lsp-plug.in/plugins/lv2/surge\_filter\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Trigger MIDI Mono_http://lsp-plug.in/plugins/lv2/trigger\_midi\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Trigger MIDI Stereo_http://lsp-plug.in/plugins/lv2/trigger\_midi\_stereo" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Trigger Mono_http://lsp-plug.in/plugins/lv2/trigger\_mono" key=""/>
+	<command name="Effect_LV2_LSP LV2_LSP Trigger Stereo_http://lsp-plug.in/plugins/lv2/trigger\_stereo" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x2 Mono_/usr/lib/vst/lsp-plugins/ab-tester-x2-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x2 Stereo_/usr/lib/vst/lsp-plugins/ab-tester-x2-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x4 Mono_/usr/lib/vst/lsp-plugins/ab-tester-x4-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x4 Stereo_/usr/lib/vst/lsp-plugins/ab-tester-x4-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x8 Mono_/usr/lib/vst/lsp-plugins/ab-tester-x8-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_A/B Tester x8 Stereo_/usr/lib/vst/lsp-plugins/ab-tester-x8-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Artistic Delay Mono_/usr/lib/vst/lsp-plugins/art-delay-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Artistic Delay Stereo_/usr/lib/vst/lsp-plugins/art-delay-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Autogain Mono_/usr/lib/vst/lsp-plugins/autogain-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Autogain Stereo_/usr/lib/vst/lsp-plugins/autogain-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Beat Breather Mono_/usr/lib/vst/lsp-plugins/beat-breather-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Beat Breather Stereo_/usr/lib/vst/lsp-plugins/beat-breather-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Clipper Mono_/usr/lib/vst/lsp-plugins/clipper-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Clipper Stereo_/usr/lib/vst/lsp-plugins/clipper-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Compressor L/R_/usr/lib/vst/lsp-plugins/compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Compressor M/S_/usr/lib/vst/lsp-plugins/compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Compressor Mono_/usr/lib/vst/lsp-plugins/compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Compressor Stereo_/usr/lib/vst/lsp-plugins/compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Crossover LeftRight x8_/usr/lib/vst/lsp-plugins/crossover-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Crossover MidSide x8_/usr/lib/vst/lsp-plugins/crossover-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Crossover Mono x8_/usr/lib/vst/lsp-plugins/crossover-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Crossover Stereo x8_/usr/lib/vst/lsp-plugins/crossover-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Delay Compensator Mono_/usr/lib/vst/lsp-plugins/comp-delay-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Delay Compensator Stereo_/usr/lib/vst/lsp-plugins/comp-delay-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Delay Compensator x2 Stereo_/usr/lib/vst/lsp-plugins/comp-delay-x2-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Dynamics Processor L/R_/usr/lib/vst/lsp-plugins/dyna-processor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Dynamics Processor M/S_/usr/lib/vst/lsp-plugins/dyna-processor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Dynamics Processor Mono_/usr/lib/vst/lsp-plugins/dyna-processor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Dynamics Processor Stereo_/usr/lib/vst/lsp-plugins/dyna-processor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Expander L/R_/usr/lib/vst/lsp-plugins/expander-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Expander M/S_/usr/lib/vst/lsp-plugins/expander-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Expander Mono_/usr/lib/vst/lsp-plugins/expander-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Expander Stereo_/usr/lib/vst/lsp-plugins/expander-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Filter Mono_/usr/lib/vst/lsp-plugins/filter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Filter Stereo_/usr/lib/vst/lsp-plugins/filter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Flanger Mono_/usr/lib/vst/lsp-plugins/flanger-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Flanger Stereo_/usr/lib/vst/lsp-plugins/flanger-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_GOTT Compressor L/R_/usr/lib/vst/lsp-plugins/gott-compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_GOTT Compressor M/S_/usr/lib/vst/lsp-plugins/gott-compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_GOTT Compressor Mono_/usr/lib/vst/lsp-plugins/gott-compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_GOTT Compressor Stereo_/usr/lib/vst/lsp-plugins/gott-compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Gate L/R_/usr/lib/vst/lsp-plugins/gate-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Gate M/S_/usr/lib/vst/lsp-plugins/gate-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Gate Mono_/usr/lib/vst/lsp-plugins/gate-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Gate Stereo_/usr/lib/vst/lsp-plugins/gate-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x16 L/R_/usr/lib/vst/lsp-plugins/graph-equalizer-x16-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x16 M/S_/usr/lib/vst/lsp-plugins/graph-equalizer-x16-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x16 Mono_/usr/lib/vst/lsp-plugins/graph-equalizer-x16-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x16 Stereo_/usr/lib/vst/lsp-plugins/graph-equalizer-x16-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x32 L/R_/usr/lib/vst/lsp-plugins/graph-equalizer-x32-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x32 M/S_/usr/lib/vst/lsp-plugins/graph-equalizer-x32-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x32 Mono_/usr/lib/vst/lsp-plugins/graph-equalizer-x32-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Graphic Equalizer x32 Stereo_/usr/lib/vst/lsp-plugins/graph-equalizer-x32-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Impulse Responses Mono_/usr/lib/vst/lsp-plugins/impulse-responses-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Impulse Responses Stereo_/usr/lib/vst/lsp-plugins/impulse-responses-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Impulse Reverb Mono_/usr/lib/vst/lsp-plugins/impulse-reverb-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Impulse Reverb Stereo_/usr/lib/vst/lsp-plugins/impulse-reverb-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Latency Meter_/usr/lib/vst/lsp-plugins/latency-meter.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Limiter Mono_/usr/lib/vst/lsp-plugins/limiter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Limiter Stereo_/usr/lib/vst/lsp-plugins/limiter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Loudness Compensator Mono_/usr/lib/vst/lsp-plugins/loud-comp-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Loudness Compensator Stereo_/usr/lib/vst/lsp-plugins/loud-comp-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Clipper Mono_/usr/lib/vst/lsp-plugins/mb-clipper-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Clipper Stereo_/usr/lib/vst/lsp-plugins/mb-clipper-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Compressor L/R_/usr/lib/vst/lsp-plugins/mb-compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Compressor M/S_/usr/lib/vst/lsp-plugins/mb-compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Compressor Mono_/usr/lib/vst/lsp-plugins/mb-compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Compressor Stereo_/usr/lib/vst/lsp-plugins/mb-compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Dynamics Processor L/R_/usr/lib/vst/lsp-plugins/mb-dyna-processor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Dynamics Processor M/S_/usr/lib/vst/lsp-plugins/mb-dyna-processor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Dynamics Processor Mono_/usr/lib/vst/lsp-plugins/mb-dyna-processor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Dynamics Processor Stereo_/usr/lib/vst/lsp-plugins/mb-dyna-processor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Expander L/R_/usr/lib/vst/lsp-plugins/mb-expander-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Expander M/S_/usr/lib/vst/lsp-plugins/mb-expander-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Expander Mono_/usr/lib/vst/lsp-plugins/mb-expander-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Expander Stereo_/usr/lib/vst/lsp-plugins/mb-expander-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Gate L/R_/usr/lib/vst/lsp-plugins/mb-gate-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Gate M/S_/usr/lib/vst/lsp-plugins/mb-gate-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Gate Mono_/usr/lib/vst/lsp-plugins/mb-gate-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Gate Stereo_/usr/lib/vst/lsp-plugins/mb-gate-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Limiter Mono_/usr/lib/vst/lsp-plugins/mb-limiter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_MB Limiter Stereo_/usr/lib/vst/lsp-plugins/mb-limiter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x16 Mono_/usr/lib/vst/lsp-plugins/mixer-x16-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x16 Stereo_/usr/lib/vst/lsp-plugins/mixer-x16-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x4 Mono_/usr/lib/vst/lsp-plugins/mixer-x4-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x4 Stereo_/usr/lib/vst/lsp-plugins/mixer-x4-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x8 Mono_/usr/lib/vst/lsp-plugins/mixer-x8-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Mixer x8 Stereo_/usr/lib/vst/lsp-plugins/mixer-x8-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Noise Generator x1_/usr/lib/vst/lsp-plugins/noise-generator-x1.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Noise Generator x2_/usr/lib/vst/lsp-plugins/noise-generator-x2.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Noise Generator x4_/usr/lib/vst/lsp-plugins/noise-generator-x4.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Oscillator Mono_/usr/lib/vst/lsp-plugins/oscillator-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Oscilloscope x1_/usr/lib/vst/lsp-plugins/oscilloscope-x1.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Oscilloscope x2_/usr/lib/vst/lsp-plugins/oscilloscope-x2.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Oscilloscope x4_/usr/lib/vst/lsp-plugins/oscilloscope-x4.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x16 L/R_/usr/lib/vst/lsp-plugins/para-equalizer-x16-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x16 M/S_/usr/lib/vst/lsp-plugins/para-equalizer-x16-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x16 Mono_/usr/lib/vst/lsp-plugins/para-equalizer-x16-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x16 Stereo_/usr/lib/vst/lsp-plugins/para-equalizer-x16-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x32 L/R_/usr/lib/vst/lsp-plugins/para-equalizer-x32-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x32 M/S_/usr/lib/vst/lsp-plugins/para-equalizer-x32-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x32 Mono_/usr/lib/vst/lsp-plugins/para-equalizer-x32-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x32 Stereo_/usr/lib/vst/lsp-plugins/para-equalizer-x32-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x8 L/R_/usr/lib/vst/lsp-plugins/para-equalizer-x8-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x8 M/S_/usr/lib/vst/lsp-plugins/para-equalizer-x8-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x8 Mono_/usr/lib/vst/lsp-plugins/para-equalizer-x8-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Parametric Equalizer x8 Stereo_/usr/lib/vst/lsp-plugins/para-equalizer-x8-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Phase Detector_/usr/lib/vst/lsp-plugins/phase-detector.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Profiler Mono_/usr/lib/vst/lsp-plugins/profiler-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Profiler Stereo_/usr/lib/vst/lsp-plugins/profiler-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Room Builder Mono_/usr/lib/vst/lsp-plugins/room-builder-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Room Builder Stereo_/usr/lib/vst/lsp-plugins/room-builder-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Compressor L/R_/usr/lib/vst/lsp-plugins/sc-compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Compressor M/S_/usr/lib/vst/lsp-plugins/sc-compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Compressor Mono_/usr/lib/vst/lsp-plugins/sc-compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Compressor Stereo_/usr/lib/vst/lsp-plugins/sc-compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Dynamics Processor L/R_/usr/lib/vst/lsp-plugins/sc-dyna-processor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Dynamics Processor M/S_/usr/lib/vst/lsp-plugins/sc-dyna-processor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Dynamics Processor Mono_/usr/lib/vst/lsp-plugins/sc-dyna-processor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Dynamics Processor Stereo_/usr/lib/vst/lsp-plugins/sc-dyna-processor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Expander L/R_/usr/lib/vst/lsp-plugins/sc-expander-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Expander M/S_/usr/lib/vst/lsp-plugins/sc-expander-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Expander Mono_/usr/lib/vst/lsp-plugins/sc-expander-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Expander Stereo_/usr/lib/vst/lsp-plugins/sc-expander-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC GOTT Compressor L/R_/usr/lib/vst/lsp-plugins/sc-gott-compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC GOTT Compressor M/S_/usr/lib/vst/lsp-plugins/sc-gott-compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC GOTT Compressor Mono_/usr/lib/vst/lsp-plugins/sc-gott-compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC GOTT Compressor Stereo_/usr/lib/vst/lsp-plugins/sc-gott-compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Gate L/R_/usr/lib/vst/lsp-plugins/sc-gate-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Gate M/S_/usr/lib/vst/lsp-plugins/sc-gate-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Gate Mono_/usr/lib/vst/lsp-plugins/sc-gate-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Gate Stereo_/usr/lib/vst/lsp-plugins/sc-gate-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Limiter Mono_/usr/lib/vst/lsp-plugins/sc-limiter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC Limiter Stereo_/usr/lib/vst/lsp-plugins/sc-limiter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Compressor L/R_/usr/lib/vst/lsp-plugins/sc-mb-compressor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Compressor M/S_/usr/lib/vst/lsp-plugins/sc-mb-compressor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Compressor Mono_/usr/lib/vst/lsp-plugins/sc-mb-compressor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Compressor Stereo_/usr/lib/vst/lsp-plugins/sc-mb-compressor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Dynamics Processor L/R_/usr/lib/vst/lsp-plugins/sc-mb-dyna-processor-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Dynamics Processor M/S_/usr/lib/vst/lsp-plugins/sc-mb-dyna-processor-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Dynamics Processor Mono_/usr/lib/vst/lsp-plugins/sc-mb-dyna-processor-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Dynamics Processor Stereo_/usr/lib/vst/lsp-plugins/sc-mb-dyna-processor-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Expander L/R_/usr/lib/vst/lsp-plugins/sc-mb-expander-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Expander M/S_/usr/lib/vst/lsp-plugins/sc-mb-expander-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Expander Mono_/usr/lib/vst/lsp-plugins/sc-mb-expander-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Expander Stereo_/usr/lib/vst/lsp-plugins/sc-mb-expander-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Gate L/R_/usr/lib/vst/lsp-plugins/sc-mb-gate-lr.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Gate M/S_/usr/lib/vst/lsp-plugins/sc-mb-gate-ms.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Gate Mono_/usr/lib/vst/lsp-plugins/sc-mb-gate-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Gate Stereo_/usr/lib/vst/lsp-plugins/sc-mb-gate-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Limiter Mono_/usr/lib/vst/lsp-plugins/sc-mb-limiter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_SC MB Limiter Stereo_/usr/lib/vst/lsp-plugins/sc-mb-limiter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Sidechain Autogain Mono_/usr/lib/vst/lsp-plugins/sc-autogain-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Sidechain Autogain Stereo_/usr/lib/vst/lsp-plugins/sc-autogain-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Slapback Delay Mono_/usr/lib/vst/lsp-plugins/slap-delay-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Slapback Delay Stereo_/usr/lib/vst/lsp-plugins/slap-delay-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x1_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x1.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x12_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x12.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x16_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x16.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x2_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x2.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x4_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x4.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Spectrum Analyzer x8_/usr/lib/vst/lsp-plugins/spectrum-analyzer-x8.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Surge Filter Mono_/usr/lib/vst/lsp-plugins/surge-filter-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Surge Filter Stereo_/usr/lib/vst/lsp-plugins/surge-filter-stereo.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Trigger Mono_/usr/lib/vst/lsp-plugins/trigger-mono.so;0" key=""/>
+	<command name="Effect_VST_LSP VST_Trigger Stereo_/usr/lib/vst/lsp-plugins/trigger-stereo.so;0" key=""/>
+	<command name="Effect_VST_falkTX_Carla-RackFX_/usr/lib/vst/carla.vst/CarlaRackFX.so;0" key=""/>
+	<command name="ManageAnalyzers" key=""/>
+	<command name="RepeatLastAnalyzer" key=""/>
+	<command name="ContrastAnalyser" key=""/>
+	<command name="PlotSpectrum" key=""/>
+	<command name="Effect_Nyquist_Audacity_Beat Finder_/usr/share/audacity/plug-ins/beat.ny" key=""/>
+	<command name="Effect_Audacity_Audacity_Find Clipping_Built-in Effect: Find Clipping" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Label Sounds_/usr/share/audacity/plug-ins/label-sounds.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Measure RMS_/usr/share/audacity/plug-ins/rms.ny" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_Big Meter_http://kxstudio.sf.net/carla/plugins/bigmeter" key=""/>
+	<command name="ManageTools" key=""/>
+	<command name="RepeatLastTool" key=""/>
+	<command name="ManageMacros" key=""/>
+	<command name="ApplyMacrosPalette" key=""/>
+	<command name="Macro_FadeEnds" key=""/>
+	<command name="Macro_MP3Conversion" key=""/>
+	<command name="Macro_moveframe" key=""/>
+	<command name="Macro_silence" key=""/>
+	<command name="Macro_v6.26" key="Ctrl+Shift+A"/>
+	<command name="Macro_vocal_v1" key=""/>
+	<command name="ConfigReset" key=""/>
+	<command name="FancyScreenshot" key=""/>
+	<command name="Benchmark" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_EQ XML to TXT Converter_/usr/share/audacity/plug-ins/eq-xml-to-txt-converter.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Nyquist Plugin Installer_/usr/share/audacity/plug-ins/nyquist-plug-in-installer.ny" key=""/>
+	<command name="Effect_Nyquist_Audacity_Nyquist Prompt_Nyquist Prompt" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Regular Interval Labels_/usr/share/audacity/plug-ins/equalabel.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Sample Data Export_/usr/share/audacity/plug-ins/sample-data-export.ny" key=""/>
+	<command name="Effect_Nyquist_Steve Daulton_Sample Data Import_/usr/share/audacity/plug-ins/sample-data-import.ny" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_LFO_http://kxstudio.sf.net/carla/plugins/lfo" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Channel A/B_http://kxstudio.sf.net/carla/plugins/midichanab" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Channel Filter_http://kxstudio.sf.net/carla/plugins/midichanfilter" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Channelize_http://kxstudio.sf.net/carla/plugins/midichannelize" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI File_http://kxstudio.sf.net/carla/plugins/midifile" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Gain_http://kxstudio.sf.net/carla/plugins/midigain" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Join_http://kxstudio.sf.net/carla/plugins/midijoin" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Pattern_http://kxstudio.sf.net/carla/plugins/midipattern" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Split_http://kxstudio.sf.net/carla/plugins/midisplit" key=""/>
+	<command name="Effect_LV2_Filipe Coelho_MIDI Transpose_http://kxstudio.sf.net/carla/plugins/miditranspose" key=""/>
+	<command name="Play" key=""/>
+	<command name="Stop" key=""/>
+	<command name="PlayOneSec" key=""/>
+	<command name="PlayToSelection" key="B"/>
+	<command name="PlayBeforeSelectionStart" key=""/>
+	<command name="PlayAfterSelectionStart" key=""/>
+	<command name="PlayBeforeSelectionEnd" key=""/>
+	<command name="PlayAfterSelectionEnd" key=""/>
+	<command name="PlayBeforeAndAfterSelectionStart" key=""/>
+	<command name="PlayBeforeAndAfterSelectionEnd" key=""/>
+	<command name="PlayCutPreview" key="C"/>
+	<command name="KeyboardScrubBackwards" key="U"/>
+	<command name="KeyboardScrubForwards" key="I"/>
+	<command name="SelectTool" key="F1"/>
+	<command name="EnvelopeTool" key="F2"/>
+	<command name="DrawTool" key="F3"/>
+	<command name="MultiTool" key="F6"/>
+	<command name="PrevTool" key=""/>
+	<command name="NextTool" key=""/>
+	<command name="OutputGain" key=""/>
+	<command name="OutputGainInc" key=""/>
+	<command name="OutputGainDec" key=""/>
+	<command name="InputGain" key=""/>
+	<command name="InputGainInc" key=""/>
+	<command name="InputGainDec" key=""/>
+	<command name="DeleteKey" key="Backspace"/>
+	<command name="DeleteKey2" key="Delete"/>
+	<command name="ClipLeft" key=""/>
+	<command name="ClipRight" key=""/>
+	<command name="PlayAtSpeed" key=""/>
+	<command name="PlayAtSpeedCutPreview" key=""/>
+	<command name="PlayAtSpeedLooped" key=""/>
+	<command name="PlaySpeedDec" key=""/>
+	<command name="PlaySpeedInc" key=""/>
+	<command name="SetPlaySpeed" key=""/>
+	<command name="SeekLeftShort" key="Left"/>
+	<command name="SeekRightShort" key="Right"/>
+	<command name="SeekLeftLong" key="Shift+Left"/>
+	<command name="SeekRightLong" key=""/>
+	<command name="InputDevice" key=""/>
+	<command name="OutputDevice" key=""/>
+	<command name="AudioHost" key=""/>
+	<command name="InputChannels" key=""/>
+	<command name="SnapToOff" key=""/>
+	<command name="SnapToNearest" key=""/>
+	<command name="SnapToPrior" key=""/>
+	<command name="SelStart" key="Shift+Home"/>
+	<command name="SelEnd" key="Shift+End"/>
+	<command name="SelExtLeft" key="Shift+Left"/>
+	<command name="SelExtRight" key=""/>
+	<command name="SelSetExtLeft" key=""/>
+	<command name="SelSetExtRight" key=""/>
+	<command name="SelCntrLeft" key="Ctrl+Shift+Right"/>
+	<command name="SelCntrRight" key="Ctrl+Shift+Left"/>
+	<command name="MoveToPrevLabel" key="Alt+Left"/>
+	<command name="MoveToNextLabel" key="Alt+Right"/>
+	<command name="ExportMp3" key=""/>
+	<command name="ExportWav" key=""/>
+	<command name="ExportOgg" key=""/>
+	<command name="ExportFLAC" key=""/>
+	<command name="MinutesAndSeconds" key=""/>
+	<command name="BeatsAndMeasures" key=""/>
+	<command name="PrevWindow" key=""/>
+	<command name="NextWindow" key=""/>
+	<command name="PrevFrame" key=""/>
+	<command name="NextFrame" key="Ctrl+F6"/>
+	<command name="PrevTrack" key="Up"/>
+	<command name="NextTrack" key="Down"/>
+	<command name="FirstTrack" key=""/>
+	<command name="LastTrack" key=""/>
+	<command name="ShiftUp" key="Shift+Up"/>
+	<command name="ShiftDown" key=""/>
+	<command name="Toggle" key="Return"/>
+	<command name="ToggleAlt" key="NUMPAD_ENTER"/>
+	<command name="CursorLeft" key="Left"/>
+	<command name="CursorRight" key="Right"/>
+	<command name="CursorShortJumpLeft" key=","/>
+	<command name="CursorShortJumpRight" key="."/>
+	<command name="CursorLongJumpLeft" key="Shift+,"/>
+	<command name="CursorLongJumpRight" key="Shift+."/>
+	<command name="TrackPan" key=""/>
+	<command name="TrackPanLeft" key=""/>
+	<command name="TrackPanRight" key=""/>
+	<command name="TrackGain" key="Shift+G"/>
+	<command name="TrackGainInc" key=""/>
+	<command name="TrackGainDec" key=""/>
+	<command name="TrackMenu" key="Shift+M"/>
+	<command name="TrackMute" key="Shift+U"/>
+	<command name="TrackSolo" key="Shift+S"/>
+	<command name="TrackClose" key=""/>
+	<command name="TrackMoveUp" key=""/>
+	<command name="TrackMoveDown" key=""/>
+	<command name="TrackMoveTop" key=""/>
+	<command name="TrackMoveBottom" key=""/>
+	<command name="SelectTime" key=""/>
+	<command name="SelectFrequencies" key=""/>
+	<command name="SelectTracks" key=""/>
+	<command name="SetTrackStatus" key=""/>
+	<command name="SetTrackAudio" key=""/>
+	<command name="SetTrackVisuals" key=""/>
+	<command name="GetPreference" key=""/>
+	<command name="SetPreference" key=""/>
+	<command name="SetClip" key=""/>
+	<command name="SetEnvelope" key=""/>
+	<command name="SetLabel" key=""/>
+	<command name="SetProject" key=""/>
+	<command name="Select" key=""/>
+	<command name="SetTrack" key=""/>
+	<command name="GetInfo" key=""/>
+	<command name="Message" key=""/>
+	<command name="Help" key=""/>
+	<command name="Import2" key=""/>
+	<command name="Export2" key=""/>
+	<command name="OpenProject2" key=""/>
+	<command name="SaveProject2" key=""/>
+	<command name="Drag" key=""/>
+	<command name="CompareAudio" key=""/>
+	<command name="Screenshot" key=""/>
+	<command name="FullScreenOnOff" key="F11"/>
+	<command name="QuickHelp" key=""/>
+	<command name="Manual" key=""/>
+	<command name="DeviceInfo" key=""/>
+	<command name="MidiDeviceInfo" key=""/>
+	<command name="Log" key=""/>
+	<command name="CrashReport" key=""/>
+	<command name="About" key=""/>
+</audacitykeyboard>
