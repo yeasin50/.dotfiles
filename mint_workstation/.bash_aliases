@@ -376,3 +376,29 @@ adb_charge() {
     esac
 }
 
+
+# until  it get merged https://github.com/cli/cli/pull/12942
+gie() {
+  local id="$1" tmp title body original
+  [[ -n "$id" ]] || { echo "Usage: ghie <issue-number>"; return 1; }
+
+  tmp=$(mktemp "${TMPDIR:-/tmp}/${id}-XXXXXX.md") || return
+  trap 'rm -f "$tmp"' RETURN
+
+  gh issue view "$id" --json title,body \
+    --template '{{.title}}{{"\n---BODY---\n"}}{{.body}}' > "$tmp" || return
+
+  original=$(cat "$tmp")
+  "${GH_EDITOR:-nvim}" "$tmp" || return
+
+  [[ -f "$tmp" ]] || return
+  [[ "$(cat "$tmp")" == "$original" ]] && {
+    echo "No changes; issue not updated."
+    return 0
+  }
+
+  title=$(sed '/^---BODY---$/,$d' "$tmp")
+  body=$(sed '1,/^---BODY---$/d' "$tmp")
+
+  gh issue edit "$id" --title "$title" --body "$body"
+}

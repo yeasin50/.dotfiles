@@ -44,3 +44,9 @@ PROMPT_COMMAND=prompt_command
 
 
 eval "$(zoxide init --cmd cd bash)"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[ -f /home/yeasin/.dart-cli-completion/bash-config.bash ] && . /home/yeasin/.dart-cli-completion/bash-config.bash || true
+## [/Completion]
+
