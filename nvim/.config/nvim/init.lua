@@ -3,7 +3,7 @@ vim.g.maplocalleader = " "
 vim.opt.colorcolumn = "120"
 
 vim.opt.clipboard = "unnamedplus"
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 vim.opt.linespace = 8
 
 vim.opt.numberwidth = 4

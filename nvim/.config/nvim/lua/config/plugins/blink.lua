@@ -8,19 +8,13 @@ return {
 	},
 	{
 		"saghen/blink.cmp",
-		-- optional: provides snippets for the snippet source
 		dependencies = {
 			"rafamadriz/friendly-snippets",
 			"moyiz/blink-emoji.nvim",
 			"ray-x/cmp-sql",
 		},
 
-		-- use a release tag to download pre-built binaries
 		version = "1.*",
-		-- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
-		-- build = 'cargo build --release',
-		-- If you use nix, you can build from source using latest nightly rust with:
-		-- build = 'nix run .#build-plugin',
 
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
@@ -49,8 +43,8 @@ return {
 			},
 
 			-- (Default) Only show the documentation popup when manually triggered
-			completion = { documentation = { auto_show = true } },
-			signature = { enabled = true },
+			completion = { documentation = { auto_show = false } },
+			signature = { enabled = false }, --  don;t like top suggestion
 
 			-- Default list of enabled providers defined so that you can extend it
 			-- elsewhere in your config, without redefining it, due to `opts_extend`

@@ -3,7 +3,10 @@ super + ...   (already default Mod4 in sxhkd/bspwm)
 
 
 # making capslock to esc for nvim  motion ; uum doesn't work
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
+
+# super + Return
+#     exec kitty
 
 super + Return
     wezterm --config-file ~/.config/wezterm/wezterm.lua
@@ -60,21 +63,7 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
-# Tab attach: focused window into a tab group on this monitor TODO: not working
-# ctrl + alt + {Left,Down,Up,Right}
-#     tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
-#
-# # create/remove from tabbed container
-# super + z
-#     id=$(bspc query -N -n); \
-#     [[ "$(tabc printclass $id)" == "tabbed" ]] \
-#     && tabc detach $id \
-#     || tabc create $id
-#
-# # toggle autoattach in tabbed container
-# super + shift + z
-#     tabc autoattach $(bspc query -N -n)
-# # ---- xxxx
+
 
 
 super + shift + v
@@ -104,8 +93,8 @@ super + shift + {1-6}
 
 # game specifics 
 #
-Page_Up ; {1-9}
-    ~/.config/sxhkd/click_loop {1-9}
-
-Page_Down
-    ~/.config/sxhkd/click_loop
+# Page_Up ; {1-9}
+#     ~/.config/sxhkd/click_loop {1-9}
+#
+# Page_Down
+#     ~/.config/sxhkd/click_loop
