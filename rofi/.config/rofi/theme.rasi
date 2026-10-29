@@ -1,11 +1,11 @@
 * {
-    bg-col: #1A1B26;
-    bg-col-light: #24283B;
-    border-col: #7AA2F7;
-    blue: #7AA2F7;
-    fg-col: #C0CAF5;
-    fg-col-muted: #565F89;
-    text-box-text: #FFFFFF;
+    bg-col: #0e1112;
+    bg-col-light: #1b2122;
+    border-col: #4a5a5e;
+    blue: #bdc7cc;
+    fg-col: #a2abaf;
+    fg-col-muted: #4b5557;
+    text-box-text: #d0dbe0;
 
     background-color: transparent;
     text-color: @fg-col;

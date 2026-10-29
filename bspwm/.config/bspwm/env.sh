@@ -1,2 +1,1 @@
-WALLPAPER="/home/yeasin/.dotfiles/themes/coast_tower/wallpaper.jpg"
-
+WALLPAPER="/home/yeasin/.dotfiles/themes/tempest/wallpaper.jpg"

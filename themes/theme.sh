@@ -31,6 +31,7 @@ extract_theme() {
     cp "$HOME/.config/rofi/theme.rasi" "$theme/rofi.rasi"
     cp "$HOME/.config/btop/themes/current.theme" "$theme/btop.theme"
     cp "$HOME/.config/wezterm/theme.toml" "$theme/wezterm.toml"
+    cp "$HOME/.config/kitty/kitty.conf" "$theme/kitty.conf"
 
     # Wallpaper from bspwm env
     wallpaper="$(sed -n 's/^WALLPAPER=//p' "$HOME/.config/bspwm/env.sh")"
@@ -100,6 +101,7 @@ apply_theme() {
     cp "$theme/rofi.rasi" "$HOME/.config/rofi/theme.rasi"
     cp "$theme/btop.theme" "$HOME/.config/btop/themes/current.theme"
     cp "$theme/wezterm.toml" "$HOME/.config/wezterm/theme.toml"
+    cp "$theme/kitty.conf" "$HOME/.config/kitty/kitty.conf"
 
     # Reload BSPWM
     bspc wm -r
