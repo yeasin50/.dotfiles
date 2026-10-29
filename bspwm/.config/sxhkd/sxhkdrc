@@ -3,7 +3,10 @@ super + ...   (already default Mod4 in sxhkd/bspwm)
 
 
 # making capslock to esc for nvim  motion ; uum doesn't work
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
+
+# super + Return
+#     exec kitty
 
 super + Return
     wezterm --config-file ~/.config/wezterm/wezterm.lua
@@ -31,15 +34,24 @@ super + b
     /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=launch-script.sh app.zen_browser.zen
 
 super + k
-    /home/yeasin/apps/kdenlive-26.04.0-x86_64.AppImage
+    /home/yeasin/apps/kdenlive.AppImage
+    # ./kdenlive_track.sh
+
+
+super + l
+    flatpak run org.localsend.localsend_app
+
+super + o
+    obsidian
+    # bspc desktop -f '^5'; xdotool search --class obsidian windowactivate || obsidian
 
 # Screenshot select area
 super + shift + s 
     flameshot gui
 
 # Emoji picker
-ctrl + period
-    /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=emoji-mart io.github.vemonet.EmojiMart
+super + period
+     ~/.config/rofi/scripts/emoji.sh
 
 
 ## Keyboard volume nob
@@ -50,66 +62,39 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+
+
+
+
+super + shift + v
+    bspc node @/ -R 90
+
 # --- Focus movement  ---
-super + Left
-    bspc node -f west
-
-super + Down
-    bspc node -f south
-
-super + Up
-    bspc node -f north
-
-super + Right
-    bspc node -f east
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
 
 # --- Move window (like sway move container) ---
-super + shift + Left
-    bspc node -s west
+super + shift + {Left,Right,Up,Down}
+    bspc node -s {west,east,north,south}
 
-super + shift + Right
-    bspc node -s east
+# toggle between floating and tiling
+super + shift + space
+    bspc node -t ~floating
 
-super + shift + Up
-    bspc node -s north
+# workspace navigation
+super + {1-6}
+    bspc desktop -f {1-6}
 
-super + shift + Down
-    bspc node -s south
+# move window between workspace
+super + shift + {1-6}
+    bspc node -d {1-6}
 
-# --- Workspaces ---
-super + 1
-    bspc desktop -f 1
 
-super + 2
-    bspc desktop -f 2
 
-super + 3
-    bspc desktop -f 3
-
-super + 4
-    bspc desktop -f 4
-
-super + 5
-    bspc desktop -f 5
-
-super + 6
-    bspc desktop -f 6
-
-# --- Move window to workspace ---
-super + shift + 1
-    bspc node -d 1
-
-super + shift + 2
-    bspc node -d 2
-
-super + shift + 3
-    bspc node -d 3
-
-super + shift + 4
-    bspc node -d 4
-
-super + shift + 5
-    bspc node -d 5
-
-super + shift + 6
-    bspc node -d 6
+# game specifics 
+#
+# Page_Up ; {1-9}
+#     ~/.config/sxhkd/click_loop {1-9}
+#
+# Page_Down
+#     ~/.config/sxhkd/click_loop

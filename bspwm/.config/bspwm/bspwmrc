@@ -3,22 +3,24 @@
 # monitor configs; run  `xrandr` to get your displace names
 source "${HOME}/.config/bspwm/env.sh"
 
- xrandr \
-   --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
-   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 1920x0
+## DesktopMode
+xrandr \
+  --output HDMI-A-0 --mode 1920x1080 --pos 0x0 \
+  --output DisplayPort-1 --mode 1280x1024 --rotate right --pos 1920x0
 
+## Record mode
 # xrandr \
 #   --output HDMI-A-0 --primary --mode 1920x1080 --scale-from 3840x2160 --pos 0x0 \
-#   --output DisplayPort-2 --mode 1280x1024 --rotate right --pos 3840x0
+#   --output DisplayPort-1 --mode 1280x1024 --rotate right --pos 3840x0
 
 
 # --- Work-Spaces per monitor
-bspc monitor HDMI-A-0 -d 1 2 3 4
-bspc monitor DisplayPort-2 -d 5 6 7
-
+bspc monitor HDMI-A-0 -d 1 2 3 4 
+bspc monitor DisplayPort-1 -d 5 6 7 8
+# bspc rule -a obsidian desktop='^5'
 
 xrandr --output HDMI-A-0 --set TearFree on
-xrandr --output DisplayPort-2 --set TearFree on
+xrandr --output DisplayPort-1 --set TearFree on
 
 # fixed mouse stuck
 xsetroot -cursor_name left_ptr &
@@ -40,12 +42,8 @@ bspc config right_padding 0
 killall -q sxhkd picom polybar
 
 sxhkd &
-
-# wallpaper first (optional but clean)
 feh --bg-fill "$WALLPAPER" &
-
-# start compositor 
- picom --config ~/.config/picom/picom.conf -b &
+picom --config ~/.config/picom/picom.conf -b &
 
 # polybar after layout
 ~/.config/polybar/launch.sh &
@@ -61,4 +59,9 @@ bspc config pointer_follows_focus false
 bspc config auto_raise false
 
 
+source "${HOME}/.config/bspwm/colors.sh"
+
+bspc rule -a Gsimplecal state=floating rectangle=300x250+800+44
+
+#
 # chmod +x bspwmrc and then reboot/stow

@@ -1,0 +1,45 @@
+/* Sidebar */
+.nemo-window .sidebar,
+.nemo-window .sidebar .view {
+    background: {{color0}};
+    color: {{foreground}};
+}
+
+/* Sidebar hover */
+.nemo-window .places-treeview .view.cell:hover,
+.nemo-window .places-treeview iconview.cell:hover {
+    background: {{color8}};
+}
+
+/* Sidebar selected */
+.nemo-window .places-treeview .view.cell:selected,
+.nemo-window .places-treeview iconview.cell:selected {
+    background: {{color4}};
+    color: {{background}};
+}
+
+/* Main file view selection */
+.nemo-window .view:selected,
+.nemo-window iconview.view:selected,
+.nemo-window treeview.view:selected {
+    background: {{color4}};
+    color: {{background}};
+}
+
+/* Path bar buttons */
+.nemo-window .path-bar button:checked {
+    background: {{color4}};
+    color: {{background}};
+}
+
+/* Search entry */
+.nemo-window entry {
+    background: {{color0}};
+    color: {{foreground}};
+    border-color: {{color8}};
+}
+
+.nemo-window .places-treeview {
+    -NemoPlacesTreeView-disk-full-bg-color: {{color8}};
+    -NemoPlacesTreeView-disk-full-fg-color: {{color4}};
+}

@@ -1,0 +1,5 @@
+@define-color bg {{background}};
+@define-color bg-alt {{color0}}; 
+@define-color fg {{foreground}};
+@define-color accent {{color4}}; 
+@define-color alert {{color1}};

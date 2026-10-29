@@ -1,0 +1,70 @@
+# wallust v3.5
+
+# How the image is parse, in order to get the colors:
+# full - resized - wal - thumb -  fastresize - kmeans
+backend = "resized"
+color_space = "labmixed"
+palette = "dark" # just perfect
+check_contrast = true
+saturation = 75
+alpha = 90
+
+
+# backend = "full"
+# color_space = "salience"
+# palette = "saliencedarkdistributed"
+# saturation = 90
+#
+# backend = "resized"
+# color_space = "salience"
+# palette = "salience-dark-balanced"
+# saturation = 60
+
+
+#no_hooks = true
+
+[templates]
+wezterm = {
+    template = 'wezterm', 
+    target = '~/.config/wezterm/colors/wallust.toml' 
+}
+
+waybar = {
+    template = 'waybar', 
+    target = '~/.config/waybar/colors.css' 
+}
+
+polybar = {
+    template = 'polybar', 
+    target = '~/.config/polybar/colors.ini' 
+}
+
+nvim = {
+    template = 'nvim', 
+    target = '~/.config/nvim/lua/wallust_theme.lua'
+}
+
+
+btop = {
+    template = 'btop', 
+    target = '~/.config/btop/themes/wallust.theme'
+}
+
+
+gtk = {
+    template = 'gtk.css', 
+    target = '~/.config/gtk-3.0/gtk.css'
+}
+
+
+bspwm = {
+    template = 'bspwm_colors', 
+    target = '~/.config/bspwm/colors.sh'
+}
+
+
+[hooks]
+# Run commands when wallust is invoked. Useful to avoid scripting.
+#wallpaper = """swww img "$(find ~/Media/Pictures/Wallpapers -iregex '.*.\\(jpg\\|jpeg\\|png\\|gif\\)' -type f | shuf -n 1)" """
+
+

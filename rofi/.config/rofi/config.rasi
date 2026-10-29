@@ -1,67 +1,39 @@
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: ""; 
+    display-drun: "";
     drun-display-format: "{name}";
-    font: "JetBrains Mono Nerd Font 11"; 
+    font: "JetBrains Mono Nerd Font 11";
 }
 
-/* Tokyo Night / Bluish Theme Variables */
-* {
-    bg-col: #1A1B26;        /* Deep Tokyo Night background */
-    bg-col-light: #24283B;  /* Used only for the search bar now */
-    border-col: #7AA2F7;    /* Bright Tokyo Night blue */
-    blue: #7AA2F7;
-    fg-col: #C0CAF5;        /* Main text color */
-    fg-col-muted: #565F89;  /* Muted text for placeholder */
-
-    /* Base resets */
-    background-color: transparent;
-    text-color: @fg-col;
-    margin: 0;
-    padding: 0;
-}
+@import "theme.rasi"
 
 window {
     width: 35%;
-    background-color: @bg-col;
-    border: 2px solid;
-    border-color: @border-col;
-    border-radius: 10px;
     padding: 15px;
 }
 
 mainbox {
-    background-color: transparent;
     spacing: 15px;
 }
 
 inputbar {
     children: [prompt, entry];
-    background-color: @bg-col-light;
-    border-radius: 8px;
     padding: 10px;
 }
 
 prompt {
-    background-color: @blue;
-    text-color: @bg-col;
     padding: 6px 12px;
-    border-radius: 6px;
     margin: 0px 10px 0px 0px;
     font: "JetBrains Mono Nerd Font Bold 11";
 }
 
 entry {
     padding: 6px 0px;
-    background-color: transparent;
-    text-color: @fg-col;
     placeholder: "Search applications...";
-    placeholder-color: @fg-col-muted;
 }
 
 listview {
-    background-color: transparent;
     columns: 1;
     lines: 7;
     spacing: 6px;
@@ -70,10 +42,7 @@ listview {
     scrollbar: false;
 }
 
-
 element {
-    background-color: transparent; /* Melts perfectly into the main window */
-    text-color: @fg-col;
     padding: 10px 12px;
     border-radius: 8px;
     spacing: 12px;
@@ -82,18 +51,15 @@ element {
 
 element-icon {
     size: 24px;
-    background-color: transparent;
 }
 
 element-text {
-    background-color: transparent;
-    text-color: inherit;
-    vertical-align: 0.5; 
+    vertical-align: 0.5;
 }
 
-element selected {
-    background-color: transparent; /* No more clashing solid backgrounds */
-    text-color: @blue;             /* Changes the text to match your outline */
-    border: 2px solid;             /* Thicker outline for that neon/border vibe */
-    border-color: @blue;           /* The Tokyo Night blue outline you liked */
+textbox {
+    padding: 16px;
+    font: "JetBrains Mono Nerd Font 16";
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
 }

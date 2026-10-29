@@ -1,1 +1,1 @@
-WALLPAPER="/home/yeasin/Pictures/bg/h.jpg"
+WALLPAPER="/home/yeasin/.dotfiles/themes/tempest/wallpaper.jpg"

@@ -1,0 +1,4 @@
+ab=320k acodec=aac ar=48000 channels=2 crf=16 f=mp4 level=5.1 pix_fmt=yuv420p preset=slow profile=high vcodec=libx264
+
+
+f=wav vcodec=a64multi acodec=pcm_f32le channels=1 ar=48000 properties=WAV video_off=1

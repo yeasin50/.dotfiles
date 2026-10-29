@@ -1,6 +1,6 @@
 return {
 	"yeasin50/wikilink.nvim",
-	enabled = true,
+	enabled = false,
 	dir = "/home/yeasin/github/wikilink.nvim",
 	dev = true,
 	config = function()

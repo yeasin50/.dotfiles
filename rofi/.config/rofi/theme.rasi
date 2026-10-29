@@ -1,0 +1,63 @@
+* {
+    bg-col: #0e1112;
+    bg-col-light: #1b2122;
+    border-col: #4a5a5e;
+    blue: #bdc7cc;
+    fg-col: #a2abaf;
+    fg-col-muted: #4b5557;
+    text-box-text: #d0dbe0;
+
+    background-color: transparent;
+    text-color: @fg-col;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-color: @bg-col;
+    border: 2px solid;
+    border-color: @border-col;
+    border-radius: 10px;
+}
+
+inputbar {
+    background-color: @bg-col-light;
+    border-radius: 8px;
+}
+
+prompt {
+    background-color: @blue;
+    text-color: @bg-col;
+    border-radius: 6px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg-col;
+    placeholder-color: @fg-col-muted;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg-col;
+}
+
+element-icon {
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element selected {
+    background-color: transparent;
+    text-color: @blue;
+    border: 2px solid;
+    border-color: @blue;
+}
+
+textbox {
+    text-color: @text-box-text;
+}

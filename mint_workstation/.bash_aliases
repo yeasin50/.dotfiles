@@ -21,6 +21,8 @@ alias ll='ls -lah'
 alias gs='git status'
 
 
+alias wall='~/.config/rofi/scripts/wall_picker.sh'
+
 ## Set wall-paper and config theme
 setwall() {
     if [ -z "$1" ]; then
@@ -48,6 +50,8 @@ setwall() {
 source ~/.note_alias.bash
 source ~/.task.bash
 
+alias tv='tmux new-session nvim'
+
 alias tmuxp='tmuxinator start .'
 # alias tmuxls= "tmux list-panes -a -F '#S:#W.#P - #{pane_title} - #{pane_current_command}'"
 
@@ -71,9 +75,29 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# remind 30 "sleep", downside is it can not show repeated remind
+remind() {
+    local mins="$1"
+    shift
+
+    [[ -z "$mins" ]] && {
+        echo "Usage: remind <minutes> [message]"
+        return 1
+    }
+
+    local start
+    start=$(date '+%-I:%M %p')
+
+    printf "⏰ Reminder set for %s (+%sm)\n" "$start" "$mins"
+
+    (
+        sleep "${mins}m"
+
+        rofi -e "$(printf '⏰ %s\n\n%s' \
+            "$(date '+%-I:%M %p')" \
+            "${*:-Time is up!}")"
+    ) >/dev/null 2>&1 & disown
+}
 
 vboxmode() {
     echo "[*] Stopping KVM services..."
@@ -195,7 +219,8 @@ videoinfo() {
 alias showKeys='screenkey -p fixed -g 1000x150+1240+1610 -s large -f "Sans Bold 40"'
 
 alias ffmerge='f(){ 
-  ls -t *.mp4 | tac | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
+  # ls -t *.mp4 | tac | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
+  ls *.mp4 | sort -n | while read f; do printf "file '\''%s'\''\n" "$f"; done > list.txt
   echo "Merge order:"
   cat list.txt
   read -p "Proceed? (y/n): " yn
@@ -206,3 +231,174 @@ alias ffmerge='f(){
 
 # cat=>bat
 alias cat='batcat --paging=never --theme=OneHalfDark'
+
+
+# copy files on description  format to put on yt markdown
+# `clipfiles filename.java`
+clipfiles() {
+    #  Detect the correct clipboard utility based on the OS ONLY Linux tested
+    local clip_cmd
+    if command -v pbcopy &> /dev/null; then 
+        clip_cmd=(pbcopy)                               # macOS
+    elif command -v xclip &> /dev/null; then 
+        clip_cmd=(xclip -selection clipboard)           # Linux (X11)
+    elif command -v wl-copy &> /dev/null; then 
+        clip_cmd=(wl-copy)                              # Linux (Wayland)
+    elif command -v clip.exe &> /dev/null; then 
+        clip_cmd=(clip.exe)                             # WSL / Windows
+    else
+        echo "Error: No clipboard utility found (need pbcopy, xclip, wl-copy, or clip.exe)." >&2
+        return 1
+    fi
+
+    {
+        for file in "$@"; do
+            if [[ -f "$file" ]]; then
+                local filename="${file##*/}"  
+                local ext="${filename##*.}"   
+                
+                # If the file has no extension, default to 'text'
+                [[ "$filename" == "$ext" ]] && ext="text"
+
+                # Generate the formatted output
+                echo "<details> <summary> ${filename} </summary>"
+                echo ""
+                echo '```'"${ext}"
+                cat "$file"
+                echo "" 
+                echo '```'
+                echo ""
+                echo "</details>"
+                echo ""
+            else
+                echo "Warning: '$file' not found or is a directory. Skipping." >&2
+            fi
+        done
+    } | tee /dev/tty | "${clip_cmd[@]}"
+
+    echo -e "\n✅ Success: Contents formatted and copied to clipboard!" >&2
+}
+
+# Correct typos (if any) and display the word's definition.
+# cmd: `define hallo`
+define() {
+    local word="$1" fixed json
+
+    [[ -z "$word" ]] && {
+        echo "Usage: define <word>"
+        return 1
+    }
+
+    # Try original word
+    json=$(curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/$word")
+
+    if jq -e 'type=="array"' >/dev/null <<<"$json"; then
+        fixed="$word"
+    else
+        fixed=$(curl -s "https://api.datamuse.com/sug?s=$word" \
+            | jq -r '.[0].word // empty')
+
+        [[ -z "$fixed" ]] && {
+            echo "No definition found."
+            return 1
+        }
+
+        printf "\nDid you mean: %s\n\n" "$fixed"
+        json=$(curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/$fixed")
+
+        jq -e 'type=="array"' >/dev/null <<<"$json" || {
+            echo "No definition found."
+            return 1
+        }
+    fi
+
+    printf "📖 %s\n" "${fixed^}"
+    printf '──────────────────────────────────────────────\n\n'
+
+    jq -r '
+        .[0].meanings[:3][] |
+        [
+            .partOfSpeech,
+            .definitions[0].definition,
+            (.definitions[0].example // "")
+        ] | @tsv
+    ' <<<"$json" |
+    while IFS=$'\t' read -r pos def ex; do
+        printf " %s\n\n" "${pos^}"
+
+        fold -s -w 72 <<<"$def" | sed 's/^/   /'
+
+        if [[ -n "$ex" ]]; then
+            printf "\n   Example\n"
+            fold -s -w 68 <<<"\"$ex\"" | sed 's/^/     /'
+        fi
+
+        echo
+    done
+}
+
+grammar() {
+    local text="$*"
+
+    curl -s https://api.languagetool.org/v2/check \
+      -d "text=$text" \
+      -d "language=en-US" |
+    jq -r '
+      if (.matches | length) == 0 then
+        "✓ No issues found."
+      else
+        .matches[] |
+        "• " + .message +
+        (if .replacements|length>0
+         then "\n  Suggestion: " + .replacements[0].value
+         else ""
+         end)
+      end
+    '
+}
+
+## For android debugging
+# use `adb_charge 0` to disable charging,
+# use `adb_charge 1` to enable charging
+adb_charge() {
+    local status="$1"
+
+    case "$status" in
+        0|1)
+            adb shell dumpsys battery set ac "$1"
+            adb shell dumpsys battery set usb "$1"
+            adb shell dumpsys battery set wireless "$1"
+            ;;
+        *)
+            echo "Usage: adb_charge {0|1}"
+            return 1
+            ;;
+    esac
+}
+
+
+# until  it get merged https://github.com/cli/cli/pull/12942
+gie() {
+  local id="$1" tmp title body original
+  [[ -n "$id" ]] || { echo "Usage: ghie <issue-number>"; return 1; }
+
+  tmp=$(mktemp "${TMPDIR:-/tmp}/${id}-XXXXXX.md") || return
+  trap 'rm -f "$tmp"' RETURN
+
+  gh issue view "$id" --json title,body \
+    --template '{{.title}}{{"\n---BODY---\n"}}{{.body}}' > "$tmp" || return
+
+  original=$(cat "$tmp")
+  "${GH_EDITOR:-nvim}" "$tmp" || return
+
+  [[ -f "$tmp" ]] || return
+  [[ "$(cat "$tmp")" == "$original" ]] && {
+    echo "No changes; issue not updated."
+    return 0
+  }
+
+  title=$(sed '/^---BODY---$/,$d' "$tmp")
+  body=$(sed '1,/^---BODY---$/d' "$tmp")
+
+  gh issue edit "$id" --title "$title" --body "$body"
+}

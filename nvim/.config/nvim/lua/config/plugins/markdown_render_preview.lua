@@ -11,6 +11,7 @@ return {
 
 	{
 		"brianhuster/live-preview.nvim",
+		enabled = true,
 		config = function()
 			require("live-preview").setup({
 				port = 5500,

@@ -1,0 +1,15 @@
+modmap:
+  - name: CapsLock -> Esc
+    application:
+      only:
+        - neovide.neovide
+    remap:
+      CapsLock: Esc
+
+keymap:
+  - name: Disable Alt+T
+    application:
+      only:
+        - neovide.neovide
+    remap:
+      Alt-T: F24

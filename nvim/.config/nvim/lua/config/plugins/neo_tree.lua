@@ -13,7 +13,7 @@ return {
 		},
 		config = function()
 			require("neo-tree").setup({
-				sources = { "filesystem", "buffers", "git_status", "diagnostics" },
+				sources = { "filesystem", "buffers", "git_status" },
 				filesystem = {
 					follow_current_file = {
 						enabled = true,

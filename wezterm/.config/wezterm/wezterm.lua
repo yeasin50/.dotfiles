@@ -4,7 +4,6 @@ local wezterm = require("wezterm")
 local function get_color_scheme()
 	-- 2. Use the absolute path, because Lua doesn't understand "~"
 	local wallust_path = "/home/yeasin/.config/wezterm/colors/wallust.toml"
-	--
 	local file = io.open(wallust_path, "r")
 	if file then
 		file:close()
@@ -14,11 +13,11 @@ local function get_color_scheme()
 end
 
 -- 3. Now this line will work, because 'config' exists!
-
 return {
 	front_end = "WebGpu",
 	color_scheme = get_color_scheme(),
-
+	-- color_scheme = "Catppuccin Mocha",
+	term = "xterm-256color",
 	-- FONT (fix bold issue)
 	font = wezterm.font_with_fallback({
 		{ family = "JetBrains Mono", weight = "Regular" },
@@ -45,21 +44,20 @@ return {
 
 	enable_tab_bar = true,
 	-- window_decorations = "NONE | RESIZE",
-	window_background_opacity = 0.9,
-
+	window_background_opacity = 0.8,
+	text_background_opacity = 1.0,
 	window_padding = {
-		left = 12,
-		right = 12,
-		top = 12,
-		bottom = 12,
+		left = 0,
+		right = 0,
+		top = 0,
+		bottom = 0,
 	},
 
 	-- PERFORMANCE / UX
 	scrollback_lines = 20000,
+	enable_scroll_bar = true,
 	scroll_to_bottom_on_input = true,
 	audible_bell = "Disabled",
-
-	term = "xterm-256color",
 
 	-- KEYS (tmux-like control)
 	keys = {
@@ -83,5 +81,23 @@ return {
 
 		-- quick select links
 		{ key = "o", mods = "CTRL|SHIFT", action = wezterm.action.QuickSelect },
+		{
+			key = "t",
+			mods = "SUPER",
+			action = wezterm.action.DisableDefaultAssignment,
+		},
+		{
+			key = "T",
+			mods = "SUPER",
+			action = wezterm.action.DisableDefaultAssignment,
+		},
+
+		{
+			key = "F",
+			mods = "SHIFT|CTRL",
+			action = wezterm.action.Search({
+				CaseSensitiveString = "hash",
+			}),
+		},
 	},
 }

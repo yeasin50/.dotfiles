@@ -11,6 +11,7 @@ function M.setup()
 		gopls = require("config.lsp.servers.gopls"),
 		marksman = require("config.lsp.servers.marksman"),
 		pyright = require("config.lsp.servers.pyright"),
+		jdtls = require("config.lsp.servers.jdtls"),
 	}
 
 	-- Ensure mason installs servers
