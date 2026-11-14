@@ -3,7 +3,7 @@ vim.g.maplocalleader = " "
 vim.opt.colorcolumn = "120"
 
 vim.opt.clipboard = "unnamedplus"
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 vim.opt.linespace = 8
 
 vim.opt.numberwidth = 4
@@ -24,6 +24,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+vim.keymap.set("n", "<leader>`", "<C-^>", {
+	desc = "Switch to last buffer",
+})
 -- vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", { desc = "Clear search highlight" })
 
 -- Save view (folds, cursor, etc.) only for real files

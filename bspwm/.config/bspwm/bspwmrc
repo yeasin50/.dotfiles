@@ -63,5 +63,9 @@ source "${HOME}/.config/bspwm/colors.sh"
 
 bspc rule -a Gsimplecal state=floating rectangle=300x250+800+44
 
+# xset s off
+# xset -dpms
+# xset s noblank
+
 #
 # chmod +x bspwmrc and then reboot/stow

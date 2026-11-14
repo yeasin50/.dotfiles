@@ -24,6 +24,7 @@ return {
 			-- cpp = { "clang_format" }, -- Uncomment if you want C++ as well
 		},
 		format_on_save = {
+			-- enabled = false,
 			timeout_ms = 1000,
 			lsp_format = "fallback",
 		},
