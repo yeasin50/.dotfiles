@@ -2,6 +2,14 @@ vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "open parent directory
 
 vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, { desc = "LSP Rename symbol" })
 
+-- Visual line movement
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.keymap.set("n", "j", "gj", { desc = "Move down visual line" })
+vim.keymap.set("n", "k", "gk", { desc = "Move up visual line" })
+vim.keymap.set("n", "<Down>", "gj", { desc = "Move down visual line" })
+vim.keymap.set("n", "<Up>", "gk", { desc = "Move up visual line" })
+
 -- Move up by two half-pages and center
 vim.keymap.set("n", "<C-u>", function()
 	local lines = math.floor(vim.fn.winheight(0) * 0.35) -- 35% of window height
