@@ -7,6 +7,7 @@ alias cls='clear'
 alias reload='source ~/.bashrc'
 
 alias vi='nvim'
+alias e='emacsclient -c -n -a ""'
 
 # alias viyt='NVIM_APPNAME=nvim.yt nvim'
 
@@ -401,4 +402,23 @@ gie() {
   body=$(sed '1,/^---BODY---$/d' "$tmp")
 
   gh issue edit "$id" --title "$title" --body "$body"
+}
+
+
+## To convert kdenlive to audacity label
+aud_labels() {
+    local input=""
+    local line
+
+    while IFS= read -r line; do
+        [[ -z "$line" ]] && break
+        input+="$line"$'\n'
+    done
+
+    printf '%s' "$input" | awk '
+    /^[0-9]+:[0-9]+[[:space:]]+Marker/ {
+        split($1,t,":")
+        s=t[1]*60+t[2]
+        printf "%.3f\t%.3f\tMarker\n",s,s
+    }' > /media/yeasin/VideoStorage/raw/_cook/audio_label.txt
 }
