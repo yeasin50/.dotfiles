@@ -11,6 +11,9 @@ super + ...   (already default Mod4 in sxhkd/bspwm)
 super + Return
     wezterm --config-file ~/.config/wezterm/wezterm.lua
 
+super + e
+    emacsclient -c -a "" .
+
 # --- Launcher & Switcher ---
 super + space
     rofi -show drun -show-icons
@@ -92,9 +95,9 @@ super + shift + {1-6}
 
 
 # game specifics 
-#
-# Page_Up ; {1-9}
-#     ~/.config/sxhkd/click_loop {1-9}
-#
-# Page_Down
-#     ~/.config/sxhkd/click_loop
+
+Page_Up ; {1-9}
+    ~/.config/sxhkd/click_loop {1-9}
+
+Page_Down
+    ~/.config/sxhkd/click_loop

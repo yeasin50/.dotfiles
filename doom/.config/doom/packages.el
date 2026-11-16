@@ -11,6 +11,9 @@
 
 (package! wakatime-mode)
 
+(package! doom-themes)
+(package! ef-themes)
+
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;; (package! some-package)
 

@@ -1,83 +1,125 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+;; Personal Doom Emacs configuration.
 
-;
 (setq user-full-name "Md. Yeasin Sheikh"
       user-mail-address "")
 
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
+;; Appearance
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14)
+      display-line-numbers-type 'relative
+      font-lock-maximum-decoration t)
 (setq-default line-spacing 4)
 
+(menu-bar-mode -1)
+
+;; WakaTime
 (use-package! wakatime-mode
   :config
   (global-wakatime-mode 1))
 
-;; Smooth mouse/trackpad scrolling
-(pixel-scroll-precision-mode 1)
-
-(setq scroll-conservatively 101
-      scroll-margin 3
-      scroll-preserve-screen-position t)
 
 
-;; open  link like nvim
-(map! :leader
-      :desc "Open URL at point"
-      "g x" #'browse-url-at-point)
-
-;; open vterm with 'SPC o t'
-(map! "C-`" #'vterm)
-
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
-
-
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type 'relative)
-
-;; change `org-directory'. It must be set before org loads!
+;; Org
 (setq org-directory "~/org/")
 
-;; File navigation
+;; Navigation
 (map! :leader
-      :desc "Recent files"
-      "f f" #'recentf-open-files
+      :desc "Recent files"       "f f" #'recentf-open-files
+      :desc "Find project files" "c f" #'projectile-find-file
+      :desc "Open URL at point"  "g x" #'browse-url-at-point)
 
-      :desc "Find project files"
-      "c f" #'projectile-find-file)
+;; ;; Terminal
+;; (map! "C-`" #'vterm
+;;       "C-\\" #'vterm)
 
-;; Terminal
-(map! "C-\\" #'vterm)
+;; Close current buffer
+(map! "C-q" #'kill-this-buffer)
 
-;; Buffer tabs
+
+
+;; Centaur Tabs: Switch top tabs with Alt+1..9 everywhere (including vterm)
 (after! centaur-tabs
   (centaur-tabs-mode 1)
 
-  ;; Alt + 1 through 9
+  (defun my/centaur-tabs-select-tab (index)
+    "Switch to the INDEX-th visible tab in the top Centaur Tabs bar."
+    (let* ((tabs (centaur-tabs-view (centaur-tabs-current-tabset)))
+           (tab (nth (1- index) tabs)))
+      (when tab
+        (centaur-tabs-buffer-select-tab tab))))
+
   (dotimes (i 9)
-    (let ((n (1+ i)))
-      (define-key evil-normal-state-map
-        (kbd (format "M-%d" n))
-        `(lambda ()
-           (interactive)
-           (centaur-tabs-select-visible-tab ,n))))))
+    (let* ((n (1+ i))
+           (key (format "M-%d" n)))
+      (map! :niv key
+            (lambda ()
+              (interactive)
+              (my/centaur-tabs-select-tab n))))))
+
+;; Prevent vterm from swallowing Alt+1..9 so you can switch out of terminal tabs
+(after! vterm
+  (dolist (n (number-sequence 1 9))
+    (add-to-list 'vterm-keymap-exceptions (format "M-%d" n))))
 
 
-;; Soft wrapping
+
+
+;; Visual line navigation
 (global-visual-line-mode 1)
 
-;; Evil visual-line navigation
-(setq evil-respect-visual-line-mode t
-      line-move-visual t)
 
-;; Normal mode
-(map! :n
-      "j" #'evil-next-visual-line
-      "k" #'evil-previous-visual-line
-      "<down>" #'evil-next-visual-line
-      "<up>" #'evil-previous-visual-line)
+;; LSP
+(after! lsp-mode
+  (setq lsp-semantic-tokens-enable t
+        lsp-enable-semantic-highlighting t
+        lsp-enable-symbol-highlighting t
+        lsp-use-on-type-formatting t)
 
-;; Insert mode
-(map! :i
-      "<down>" #'evil-next-visual-line
-      "<up>" #'evil-previous-visual-line)
+  (map! :map lsp-mode-map
+        :desc "Go to Declaration"
+        "g D" #'lsp-find-declaration))
+
+;; LSP Leader Keybindings
+(map! :leader
+      :desc "Go to Definition"       "g d" #'lsp-find-definition
+      :desc "Go to References"       "g r" #'lsp-find-references
+      :desc "Go to Implementation"   "g i" #'lsp-find-implementation
+      :desc "Go to Type Definition"  "g D" #'lsp-find-type-definition
+      :desc "Document Symbols"       "d s" #'consult-lsp-file-symbols
+      :desc "Workspace Symbols"      "w s" #'consult-lsp-symbols
+      :desc "Rename Symbol"          "c r" #'lsp-rename
+      :desc "Code Actions"           "c a" #'lsp-execute-code-action)
+
+
+;; Tab & Indentation (2 spaces)
+(setq-default tab-width 2
+              standard-indent 2
+              indent-tabs-mode nil)
+
+
+;; LSP Autocomplete: Confirm with Enter instead of Tab
+(after! corfu
+  (setq corfu-preselect 'first)
+  (define-key corfu-map (kbd "RET") #'corfu-insert)
+  (define-key corfu-map (kbd "<return>") #'corfu-insert)
+  (define-key corfu-map (kbd "TAB") nil)
+  (define-key corfu-map (kbd "<tab>") nil)
+  (map! :map corfu-map
+        :i "RET"      #'corfu-insert
+        :i "<return>" #'corfu-insert
+        :i "TAB"      nil
+        :i "<tab>"    nil))
+
+(after! company
+  (setq company-frontends '(company-pseudo-tooltip-frontend company-echo-metadata-frontend))
+  (define-key company-active-map (kbd "RET") #'company-complete-selection)
+  (define-key company-active-map (kbd "<return>") #'company-complete-selection)
+  (define-key company-active-map (kbd "TAB") nil)
+  (define-key company-active-map (kbd "<tab>") nil)
+  (define-key company-tng-map (kbd "TAB") nil)
+  (define-key company-tng-map (kbd "<tab>") nil)
+  (map! :map company-active-map
+        :i "RET"      #'company-complete-selection
+        :i "<return>" #'company-complete-selection
+        :i "TAB"      nil
+        :i "<tab>"    nil))
