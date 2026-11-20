@@ -13,6 +13,10 @@
 
 (package! doom-themes)
 (package! ef-themes)
+(package! ultra-scroll) ;; didn't work
+
+(package! vertico-posframe) ;; for floating files show
+
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;; (package! some-package)
